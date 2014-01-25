@@ -1,0 +1,211 @@
+/*
+* qTip2 - Pretty powerful tooltips
+* http://craigsworks.com/projects/qtip2/
+*
+* Version: nightly
+* Copyright 2009-2010 Craig Michael Thompson - http://craigsworks.com
+*
+* Dual licensed under MIT or GPLv2 licenses
+*   http://en.wikipedia.org/wiki/MIT_License
+*   http://en.wikipedia.org/wiki/GNU_General_Public_License
+*
+* Date: Wed Mar  9 14:08:00 PST 2011
+*/
+
+/* Fluid class for determining actual width in IE */
+.ui-tooltip-fluid {
+	display: block;
+	visibility: hidden;
+	position: static !important;
+	float: left !important;
+}
+
+.ui-tooltip, .qtip, .ui-tooltip-hidden {
+	position: absolute;
+	left: -31000px;
+	top: -31000px;
+	display: block;
+
+	max-width: 280px;
+	min-width: 50px;
+	
+	font-size: 10.5px;
+	line-height: 12px;
+}
+
+	.ui-tooltip-content{
+		position: relative;
+		padding: 5px 9px;
+		overflow: hidden;
+		
+		border-width: 1px;
+		border-style: solid;
+		
+		text-align: left;
+		word-wrap: break-word;
+		overflow: hidden;
+	}
+
+	.ui-tooltip-titlebar{
+		position: relative;
+		min-height: 14px;
+		padding: 5px 35px 5px 10px;
+		overflow: hidden;
+		
+		border-width: 1px 1px 0;
+		border-style: solid;
+
+		font-weight: bold;
+	}
+
+	.ui-tooltip-titlebar + .ui-tooltip-content{ border-top-width: 0px !important; }
+
+		/*! Default close button class */
+		.ui-tooltip-titlebar .ui-state-default{
+			position: absolute;
+			right: 4px;
+			top: 50%;
+			margin-top: -9px;
+
+			cursor: pointer;
+			outline: medium none;
+
+			border-width: 1px;
+			border-style: solid;
+		}
+		
+		* html .ui-tooltip-titlebar .ui-state-default{
+			top: 16px;
+		}
+
+		.ui-tooltip-titlebar .ui-icon,
+		.ui-tooltip-icon .ui-icon{
+			display: block;
+			text-indent: -1000em;
+		}
+
+		.ui-tooltip-icon, .ui-tooltip-icon .ui-icon{
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+		}
+
+			.ui-tooltip-icon .ui-icon{
+				width: 18px;
+				height: 14px;
+
+				text-align: center;
+				text-indent: 0;
+				font: normal bold 10px/13px;
+
+				color: inherit;
+				background: transparent none no-repeat -100em -100em;
+			}
+
+
+/* Applied to 'focused' tooltips e.g. most recently displayed/interacted with */
+.ui-tooltip-focus{
+
+}
+
+
+/*! Default tooltip style */
+.ui-tooltip-titlebar,
+.ui-tooltip-content{
+	border-color: #F1D031;
+	background-color: #FFFFA3;
+	color: #555;
+}
+
+	.ui-tooltip-titlebar{
+		background-color: #FFEF93;
+	}
+
+	.ui-tooltip-titlebar .ui-tooltip-icon{
+		border-color: #CCC;
+		background: #F1F1F1;
+		color: #777;
+	}
+	
+	.ui-tooltip-titlebar .ui-state-hover{
+		border-color: #AAA;
+		color: #111;
+	}
+
+/* nbouton [2011-03-15]: NOTE: removed unused colour themes */
+
+.ui-tooltip .ui-tooltip-tip{
+	position: absolute;
+	margin: 0 auto;
+	overflow: hidden;
+
+	background: transparent !important;
+	border: 0px dashed transparent !important;
+	z-index: 10;
+}
+
+	.ui-tooltip .ui-tooltip-tip,
+	.ui-tooltip .ui-tooltip-tip *{
+		line-height: 0.1px !important;
+		font-size: 0.1px !important;
+		color: #123456;
+
+		background: transparent;
+		border: 0px dashed transparent;
+	}
+
+
+
+
+/* ADDITIONS */
+/* nbouton [2011-03-15] */
+
+
+/* tooltip container styles */
+
+.ui-tooltip-titlebar,
+.ui-tooltip-content {
+	border: 0;
+	background: rgba(54, 53, 52, 0.85);
+	color: #fff;
+}
+
+.ui-tooltip-content strong {
+	display: block;
+	margin: 0 0 4px 0;
+}
+
+/* tip/arrow styling */
+
+.ui-tooltip .ui-tooltip-tip {
+	margin-top: -10px !important;
+}
+
+/* shadows & rounded corners */
+
+/*! Add rounded corners to your tooltips in: FF3+, Chrome 2+, Opera 10.6+, IE9+, Safari 2+ */
+.ui-tooltip-rounded,
+.ui-tooltip-rounded .ui-tooltip-content {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.ui-tooltip-rounded .ui-tooltip-titlebar {
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+ 
+.ui-tooltip-rounded .ui-tooltip-titlebar + .ui-tooltip-content {
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
+/*! Add shadows to your tooltips in: FF3+, Chrome 2+, Opera 10.6+, IE5.5+, Safari 2+ */
+.ui-tooltip-shadow {
+	-webkit-box-shadow: 0 0 3px 1px #b2b2b2;
+	-moz-box-shadow: 0 0 3px 1px #b2b2b2;
+	box-shadow: 0 0 3px 1px #b2b2b2;
+}

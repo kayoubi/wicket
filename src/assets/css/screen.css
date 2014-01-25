@@ -1,0 +1,8436 @@
+
+/**** START reset.css ****/
+/***** ****/
+/* Removed, Bootstrap is covering this */
+/**** ****/
+/**** STOP reset.css ****/
+/**** START General components stylesheets - components.css ****/
+/**** ****/
+/* Styles for all the types of buttons
+----------------------------------------- */
+
+
+.sol-button { /* Obsolete class for buttons previously widely used in the app. This line will be removed at cleanup. */
+}
+
+#ui .login-oldbt {
+	/* combination of "sol-button" & "login" - to be removed after signup refactor  */
+	height: 36px !important;
+	border: 1px solid #53B2DE;
+	background: #00d6e1;
+	background: -moz-linear-gradient(top, #00d6e1 0%, #00b3c8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00d6e1), color-stop(100%, #00b3c8));
+	background: -webkit-linear-gradient(top, #00d6e1 0%, #00b3c8 100%);
+	background: -o-linear-gradient(top, #00d6e1 0%, #00b3c8 100%);
+	background: -ms-linear-gradient(top, #00d6e1 0%, #00b3c8 100%);
+	background: linear-gradient(top, #00d6e1 0%, #00b3c8 100%);
+	-pie-background: linear-gradient(top, #00d6e1 0%, #00b3c8 100%);
+	display: inline-block;
+	padding: 0px 25px 0 25px;
+	font-size: 15px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+	color: #FFFFFF;
+	position: relative;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2), inset 0 1px rgba(255, 255, 255, .3);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2), inset 0 1px rgba(255, 255, 255, .3);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2), inset 0 1px rgba(255, 255, 255, .3);
+	line-height: 36px !important;
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, -moz-linear-gradient(center top, #00D6E1 0%, #00B3C8 100%);
+	width: 130px;
+}
+
+#ui .login-oldbt:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, -moz-linear-gradient(top, #00b3c8 0%, #00d6e1 100%);
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00b3c8), color-stop(100%, #00d6e1));
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, -webkit-linear-gradient(top, #00b3c8 0%, #00d6e1 100%);
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, -o-linear-gradient(top, #00b3c8 0%, #00d6e1 100%);
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, -ms-linear-gradient(top, #00b3c8 0%, #00d6e1 100%);
+	background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, linear-gradient(top, #00b3c8 0%, #00d6e1 100%);
+	-pie-background: url("../images/button-arrow.png") no-repeat scroll 90% 50%, linear-gradient(top, #00b3c8 0%, #00d6e1 100%);
+}
+
+.sol-btn { /* used in java, keep it for now*/
+}
+
+.std-btn { /* used in java, keep it for now*/
+}
+
+/*.link-btn {  used in JS, keep it for now  }*/
+/* Styles for all the types of tables
+
+----------------------------------------- */
+
+
+.appCatalogActionColumn {
+	width: 90px
+}
+
+.clouddesktopconfig {
+	padding: 10px 10px 50px 10px;
+	border-bottom: none;
+}
+
+.advancedconfig .clouddesktopconfig {
+	padding: 10px 10px 0 0;
+	border-bottom: none;
+	margin-bottom: 10px;
+}
+
+th.attrRequired,
+td.attrRequired {
+	width: 129px
+}
+
+th.attrDescription,
+td.attrDescription,
+th.stepDescription,
+td.stepDescription {
+	width: 330px;
+	text-align: left;
+}
+
+th.attrName,
+td.attrName,
+th.stepName,
+td.stepName {
+	width: 100px;
+	text-align: left;
+}
+
+td.attrDescription input.ping-textinput,
+td.attrName input.ping-textinput,
+td.attrRequired input {
+	float: none
+}
+
+th.order,
+td.order {
+	width: 14px
+}
+
+table#attributeTable,
+table#instructionTable {
+	border-bottom: 0px solid black
+}
+
+table#attributeTable {
+}
+
+table#attributeTable * td,
+table#attributeTable *:hover td {
+	background: none;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-image: url("../images/table-cell-divider.png");
+	background-origin: padding-box;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+}
+
+table#attributeTable * td:last-child {
+	border-bottom: 1px solid #A7A7A7 !important
+}
+
+table#attributeTable * td:first-child {
+	border-bottom: 1px solid #A7A7A7 !important;
+	background: none;
+}
+
+td.dataTables_empty {
+	font-size: 16px!important
+}
+
+tr.norecords-tr {
+	display: none
+}
+
+#SpCustomerConnectionsPanel thead th:last-child,
+#IdpMyApplicationsPanel thead th:last-child {
+	min-width: 160px
+}
+
+#SpCustomerConnectionsPanel tbody tr td:nth-last-child(2),
+#SpCustomerConnectionsPanel thead th:nth-last-child(2),
+#IdpMyApplicationsPanel tbody tr td:nth-last-child(2),
+#IdpMyApplicationsPanel thead th:nth-last-child(2) {
+	text-align: center !important
+}
+
+#GroupManagementPanel {
+	margin-bottom: 20px !important
+}
+
+.table-general.GroupManagementPanel tr.active td {
+	background-color: #FFF
+}
+
+.table-general.GroupManagementPanel tr.active td:first-child {
+	background-color: #FFF
+}
+
+.table-general.GroupManagementPanel tr.wizardRow td.wizardRow {
+	background-color: #FFF;
+	border-left: 1px solid #A7A7A7 !important;
+}
+
+.table-general.GroupManagementPanel thead th:first-child {
+	width: 220px
+}
+
+.table-general.GroupManagementPanel tbody tr td:first-child {
+	font-size: 14px
+}
+
+.table-general.GroupManagementPanel thead th:last-child {
+	width: 120px
+}
+
+/* General format styles
+----------------------------------------- */
+
+
+.no-wrap {
+	white-space: nowrap
+}
+
+.no-textdecoration {
+	text-decoration: none
+}
+
+/* Application Catalog styles
+------------------------------------------*/
+
+
+H1.title {
+	color: #6C9A73;
+	font-size: 40px;
+	margin: 0 0 20px 0;
+	text-shadow: 1px 1px 1px rgba(17, 45, 41, 0.12);
+}
+
+H1.title.first-on-page {
+}
+
+.ideaLink {
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+
+#apps-catalog {
+	position: relative;
+	display : table;
+}
+
+#catalog-categories {
+	min-height: 765px;
+	overflow: hidden;
+	position: relative;
+	width: 150px;
+	z-index: 10;
+	display : table-row;
+}
+
+#catalog-categories li {
+	display: block;
+	height: 120px;
+	margin: 0 0 8px;
+	width: 122px;
+}
+
+.categoryRepeater a {
+	height: 82px;
+	padding-top: 40px;
+}
+
+#catalog-categories li a {
+	background: none repeat scroll 0 0 #CCCCCC;
+	border: 1px solid #BEBEBE;
+	border-radius: 8px 8px 8px 8px;
+	color: #FAFAFA;
+	display: block;
+	font-size: 15px;
+	font-weight: normal;
+	height: 120px;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 74px;
+	padding-top: 48px;
+}
+
+li.appRepeater a {
+	text-align: left
+}
+
+#catalog-categories li a:hover {
+	text-decoration: none
+}
+
+#catalog-categories li.current {
+	border: medium none;
+	border-radius: 0 0 0 0;
+	margin-bottom: -22px;
+	padding-bottom: 18px;
+	padding-right: 11px;
+	padding-top: 12px;
+	position: relative;
+	top: -11px;
+}
+
+#catalog-categories li.current:first-child {
+	background-position: 0 -150px
+}
+
+#catalog-categories li.current:last-child {
+	background-position: 0 -303px
+}
+
+#catalog-categories li.current a {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	padding-left: 1px;
+	text-shadow: none;
+}
+
+.catalog-list-category {
+	background: none repeat scroll 0 0 #333;
+	border: 1px solid #000000;
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 0 0 4px #000000 inset;
+	min-height: 763px;
+	left: 127px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 831px;
+}
+
+.category-apps {
+	margin: 10px 0 0;
+	overflow: hidden;
+	padding: 0 0 10px 10px;
+	position: relative;
+	width: 190px;
+	z-index: 10;
+}
+
+.category-apps li {
+	background: none repeat scroll 0 0 #666666;
+	border-bottom: 1px solid #525252;
+	border-radius: 8px 8px 8px 8px;
+	border-top: 1px solid #252525;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 0 5px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 163px;
+	z-index: 100;
+}
+
+.category-apps li:hover {
+	background: none repeat scroll 0 0 #999999
+}
+
+.category-apps li:hover a {
+	text-decoration: none
+}
+
+.category-apps li a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 15px;
+	height: 100%;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	width: 163px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.category-apps li a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.category-apps li.current {
+	border: medium none;
+	border-radius: 0 0 0 0;
+	margin: 0 0 -15px -5px;
+	padding: 12px 15px 10px 5px;
+	position: relative;
+	top: -11px;
+	z-index: 50;
+}
+
+.category-apps li.current a {
+	color: #666666
+}
+
+.myapp-title {
+	color: #333333;
+	font-size: 18px;
+	margin: 15px 0 20px;
+	font-weight: normal !important;
+}
+
+.myapp-desc {
+	color: #333333;
+	font-size: 14px;
+}
+
+.current-app-desc {
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 0 0 5px #000000;
+	min-height: 720px;
+	left: 179px;
+	overflow: hidden;
+	padding: 10px 45px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: auto;
+}
+
+.current-app-desc .left-side {
+	float: left;
+	overflow: hidden;
+	padding: 50px 0 0 15px;
+	width: 215px;
+}
+
+.current-app-desc .right-side {
+	margin-left: 240px;
+	padding: 20px 0 0;
+}
+
+.right-side .myapp-title {
+	margin-bottom: 10px
+}
+
+.current-app-desc .left-butons {
+	margin: 25px 0 0;
+	text-align: left;
+}
+
+.current-app-desc .app-logo,
+.current-app-desc .app-icon {
+	display: block;
+	margin: 20px 0;
+}
+
+.current-app-desc .app-logo {
+	width: 185px;
+	height: 40px;
+}
+
+.current-app-desc .app-developer-info {
+	border-top: 1px solid #BBBCC0;
+	margin-top: 40px;
+	padding: 20px 0 0;
+}
+
+.app-developer-info .dev-logo {
+	display: block;
+	margin: 0 auto;
+	width: 185px;
+	height: 40px;
+}
+
+.app-developer-info .myapp-rem {
+	margin-top: 15px
+}
+
+.other-apps-by-dev {
+	text-align: center
+}
+
+.app-developer-info .myapp-title {
+	margin-top: 0
+}
+
+.other-apps-by-dev .section-subtitle {
+	color: #333333;
+	font-size: 14px;
+	margin: 15px 0 10px;
+	font-weight: normal;
+}
+
+.app-item img {
+	display: block;
+	margin: 0 auto 5px;
+	width: 48px;
+	height: 48px;
+}
+
+.app-item img:after {
+	content: " "
+}
+
+.app-item {
+	color: #333333;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 20px;
+	text-align: center;
+	width: 64px;
+	padding-top: 15px;
+}
+
+.appDetailsBox {
+	padding-top: 15px
+}
+
+.category-apps li a span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.category-apps li a span.appName,
+.app-item .appName {
+	width: 80px
+}
+
+ul.category-apps li a img {
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+/* my applications
+------------------------------------ */
+
+
+.myapps-item:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.myapps-item {
+	background: #ececec;
+	border-radius: 10px;
+	height: 50px;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.myapps-item.active {
+	background: #FFF;
+	box-shadow: inner 0 0 4px 0 rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+	position: relative;
+	border-radius: 10px 0 0 10px;
+}
+
+.myapps-item.active>td {
+}
+
+.myapp-col {
+	float: left;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.myapps-item>.myapp-col {
+	border-left: 1px solid #FFFFFF;
+	height: 43px;
+	line-height: 43px;
+	padding: 4px 5px 3px;
+}
+
+.myapps-item>.myapp-col:first-child {
+	border-left: none
+}
+
+.myapps-item>.myapp-col:last-child {
+	border-right: none
+}
+
+.myapps-table-header>.myapp-col {
+	border-left: 1px solid #000000;
+	padding: 10px 5px;
+	text-align: center;
+}
+
+.myapps-table-header>.myapp-col:first-child {
+	border-left: none
+}
+
+.myapps-table-header>.myapp-col:last-child {
+	border-right: none;
+	width: 200px;
+}
+
+.myapps-item {
+}
+
+.myapps-item>.myapp-col.myapp-icon,
+.table-general.myapplications>tbody>tr>td:first-child,
+li.appContainer img {
+	padding: 4px;
+	height: 46px;
+	width: 46px;
+}
+
+.myapps-item>.myapp-col.myapp-icon>img,
+.table-general.myapplications>tbody>tr>td:first-child > span > img {
+	display: inline-block;
+	text-align: center;
+	height: 40px !important;
+	width: 40px !important;
+	max-width: inherit !important;
+	vertical-align: middle;
+	margin-left: 3px;
+}
+
+/* -ONDEMAND-4414 */
+/* /ONDEMAND-4414 */
+
+
+.myapps-item>.myapp-name {
+	color: #333333;
+	font-size: 14px;
+}
+
+.myapp-name {
+	width: 323px
+}
+
+.myapp-visibility {
+	width: 102px;
+	font-size: 14px;
+}
+
+.myapps-item>.myapp-connections {
+	color: #000000;
+	font-size: 14px;
+}
+
+.myapp-connections {
+	width: 115px
+}
+
+.myapp-enabled {
+	width: 86px
+}
+
+.myapps-item>.myapp-enabled {
+	padding: 11px 8px 3px 2px;
+	height: 36px;
+}
+
+.myapp-actions {
+}
+
+.lower-footer {
+	background: #3d3d3d;
+	height: 39px;
+	padding: 8px 15px;
+	color: #fafafa;
+	overflow: hidden;
+}
+
+.lower-footer p {
+	float: left;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 39px;
+	margin-left: 20px;
+}
+
+.lower-footer:after {
+	content: '';
+	clear: both;
+}
+
+.lower-content {
+	margin: 0 0 0 63px;
+	display: none;
+}
+
+.lower-content h4 {
+	background: #00bacd;
+	color: #fafafa;
+	padding: 15px 35px;
+	font: 18px/25px;
+}
+
+.lower-content .container {
+	border-left: 1px solid #c6c3c3;
+	border-right: 1px solid #c6c3c3;
+	background: #ffffff;
+	padding: 50px 40px;
+}
+
+.myapp-title {
+	color: #333333;
+	font-size: 18px;
+	margin: 15px 0 20px;
+}
+
+.myapp-desc {
+	color: #333333;
+	font-size: 14px;
+}
+
+.myapp-rem {
+	color: #333333;
+	font-size: 14px;
+	margin: 30px 0 0;
+}
+
+.myapp-rem a {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.myapp-rem a:hover {
+	text-decoration: none;
+	font-style: italic;
+}
+
+.myapps-table-header {
+	height: 39px;
+	padding: 0;
+	background: #454545;
+	margin: 0 0 00 53px;
+	border-radius: 10px 10px 10px 10px;
+	color: #FAFAFA;
+	text-align: center;
+	font: 15px/19px;
+}
+
+.myapps-table-header:after {
+	content: '';
+	clear: both;
+}
+
+.myapps-table {
+	margin: 0 0 0 0
+}
+
+#addNewApplication {
+	margin-left: 55px;
+	margin-top: 25px;
+}
+
+/* IDP connection set up wizard
+-----------------------------------*/
+
+
+.connectionSetupWizard {
+	margin-top: 0 !important;
+	width: auto;
+}
+
+.connectionSetupWizard tbody,
+.wizardContainer table.wicketExtensionsWizardInnerTable>tbody {
+	background: transparent;
+	border-radius: 10px;
+	box-shadow: none;
+}
+
+/* group management
+------------------------------------ */
+
+
+#groups-manager {
+	position: relative
+}
+
+.ag-apps-list {
+	float: left;
+	width: 260px;
+}
+
+.ag-apps-list li {
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ag-apps-list li.current {
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	position: relative;
+	z-index: 10;
+}
+
+.ag-apps-list li,
+.ag-groups-list li {
+	background: none repeat scroll 0 0 #ECECEC;
+	border: 1px solid #A7A7A7;
+	color: #333333;
+	display: block;
+	font-size: 14px;
+	padding: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.ag-apps-list li span,
+.ag-groups-list li span {
+	display: block;
+	word-wrap: break-word;
+}
+
+.ag-groups-list li {
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	padding-top: 21px;
+	padding-bottom: 21px;
+}
+
+.ag-groups-list li.selected {
+	background: none repeat scroll 0 0 #00BACD;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	color: #FFFFFF;
+	position: relative;
+	z-index: 10;
+}
+
+.ag-groups-list li.selected .close {
+	display: block
+}
+
+.ag-groups-list li .close {
+	display: none;
+	height: 21px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 21px;
+}
+
+.ag-groups-list li .close {
+	top: 3px
+}
+
+.ag-groups-list ul,
+.ag-apps-list ul {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.ag-apps-list {
+	text-align: right
+}
+
+.ag-apps-list li:after,
+.ag-groups-list li:after {
+	background: #999999;
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 17px;
+}
+
+.ag-groups-list li:after {
+	background: #999999
+}
+
+.ag-apps-list li {
+	padding-right: 20px
+}
+
+.ag-apps-list li:after {
+	border-left: 1px solid #A7A7A7;
+	right: 0;
+}
+
+.ag-apps-list li.current:after {
+	background: #00BACD
+}
+
+.ag-groups-list li {
+	padding-left: 20px
+}
+
+.ag-groups-list li:after {
+	border-right: 1px solid #A7A7A7;
+	left: 0;
+}
+
+.ag-apps-list li + li,
+.ag-groups-list li + li {
+	border-top: medium none
+}
+
+.ag-apps-list img {
+	display: block;
+	float: left;
+}
+
+.ag-apps-list .app-title {
+	color: #333333;
+	font-size: 14px;
+	line-height: 45px;
+	margin-left: 65px;
+	text-align: center;
+}
+
+.ag-apps-list li:before {
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #C6C3C3;
+	bottom: 2px;
+	content: "";
+	display: block;
+	height: auto;
+	left: 62px;
+	position: absolute;
+	top: 1px;
+	width: 0;
+}
+
+.ag-groups-list {
+	float: right;
+	width: 260px;
+}
+
+#ag-relations {
+	float: left;
+	position: relative;
+	z-index: 20;
+}
+
+/* SP App wizard */
+
+
+.emptyTableText {
+	margin: 40px 0
+}
+
+#attributeTable_wrapper div.checker {
+	padding-left: 219px;
+    :;
+}
+
+/* on/off but */
+
+
+.rounded-switcher {
+	border: none;
+	background: url("../images/checkbox-toggle.png") no-repeat scroll 0 bottom transparent;
+	height: 23px;
+	padding: 5px 0 0 0;
+	width: 82px;
+	margin-left: 5px;
+	position: relative;
+}
+
+.rounded-switcher.second-active {
+	background-position: 0 top
+}
+
+.rounded-switcher a:hover {
+	text-decoration: none
+}
+
+.rounded-switcher .item {
+	border: none;
+	display: block;
+	font: 15px/20px;
+	height: 23px;
+	padding: 0 0 0 0;
+	text-align: center;
+	position: relative;
+	left: 8px;
+	top: -2px;
+	overflow: hidden;
+	width: 25px;
+	zoom: 1;
+	color: #CFCFCF;
+}
+
+.rounded-switcher .item.no {
+	left: 48px;
+	top: -24px;
+}
+
+.rounded-switcher .item.active {
+	padding-right: 0;
+	color: #333;
+}
+
+/** pop over panel */
+/* modal popup old */
+/* /modal popup old */
+
+
+.push {
+	clear: both;
+	height: 160px;
+}
+
+ul.decimal {
+	list-style-type: decimal;
+	list-style-position: inside;
+	margin: 0;
+}
+
+.vertical-spacer {
+	padding-top: 40px
+}
+
+.action-delete {
+	font-size: 15px;
+	color: #777;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+
+.action-delete:hover {
+	color: #990000
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.wordwrap {
+	white-space: pre-wrap; /* CSS3 */
+	white-space: -moz-pre-wrap; /* Firefox */
+	white-space: -pre-wrap; /* Opera <7 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* IE */
+}
+
+.connectionDetailValue {
+	margin-left: 177px
+}
+
+.appDetailButtonBar {
+	background-color: #F0F0F0;
+	border-radius: 6px 6px 6px 6px;
+	margin: 0 0 20px;
+	padding: 10px !important;
+}
+
+.categoryFilterContainer {
+	float: right;
+	width: 50%;
+}
+
+.categoryFilterLabel {
+	float: left;
+	padding: 4px 0 0 60px;
+	font-size: 15px;
+}
+
+.categoryFilter {
+	float: right
+}
+
+.wizardRow {
+	padding-bottom: 20px
+}
+
+.appLogo {
+	float: left;
+	padding-right: 20px;
+}
+
+.equation {
+	padding: 5px 0 5px 45px
+}
+
+.attributeMapPanel {
+	width: 800px
+}
+
+.pop-buttons { /* this is used in js ssoinformationpanel bt is novhere used in html.. presume is old unused code. to be checked */
+}
+
+.groupApp {
+	height: 20px;
+	margin: 0 0 10px;
+	text-align: left;
+}
+
+#ui .applc {
+	margin: 50px 0
+}
+
+#ui .applc input[type="checkbox"] {
+	float: left;
+	margin: 3px 0 0 0;
+}
+
+.idpConnectionSetupWizardContainer {
+}
+
+.idpConnectionSetupWizardContainer .appDetails {
+	width: 915px
+}
+
+.table-general .groupApp.appList {
+	float: left !important;
+	clear: right;
+	margin: 0px 20px 20px 0;
+	/* background-color: #F0F0F0 !important;
+    border-radius: 0 0 5px 5px;*/
+	width: 285px;
+	height: 62px;
+}
+
+#toggleAllLabel {
+	float: left;
+	padding-left: 7px;
+}
+
+.idpConnectionSetupWizardContainer .groupDetails {
+}
+
+#ui .groupAppAllSelected {
+	height: 20px;
+	width: 285px;
+}
+
+#ui .groupAppAllSelected .groupName {
+}
+
+#ui .ssoSelected,
+.provisioningSelected {
+	font-weight: normal
+}
+
+.groupBox1 {
+}
+
+.groupBox1 .ssoSelected,
+.groupBox1 .provisioningSelected {
+	margin-left: 20px;
+	display: block;
+	height: 20px;
+}
+
+#ui .groupBox1 .ssoSelected input[type="checkbox"],
+#ui .groupBox1 .provisioningSelected input[type="checkbox"] {
+	float: left
+}
+
+label.selectAllApp {
+	display: block;
+	float: right;
+}
+
+.wicketExtensionsWizardOuterTable .groupApp label {
+	display: block
+}
+
+.groupEditDescription {
+	padding: 20px 0 0 0
+}
+
+.idpConnectionSetupWizardContainer .instructions,
+.idpConnectionSetupWizardContainer .ssoConfigScreen {
+	min-width: 795px
+}
+
+.app-description,
+.appDescription,
+.ssoConfig >.description {
+	line-height: 18px;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+
+.app-description {
+	width: 700px
+}
+
+.appDescription,
+.ssoConfig > .description {
+	width: 800px
+}
+
+.admin-console-accountUrl a span {
+	width: 160px;
+	display: inline-block;
+	word-wrap: break-word;
+}
+
+.admin-console-appEditUrl {
+	padding-right: 10px
+}
+
+.accordion-wrap li:before {
+	background: none !important
+}
+
+.inviteEmailPanel .content {
+	height: 620px
+}
+
+.inviteEmailPanel .page-indent {
+	padding-left: 0px
+}
+
+.emailDescription {
+	padding: 0 20px 0 10px
+}
+
+#connectionMetadata {
+	padding: 30px 0 0 0
+}
+
+#connectionMetadata ul {
+	float: inherit
+}
+
+#connectionMetadata #metadata .form-feedback {
+	float: left;
+	width: 100%;
+}
+
+/**** ****/
+/**** STOP General components stylesheets - components.css ****/
+/**** START Original - components.css ****/
+/**** ****/
+/* Generel
+------------------------------------ */
+
+
+HTML,
+BODY {
+	font-size: 14px;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+A {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+A:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+EM {
+	font-style: italic
+}
+
+.clear {
+	clear: both
+}
+
+INPUT {
+	vertical-align: middle
+}
+
+#appContainer {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Header
+------------------------------------ */
+
+
+.steps {
+	height: 40px;
+	margin: 0 auto 32px auto;
+}
+
+.steps a {
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	color: #fafafa;
+	font: 15px/40px;
+	background: #424242;
+	position: relative;
+	float: left;
+	padding: 0 20px 0 10px;
+	width: 157px;
+	white-space: nowrap;
+}
+
+.steps a:hover {
+	text-decoration: none
+}
+
+.steps a .label {
+	position: relative;
+	z-index: 10;
+	border-radius: 0;
+	padding: 0;
+	background-color: transparent;
+	color: #FFF;
+	font-size: inherit;
+	font-weight: bold;
+	line-height: normal;
+	text-shadow: none;
+	vertical-align: auto;
+	white-space: nowrap;
+	line-height: 38px;
+}
+
+.steps a:after {
+	content: '';
+	height: 100%;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+}
+
+.steps a.current {
+}
+
+.steps a.disabled {
+}
+
+.steps a.current:after {
+}
+
+.steps a.prev-current:after {
+}
+
+.steps a.disabled:after {
+}
+
+.steps a.last:after {
+	display: none!important
+}
+
+a.last { /* used in java code, keep it for now */
+}
+
+.steps a.first {
+	-webkit-border-radius: 19px 0 0 21px;
+	-moz-border-radius: 19px 0 0 21px;
+	border-radius: 19px 0 0 21px;
+	padding: 0 25px 0 15px;
+}
+
+.steps a:last-child {
+	-moz-border-radius: 0 19px 21px 0;
+	-webkit-border-radius: 0 19px 21px 0;
+	border-radius: 0 19px 21px 0;
+	width: 132px;
+}
+
+/* ------------------------------------------------
+
+   Global Elements
+
+------------------------------------------------ */
+
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline-width: 0; /* disable input outlines in Safari */
+}
+
+/* ------------------------------------------------
+
+   Body and Container
+
+------------------------------------------------ */
+/* ------------------------------------------------
+
+   Header - moved to screen-headfootonly.css
+
+------------------------------------------------ */
+/* ------------------------------------------------
+
+   Header & Footer Mini Nav Styles - moved to screen-headfootonly.css
+
+------------------------------------------------ */
+/* ------------------------------------------------
+
+   Tab Styles
+
+------------------------------------------------ */
+
+
+.ping-tabs {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0;
+	padding: 25px 0 0 0;
+}
+
+.ping-tabs li {
+	float: left;
+	margin: 0 2px 0 0;
+	height: 34px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	border: 1px solid #676560;
+	border-bottom: 0;
+	-webkit-box-shadow: 0 -1px 2px 1px #373634;
+	-moz-box-shadow: 0 -1px 2px 1px #373634;
+	box-shadow: 0 -1px 2px 1px #373634;
+	background-color: #5b5854;
+}
+
+.ping-tabs li.ssoConfigure {
+	background-repeat: no-repeat;
+	background-position: 8px center, top left;
+}
+
+.ping-tabs li.selected.ssoConfigure {
+	background-repeat: no-repeat;
+	background-position: 8px center, top left;
+}
+
+.ping-tabs li.ssoConfigure a,
+.ping-tabs li.ssoConfigure a:link,
+.ping-tabs li.ssoConfigure a:visited {
+	padding: 0px 20px 0px 28px
+}
+
+.ping-tabs li a,
+.ping-tabs li a:link,
+.ping-tabs li a:visited {
+	display: block;
+	padding: 0 20px;
+	font-size: 110%;
+	line-height: 35px;
+	color: #e6e4e2;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 7px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow: inset 0 1px 7px 2px rgba(0,0,0,0.15);
+	box-shadow: inset 0 1px 7px 2px rgba(0,0,0,0.15);
+}
+
+.ping-tabs li.selected {
+	height: 35px;
+	border: 1px solid #ecedee;
+	border-bottom: 0;
+}
+
+.ping-tabs li.selected a {
+	color: #131313;
+	text-shadow: 1px 1px 2px #fff;
+	-webkit-box-shadow: inset 0 5px 6px 1px rgba(0,0,0,0.10);
+	-moz-box-shadow: inset 0 5px 6px 1px rgba(0,0,0,0.10);
+	box-shadow: inset 0 5px 6px 1px rgba(0,0,0,0.10);
+}
+
+/* ------------------------------------------------
+
+   Subheader
+
+------------------------------------------------ */
+
+
+.ping-subheader {
+	height: 33px;
+	padding: 0 22px;
+}
+
+.ping-subheader p {
+	line-height: 33px;
+	color: #fff;
+	font-size: 110%;
+}
+
+.ping-min .ping-subheader.ping-error {
+	position: relative;
+	z-index: 2;
+	border: 1px solid #d06b36;
+	border-top: 1px solid #d7722d;
+	border-bottom: 1px solid #be5935;
+}
+
+.ping-min .ping-subheader.ping-error p {
+	margin: 0
+}
+
+/* ------------------------------------------------
+
+   Headings
+
+------------------------------------------------ */
+
+
+h1 {
+	margin: 0;
+	font-size: 220%;
+	font-weight: normal;
+	line-height: 130%;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 20px;
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+h3.ping-step {
+	overflow: auto;
+	line-height: 32px;
+}
+
+h3.ping-step.tight {
+	line-height: 20px
+}
+
+h3.ping-step.tight .ping-step-subhead,
+h3 .ping-subhead {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 120%;
+	margin-left: 47px;
+}
+
+h3 .ping-subhead {
+	margin: 0
+}
+
+h3 .h3-normal-weight {
+	font-weight: normal
+}
+
+h4 {
+	font-size: 14px;
+	padding: 0;
+	margin: 0 0 15px 0;
+}
+
+h5 {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+
+h6 {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+
+/* ------------------------------------------------
+
+   Content
+
+------------------------------------------------ */
+
+
+.ping-body {
+	min-height: 350px
+}
+
+.ping-body.no-background {
+	background: none;
+	background-color: #fff;
+}
+
+.ping-min .ping-body {
+	min-height: 0;
+	background: none;
+	background-color: #fff;
+}
+
+.ping-error .ping-body {
+	overflow: visible
+}
+
+.ping-body.ping-error {
+	padding: 12px 25px 48px 25px
+}
+
+.ping-body #accordion .ping-body {
+	padding-top: 10px
+}
+
+.ping-body h1.ping-login {
+	color: #363534;
+	line-height: 100%;
+	padding: 0;
+	margin: 0 0 13px 0;
+}
+
+.ping-truncated {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+
+.page-indent {
+}
+
+.field-data-indent {
+	padding-left: 177px
+}
+
+/* ------------------------------------------------
+
+   Error Page
+
+------------------------------------------------ */
+
+
+.ping-body h1.ping-error {
+	color: #e05206;
+	font-size: 180%;
+	margin-bottom: 25px;
+}
+
+.ping-body .ping-return {
+	font-size: 90%
+}
+
+/* ------------------------------------------------
+
+   Login
+
+------------------------------------------------ */
+
+
+.ping-body .ping-login {
+	/* L = in the new login - tbdel after finish  */
+	clear: both;
+}
+
+.ping-body .ping-login fieldset {
+	/* L = in the new login - tbdel after finish  */
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.ping-body .ping-login a.ping-recoverpass {
+	/* L = in the new login - tbdel after finish  */
+	margin-left: 130px;
+}
+
+.ping-body .ping-login a.ping-recoverpass:hover {
+	/* L = in the new login - tbdel after finish  */
+	text-decoration: underline;
+}
+
+.ping-body .ping-login a.ping-contact {
+	/* L = in the new login - tbdel after finish  */
+	font-weight: normal;
+	color: #908d87;
+}
+
+.ping-body .ping-login a.ping-contact:hover {
+	/* L = in the new login - tbdel after finish  */
+	text-decoration: underline;
+}
+
+/* L = end of login styles? */
+
+
+.ping-body .ping-filter {
+	float: left;
+	margin-bottom: 4px;
+	margin-left: 50px;
+	padding: 15px 8px 10px 20px;
+	background-color: #f7f7f7 !important;
+	height: 40px;
+	width: 910px;
+	margin: 10px 20px 20px 0;
+	border-color: #b4b4b4 !important;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	vertical-align: middle;
+	-webkit-box-shadow: inset 0px 2px 2px 0px #dddddd;
+	box-shadow: inset 0px 1px 2px 0px #dddddd;
+}
+
+.ping-body .ping-filter .ping-searchbar { /* kept the class because is ussed in the CommonFilterPanel.java file */
+}
+
+.ping-body .ping-filter .ping-src-but { /* kept the class because is ussed in the CommonFilterPanel.java file */
+}
+
+/* ------------------------------------------------
+
+   L = New Login
+
+------------------------------------------------ */
+
+
+.ping-body .ping-login-signup {
+	clear: both
+}
+
+.ping-body .ping-login-signup .logsign-container {
+	float: left;
+}
+
+.ping-body .ping-login-signup .new-login {
+	width: 450px
+}
+
+.ping-body .ping-login-signup .new-login .ping-input label {
+	width: 80px
+}
+
+.ping-body .ping-login-signup .new-login .ping-buttons {
+	padding-left: 80px
+}
+
+.ping-body .ping-login-signup .new-singup {
+	width: 470px
+}
+
+#registrationPanel {
+	border-left: 1px dotted #BCBCBC
+}
+
+#registrationPanel #feedbackRegistrationForm {
+	margin: 10px 0 0 30px
+}
+
+#ping-content {
+	margin-left: -20px
+}
+
+#ping-content #feedback {
+	margin: 10px
+}
+
+.ping-body .ping-login-signup .new-singup .logsign-form {
+}
+
+.ping-body .ping-login-signup .logsign-container .lgsg-title {
+	padding: 0 0 0 171px;
+	font-size: 24px;
+	color: #676767;
+}
+
+.ping-body .ping-login-signup .new-login .lgsg-title {
+	padding: 0 0 0 91px
+}
+
+.ping-body .ping-login-signup .logsign-container .logsign-form {
+	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
+}
+
+.ping-body .ping-login-signup a.ping-recoverpass {
+}
+
+.ping-body .ping-login-signup a:hover {
+	text-decoration: underline
+}
+
+.ping-body .ping-login-signup .ping-input label {
+	padding: 9px 3px 8px 0
+}
+
+.logsign-form .login-tos {
+	display:block;
+	margin-left:170px;
+}
+
+/* ------------------------------------------------
+
+   Input Text Boxes
+
+------------------------------------------------ */
+
+
+.ping-body .ping-textinput,
+.ping-body .ping-textinput input {
+	float: left;
+	display: inline-block;
+	height: 20px;
+	width: 240px;
+	padding: 5px 5px;
+	line-height: 20px;
+	font-size: 17px;
+}
+
+.ping-body .ping-textinput.url {
+	width: 390px
+}
+
+.ping-body .ping-login-signup .ping-textinput.grey-bg {
+	color: #333
+}
+
+.ping-body .ping-login-signup .ping-textinput.grey-bg:hover,
+.ping-body .ping-login-signup .ping-textinput.grey-bg:focus {
+	color: #333
+}
+
+.ping-body textarea.ping-textinput {
+	width: 520px;
+	height: 125px;
+	color: #333;
+	resize: none;
+}
+
+/* generic size for dialog textareas */
+
+
+.ping-dialog textarea.ping-textinput {
+	width: 350px;
+	height: 140px;
+	resize: none;
+}
+
+.ping-body .ping-textinput:hover,
+.ping-body form.ping-textinput input:hover {
+	outline: 0
+}
+
+.ping-body .ping-textinput:focus,
+.ping-body .ping-textinput.ping-focus,
+.ping-body form.ping-textinput input:focus {
+	color: #333;
+	outline: 0;
+}
+
+/* ------------------------------------------------
+
+   Table styles
+
+------------------------------------------------ */
+
+
+.ping-table {
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0 0 38px 0;
+}
+
+.ping-table thead th {
+	font-size: 12px;
+	line-height: 16px;
+	color: #353533;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	text-align: left;
+	padding: 5px 4px 3px 14px;
+	border-top: 1px solid #e6e6e4;
+	border-bottom: 1px solid #ececeb;
+}
+
+.ping-table thead th.ping-table-customer {
+	-webkit-border-radius: 3px 0 0 0;
+	-moz-border-radius: 3px 0 0 0;
+	border-radius: 3px 0 0 0;
+	border-left: 1px solid #e6e6e4;
+	padding-left: 9px;
+	padding-right: 14px;
+	width: 210px;
+}
+
+.ping-table thead th.ping-table-status {
+	-webkit-border-radius: 0 3px 0 0;
+	-moz-border-radius: 0 3px 0 0;
+	border-radius: 0 3px 0 0;
+	border-right: 1px solid #e6e6e4;
+}
+
+.ping-table thead th .ping-note {
+	font-weight: normal
+}
+
+.ping-table thead th a {
+	color: #353533;
+	text-decoration: none;
+}
+
+.ping-table thead th a:hover {
+	text-decoration: underline
+}
+
+.ping-table thead th a.ping-table-sort {
+	display: inline-block;
+	overflow: hidden;
+	width: 9px;
+	height: 12px;
+	text-indent: -200px;
+	text-decoration: none;
+	font-size: 1px;
+	background: transparent url('../images/table_sort_arrows.png') no-repeat 0 -12px;
+}
+
+.ping-table thead th a.ping-table-sort.reverse {
+	background-position: 0 0
+}
+
+.ping-table tbody td,
+.ping-table tfoot td {
+	font-size: 12px;
+	line-height: 115%;
+	color: #353533;
+	padding: 12px 4px 12px 14px;
+	vertical-align: top;
+	border-bottom: 1px solid #f1f0ee;
+}
+
+.ping-table tbody tr:first-child td {
+	border-top: 1px solid #e6e6e4
+}
+
+.ping-table tbody td a {
+	font-weight: normal
+}
+
+.ping-table tbody td.ping-table-customer {
+	padding-left: 10px;
+	padding-right: 14px;
+	width: 210px;
+}
+
+.ping-table tbody td.ping-table-customer {
+	background-color: #fcfcfc
+}
+
+.ping-table thead th.ping-table-status,
+.ping-table tbody td.ping-table-status {
+	width: 116px
+}
+
+.ping-table tbody td.ping-table-status {
+	color: #007F89
+}
+
+.ping-table tbody td.ping-table-status.pending {
+	font-style: italic;
+	color: #b7b3ad;
+}
+
+/* ------------------------------------------------
+
+   Buttons
+
+------------------------------------------------ */
+
+
+.ping-buttons {
+	clear: both;
+	overflow: visible;
+	margin: 0;
+	padding: 0 0 12px 0px;
+	width: 100%;
+}
+
+/* ------------------------------------------------
+
+   Highlight box
+
+------------------------------------------------ */
+
+
+.ping-highlight-container {
+	float: left;
+	padding: 12px 16px;
+	border: 1px solid #C6C3C3;
+	margin: 1px 21px 0 0;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* first alternate highlight box theme */
+
+
+.ping-highlight-container.alt {
+}
+
+/* second alternate highlight box theme */
+
+
+.ping-highlight-container.alt2 {
+}
+
+/* validation summary style */
+
+
+.ping-highlight-container.error {
+	display: block;
+	float: none;
+	font-size: 14px;
+	line-height: 130%;
+	-moz-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	-webkit-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	box-shadow: 0 0 4px rgba(128,128,128,.3);
+	margin: 22px 0 0 0;
+}
+
+h3.ping-step {
+	overflow: auto;
+	line-height: 32px;
+}
+
+h3.ping-step.tight {
+	line-height: 20px
+}
+
+h3.ping-step.tight .ping-step-subhead {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	color: #83807c;
+	line-height: 120%;
+	margin-left: 47px;
+}
+
+.ping-step .ping-highlight-container {
+	width: 28px;
+	padding: 6px 2px;
+	margin: 1px 12px 14px 1px;
+}
+
+.ping-highlight-container h2 {
+	font-size: 60px;
+	line-height: 60px;
+	color: #333;
+	margin: 0;
+	padding: 10px 0 4px 0;
+}
+
+.ping-highlight-container.alt h2 {
+	color: #453a05
+}
+
+.ping-highlight-container.alt2 h2 {
+	color: #461b04
+}
+
+.ping-highlight-container.error h3 {
+	font-size: 18px;
+	color: #453a05;
+}
+
+.ping-highlight-container.error ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+
+.ping-highlight-container.error ul li {
+	background: transparent url('../images/bullet_validation_summary.png') no-repeat 0 center;
+	margin: 0;
+	padding: 0 0 0 12px;
+}
+
+.ping-highlight-container .ping-step-count {
+	display: block;
+	font-size: 17px;
+	line-height: 20px;
+	color: #999391;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.ping-highlight-container .ping-highlight-label {
+	font-size: 18px;
+	line-height: 18px;
+	color: #333;
+	font-weight: bold;
+}
+
+.ping-highlight-container.alt .ping-highlight-label {
+	color: #333;
+	font-weight: bold;
+}
+
+.ping-highlight-container.alt2 .ping-highlight-label {
+	color: #333;
+	font-weight: bold;
+}
+
+.ping-highlight-container #loginTabs div p,
+.ping-highlight-container #failureTabs div p {
+	font-size: 12px;
+	line-height: 12px;
+	color: #999999;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	padding-top: 15px;
+}
+
+.updated-hourly-footer {
+	font-size: 12px;
+	color: #666;
+	margin: 0px;
+	text-decoration: none;
+	padding-bottom: 0px;
+}
+
+/* ------------------------------------------------
+
+   General body styles
+
+------------------------------------------------ */
+
+
+.ping-body form {
+	margin: 0;
+	padding: 0;
+}
+
+.ping-body fieldset {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	border-spacing: 0;
+}
+
+.ping-body .ping-account fieldset {
+	padding: 0 0 18px 0;
+	margin: 0 0 20px 0;
+}
+
+.ping-body fieldset.nobody {
+	padding: 0 0 10px 0
+}
+
+.ping-body fieldset.nomargin {
+	margin-bottom: 0
+}
+
+.ping-body .ping-account fieldset.noborder,
+.ping-body .ping-ssosettings fieldset.noborder {
+	border: 0
+}
+
+.ping-body legend,
+#configPanel legend,
+#advancedConfigPanel legend,
+#samlConfigurationDetails legend,
+.page-indent legend {
+	display: none
+}
+
+.ping-body .ping-instructions {
+	margin: 0;
+	color: #b7b3ad;
+	font-size: 100%;
+}
+
+.ping-body .ping-instructions em {
+	display: block;
+	font-style: normal;
+}
+
+.ping-body .ping-secondary .ping-instructions em {
+	margin-top: 0.5em
+}
+
+.ping-content {
+	clear: both;
+	width: 100%;
+	margin-left: -20px;
+}
+
+/* ------------------------------------------------
+
+   Page heading block
+
+   ------------------------------------------------ */
+
+
+.ping-pagehead { /* removed the div with this class, it was messy */
+}
+
+/* ------------------------------------------------
+
+   Primary container -- Left Side
+
+   ------------------------------------------------ */
+
+
+.ping-primary {
+	margin: 0 auto;
+	padding: 0 0 0 0;
+}
+
+.ping-heading-container {
+	clear: left;
+	height: 31px;
+}
+
+.ping-heading-container {
+	border: 1px solid #dfdeda;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	-webkit-box-shadow: 0 0 1px 0 #f7f7f6;
+	-moz-box-shadow: 0 0 1px 0 #f7f7f6;
+	box-shadow: 0 0 1px 0 #f7f7f6;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f7f7), to(#e0dfdf));
+	background: -moz-linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background: linear-gradient(#f8f7f7, #e0dfdf 100%);
+}
+
+.ping-heading-container h3 {
+	display: block;
+	line-height: 31px;
+	margin: 0;
+	padding: 0 19px;
+	color: #363534;
+	font-size: 110%;
+}
+
+.ping-heading-container h3 {
+	border-bottom: 1px solid #ececec
+}
+
+.ping-primary p {
+	padding: 0 0 0 0
+}
+
+/* ------------------------------------------------
+
+   Secondary container -- Right Side
+
+   ------------------------------------------------ */
+
+
+.ping-secondary {
+	float: right;
+	width: 243px;
+	padding: 0 0 13px 0;
+}
+
+.ping-secondary .ping-heading-container {
+	border: none;
+	background: none;
+	background-color: #ebebeb;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.ping-secondary h2 {
+	text-align: center;
+	margin: 0 0 12px 0;
+}
+
+.ping-secondary .ping-heading-container h3 {
+	padding: 0 12px
+}
+
+.ping-secondary .ping-instructions {
+	color: #353533;
+	padding: 0;
+	margin: 10px 13px;
+}
+
+.ping-secondary ul {
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0 13px;
+}
+
+.ping-secondary ul li {
+	margin: 0 0 6px 0
+}
+
+.ping-secondary ul.ping-features {
+	margin: 0;
+	border-top: 1px solid #ebeaea;
+}
+
+.ping-secondary ul.ping-features li {
+	text-align: center;
+	line-height: 120%;
+	color: #83807c;
+	padding: 10px 0;
+	margin: 0;
+	border-bottom: 1px solid #ebeaea;
+}
+
+.ping-secondary ul.ping-features li p {
+	margin: 0;
+	padding: 0;
+}
+
+.ping-secondary .ping-buttons {
+	margin: 13px 13px 0 13px
+}
+
+.ping-secondary .ping-buttons.wide {
+	margin: 0
+}
+
+.ping-secondary .ping-warning {
+	display: none;
+	margin: 20px 0 0 0;
+	color: #e05206;
+	text-align: center;
+}
+
+.ping-primary textarea {
+	width: 463px;
+	height: 300px;
+	padding: 19px;
+	resize: vertical;
+	font-size: 90%;
+	resize: none;
+}
+
+.ping-primary textarea.ping-active {
+	background: #f0f0f0;
+	resize: none;
+}
+
+/* ------------------------------------------------
+
+   Sign In / Out
+
+   ------------------------------------------------ */
+
+
+.ping-body #ping-login {
+	margin-top: 13px
+}
+
+.ping-body h1.ping-successful {
+	padding-bottom: 59px;
+	color: #363534;
+	font-weight: normal;
+}
+
+/* ------------------------------------------------
+
+   Sign-up page
+
+   ------------------------------------------------ */
+
+
+.ping-input {
+	clear: left;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+}
+
+.ping-input.relative {
+	position: relative
+}
+
+.ping-input.verticalshift {
+	top: -10px
+}
+
+.ping-input.nomargin {
+	clear: left;
+	overflow: hidden;
+	margin: 0;
+}
+
+.ping-input.nomargin.blockstart {
+	margin-top: 30px
+}
+
+.ping-input.indented {
+	margin: 0 0 10px 47px
+}
+
+.ping-input.indented.optional {
+	margin: 0 0 10px 37px;
+	padding: 0 0 6px 10px;
+}
+
+.ping-input.padded {
+	padding: 20px 0 0 0
+}
+
+.ping-input.optional {
+	padding-bottom: 10px;
+	margin-bottom: 0;
+}
+
+.ping-input.padded.optional {
+	padding: 14px 20px 10px 0
+}
+
+.ping-input label {
+	float: left;
+	font-size: 16px;
+	color: #353533;
+	width: 160px;
+	padding: 12px 17px 8px 0;
+	text-align: right;
+}
+
+.ping-input .ellipsis label {
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.ping-input .connectionDetailValue .ellipsis {
+	margin: 12px 20px 0 0
+}
+
+.ping-input.flush label {
+	float: none;
+	clear: left;
+	display: block;
+	text-align: left;
+	width: auto;
+	padding: 12px 0 4px 0;
+}
+
+.ping-input .radio-b {
+	float: left;
+	font-size: 15px;
+	margin: 0;
+	height: 23px;
+	display: block;
+	vertical-align: middle;
+}
+
+.ping-input .radio-b span {
+	vertical-align: middle;
+	display: inline;
+}
+
+.ping-login-signup p {
+	font: 13px;
+	color: #333;
+	padding: 15px 0 25px 180px;
+}
+
+.ping-login-signup .ping-input .ping-textinput,
+.ping-login-signup .ping-input .selector {
+	float: left;
+	margin: 0 0px 10px 8px;
+	height: 22px;
+	font-size: 17px;
+	line-height: 17px;
+	padding-bottom: 4px;
+}
+
+.ping-login-signup .ping-input .selector {
+	height: 31px
+}
+
+.ping-input.indented.optional label {
+	padding-top: 10px
+}
+
+.ping-input label .note {
+	display: block;
+	clear: left;
+	font-size: 11px;
+	color: #b3afa9;
+}
+
+.ping-input.indented label .note {
+	clear: none;
+	display: inline-block;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0 0 0 4px;
+}
+
+p.hint {
+	clear: left;
+	font-size: 11px;
+	line-height: 12px;
+	color: #b3afa9;
+ .:;
+	margin: -4px 0 4px 107px;
+	padding: 0;
+}
+
+p.hint-required-field {
+	clear: left;
+	font-size: 11px;
+	line-height: 12px;
+	color: #b3afa9;
+ .:;
+	padding: 0;
+	display: block;
+	float: right;
+	margin-right: 470px;
+	margin-bottom: 12px;
+}
+
+.ping-input.flush p.hint {
+	margin-left: 0
+}
+
+.ping-input .ping-textinput {
+	width: 270px;
+	margin: 0 0 10px 0;
+}
+
+.ping-input .radio-b-block {
+	float: left;
+	width: 282px;
+	margin: 0 0 10px 8px;
+}
+
+.ping-input.flush .ping-textinput {
+	margin-left: 0
+}
+
+.ping-input .ping-text {
+	float: right;
+	display: block;
+}
+
+.ping-input .ping-strong-auth-checkbox {
+}
+
+.ping-input .ping-strong-auth-text {
+	display: inline;
+	font-size: 16px;
+	vertical-align: -5px;
+}
+
+.ping-input.indented .ping-buttons {
+	float: right;
+	clear: none;
+	padding: 0 12px 0 177px;
+}
+
+.ping-separator {
+	display: block;
+	overflow: hidden;
+	border: 0;
+	border-top: 1px solid #ebeaea;
+	height: 1px;
+	line-height: 1px;
+	padding: 0;
+	margin: 0;
+}
+
+.ping-spacer-35 {
+	display: block;
+	border: 0;
+	height: 35px;
+}
+
+.ping-input hr.ping-separator {
+	margin: 4px 0 12px 0
+}
+
+.ping-input.optional hr.ping-separator {
+	margin-left: 107px
+}
+
+.ping-flush {
+	clear: both;
+	overflow: visible;
+	height: 14px;
+}
+
+.ping-flush hr.ping-separator {
+	margin: 0 0 0 0
+}
+
+.ping-flush h3 {
+	text-align: center;
+	float: left;
+	background-color: #fff;
+	line-height: 100%;
+	color: #214f5f;
+	margin: -12px 0 0;
+}
+
+.ping-flush h4 {
+	float: left;
+	background-color: #fff;
+	font-size: 14px;
+	line-height: 100%;
+	color: #214f5f;
+	margin: -8px 0 0 -6px;
+	padding: 0 6px;
+}
+
+.ping-sectionseparator {
+	clear: both;
+	height: 1px;
+	border-top: 1px solid #EBEAEA;
+	text-align: center;
+	position: relative;
+	margin-top: 6px;
+}
+
+.ping-sectionseparator span {
+	position: relative;
+	background: #ffffff;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	top: -11px;
+	font-size: 18px;
+	color: #22505F;
+}
+
+.ping-fineprint {
+	font-size: 10px;
+	line-height: 140%;
+	color: #514f4f;
+	padding: 4px 0 12px 0;
+}
+
+.ping-login-signup .ping-fineprint {
+	padding-left: 125px;
+	padding-bottom: 0;
+	float: left;
+	margin-top: -20px;
+}
+
+.ping-login-signup .ping-fineprint a {
+	font-weight: normal
+}
+
+/* Uniform field style customizations */
+
+
+.ping-input .selector {
+	float: left;
+	display: block-inline;
+	margin: 0 0 10px 0px;
+	width: 270px;
+	left: -5px;
+}
+
+.ping-input .selector select {
+	/* position open select element */
+	width: 270px;
+	top: 6px;
+	left: 5px;
+}
+
+.ping-input .selector.selector span {
+	width: 230px
+}
+
+div.selector.disabled span {
+	font-style: italic;
+	color: #c7c2ba;
+}
+
+div.ping-fileupload-container {
+	height: 31px
+}
+
+.ping-input .ping-fileupload-container .uploader {
+	float: left;
+	width: 278px;
+	height: 31px;
+	overflow: hidden;
+	margin: 0 13px -2px 0;
+	left: -2px;
+	font-size: 12px;
+	display: block;
+}
+
+.ping-ssosettings .ping-input .ping-fileupload-container .uploader {
+	margin: 0 10px 10px 0px;
+	left: 0;
+	width: 183px;
+}
+
+.ping-input .ping-fileupload-container .uploader span.filename {
+	width: 170px;
+	line-height: 31px;
+}
+
+.ping-input .ping-fileupload-container .uploader span.action {
+	line-height: 31px;
+	color: #363534;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.ping-input .ping-fileupload-container .uploader input:hover {
+	cursor: pointer !important
+}
+
+.ping-input .ping-fileupload-container .uploader input {
+	width: 278px
+}
+
+.ping-input .ping-fileupload-container span.filenameLabel {
+	display: inline;
+	clear: left;
+	color: #009900;
+	padding-bottom: 5px;
+}
+
+/* ------------------------------------------------
+
+   Tooltip & help icon styles
+
+   ------------------------------------------------ */
+
+
+a.ping-help {
+	display: inline-block;
+	cursor: help;
+	background: transparent url('../images/icon_help.png') no-repeat 0 0;
+	width: 11px;
+	height: 11px;
+	font-size: 1px;
+	line-height: 1px;
+	text-indent: -100px;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+a.ping-help:hover,
+a.ping-help:focus,
+a.ping-help:active {
+	background: transparent url('../images/icon_help.png') no-repeat 0 -11px
+}
+
+/* ------------------------------------------------
+
+   Overview page styles
+
+   ------------------------------------------------ */
+
+
+.ping-highlight-1col,
+.ping-highlight-2col {
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 0 0 28px 0;
+}
+
+.ping-highlight-3col {
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 0 0 28px 0;
+	text-align: center;
+}
+
+.ping-highlight-2col .ping-highlight-container {
+	width: 425px;
+	background: #FFFFFF;
+}
+
+.ping-highlight-3col .ping-highlight-container {
+	width: 265px;
+	background: #FFFFFF;
+}
+
+.ping-highlight-1col h5,
+.ping-highlight-2col h5 {
+	font-size: 18px;
+	line-height: 18px;
+	color: #999999;
+	margin: 10px 0 1px 0;
+	text-align: center;
+}
+
+.ping-highlight-1col .ping-highlight-container {
+	margin: 1px 1px 0 1px;
+	background: #FFFFFF;
+}
+
+.ping-highlight-1col .ping-highlight-container a.ping-map-link {
+	float: left;
+	clear: both;
+	margin: 4px 0 0 0;
+	padding: 0 9px 0 0;
+	text-decoration: none;
+}
+
+/* Dashboard styles L - OverivewPage ChartsPanel ChartsPanelSubjectDetails MapsPanel */
+
+
+.dashboard-charts {
+}
+
+.dashboard-charts .charts-panel {
+}
+
+#master-connections-timeranges {
+	float: left
+}
+
+#master-date-selected {
+	border-bottom: 1px dotted #BCBCBC;
+	padding: 0 0 20px;
+}
+
+.master-date-line {
+	background-color: #D9EDF7;
+	border-radius: 5px 5px 5px 5px;
+	height: 27px;
+	line-height: 30px;
+	margin: 160px auto 0;
+	width: 340px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 15px;
+}
+
+#master-date-chart {
+	width: 900px;
+	height: 100px;
+	clear: both;
+	margin-left: -27px;
+	background-color: transparent;
+}
+
+#master-date-chart .highcharts-container {
+	background-color: transparent
+}
+
+#master-date-chart .highcharts-container rect {
+}
+
+#master-date-chart p.load-chart1 {
+	padding: 10px 0 10px 27px
+}
+
+.dashboard-charts .charts-panel .range-block {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	box-shadow: none;
+	padding-left: 0;
+	width: 925px;
+}
+
+.dashboard-charts .charts-panel .range-block ul {
+	display: inline;
+	font-weight: bold;
+}
+
+.dashboard-charts .charts-panel .range-block ul li {
+	margin: 0 10px 0 0;
+	display: inline;
+}
+
+.dashboard-charts .charts-panel .range-block .ttl {
+	color: #999999
+}
+
+.dashboard-charts .charts-panel-subjects {
+	background-color: #690
+}
+
+.dashboard-charts .maps-panel {
+	background-color: #FC0
+}
+
+.ping-highlight-3col .ping-help {
+	margin: 0 0 0 10px
+}
+
+#loginSuccessTrends-container-chart,
+#loginFailureTrends-container-chart {
+	width: 400px;
+	height: 255px;
+	clear: both;
+	margin: 20px 0;
+}
+
+.ch-all-app,
+.lg-all-app {
+	width: 100%
+}
+
+#loginSuccessTrends-filter,
+#loginFailureTrends-filter,
+#userLoginConnections-filter,
+#loginConnections-filter {
+	float: right
+}
+
+#loginConnections-filter {
+	line-height: 35px;
+	font-weight: bold;
+	color: #33B6CB;
+}
+
+#loginConnections-filter label {
+	cursor: pointer
+}
+
+.dashboard-charts h5 {
+	line-height: 35px;
+	color: #333333;
+	font-size: 16px;
+}
+
+#loginConnections {
+}
+
+#userLoginConnections {
+}
+
+#loginConnections,
+#userLoginConnections {
+	height: 373px
+}
+
+#loginConnections-container-chart,
+#loginConnections-container-table,
+#userLoginConnections-container-chart,
+#userLoginConnections-container-table {
+	width: 400px;
+	height: 255px;
+	clear: both;
+	display: none;
+	margin: 20px 0 30px 20px;
+}
+
+.disp-pie {
+	text-align: right;
+	font-weight: bold;
+}
+
+#map_canvas {
+	width: 925px;
+	height: 570px;
+}
+
+/* ------------------------------------------------
+
+   Notices listing
+
+   ------------------------------------------------ */
+
+
+ul.ping-notices-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+ul.ping-notices-list li {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 8px 0;
+	min-height: 53px;
+	border: 1px solid #C6C3C3;
+	-moz-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	-webkit-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	box-shadow: 0 0 4px rgba(128,128,128,.3);
+	background: #FFFFFF;
+}
+
+ul.ping-notices-list li .ping-notice-meta {
+	float: left;
+	padding: 10px 10px 10px 30px;
+	color: #878583;
+	font-style: italic;
+}
+
+ul.ping-notices-list li .ping-notice-details {
+	padding: 0 10px 0 30px
+}
+
+ul.ping-notices-list li .ping-notice-details p {
+	font-size: 14px;
+	line-height: 14px;
+}
+
+ul.ping-notices-list li .ping-notice-title {
+	font-size: 18px;
+	padding: 0 10px 10px 30px;
+}
+
+ul.ping-notices-list li .ping-notice-details-short {
+	padding: 0 10px 10px 30px;
+	width: 600px;
+}
+
+ul.ping-notices-list li .ping-notice-action {
+	position: relative;
+	top: 15px;
+	right: 10px;
+	float: right;
+}
+
+/* ------------------------------------------------
+
+   Customer Connections list page
+
+   ------------------------------------------------ */
+
+
+.ping-connections {
+	width: 960px;
+	min-height: 350px;
+}
+
+.ping-connections .ping-table-sorted {
+	margin: 0 0 18px
+}
+
+.ping-connections table.ping-table-sorted td:last-child {
+	text-align: right
+}
+
+.connectionSetupWizard {
+	margin-top: 25px
+}
+
+.disableLink.disabled {
+	background-repeat: no-repeat;
+	background-position: top top;
+	font-style: italic;
+	font-size: 24px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: red;
+}
+
+.disableLink.enabled {
+	background-repeat: no-repeat;
+	background-position: top top;
+	font-style: italic;
+	font-size: 24px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: green;
+}
+
+.connectionInfoLinkContainer,
+.connectionViewLink,
+.connectionEditLink,
+.connectionDeleteLink {
+	padding: 0 3px
+}
+
+.connectionEditLinkContainer,
+.connectionDeleteLinkContainer {
+	width: 16px;
+	display: inline-block;
+}
+
+/* ------------------------------------------------
+
+   Manage SSO Settings page styles
+
+   ------------------------------------------------ */
+
+
+ul.ping-providers {
+	border-top: 1px solid #ebeaea;
+	margin-bottom: 36px;
+	width: 217px;
+}
+
+ul.ping-providers li {
+	padding: 11px 0 14px 0;
+	margin: 0;
+	border-bottom: 1px solid #ebeaea;
+}
+
+ul.ping-providers li a.ping-provider {
+	display: block;
+	overflow: hidden;
+	width: 126px;
+	height: 39px;
+	padding: 2px;
+	margin: 0;
+	text-indent: -200px;
+	text-decoration: none;
+	font-size: 1px;
+	line-height: 1px;
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+ul.ping-providers li strong {
+	display: block;
+	margin: 4px 0 0 0;
+}
+
+ul.ping-providers li a {
+	display: block;
+	font-weight: normal;
+	line-height: 110%;
+}
+
+.ping-ssosettings .ping-connect-values {
+	margin: 20px 0
+}
+
+.ping-ssosettings .ping-connect-values .ping-container-2col {
+	overflow: hidden
+}
+
+.ping-ssosettings .ping-connect-values .ping-container-2col .ping-input {
+	float: left;
+	clear: none;
+	overflow: hidden;
+	width: 270px;
+	margin: 0 30px 0 0;
+}
+
+.ping-ssosettings .ping-connect-values .ping-input p.hint {
+	margin: 0 0 12px 177px;
+	padding: 0;
+}
+
+ping-login-signup .ping-input p.hint {
+	margin: -5px 0 12px 136px
+}
+
+.ping-ssosettings .ping-input p.hint {
+	margin: 10px 0 0 0
+}
+
+.ping-ssosettings .ping-input p.signing_cert.hint {
+	margin: 35px 0 12px 177px
+}
+
+.ping-account .ping-input p.hint,
+.ping-account .ping-input div.pendingEmailDiv {
+	margin: 5px 0 0 197px
+}
+
+.ping-account .ping-input div.pendingEmailDiv {
+	color: #353533;
+	font-size: 12px;
+	line-height: 13px;
+	margin-bottom: 5px;
+}
+
+.ping-account .ping-input div.pendingEmailDiv div.pendingEmailCancel {
+	float: left;
+	padding-top: 2px;
+}
+
+.ping-account .ping-input div.pendingEmailDiv div.pendingEmailDescription {
+	margin-left: 25px
+}
+
+.ping-account .ping-input div.pendingEmailDiv div.pendingEmailDescription span {
+	color: #009900
+}
+
+.ping-login-signup div.hint {
+	vertical-align: middle;
+	margin-left: 171px;
+	color: #828282;
+	line-height: 1.4;
+	height: 60px;
+}
+
+.ping-ssosettings .ping-input .datatext a:hover {
+	text-decoration: underline;
+	color: #20505f;
+}
+
+.ping-login-signup .ping-buttons {
+	margin-left: 130px;
+	margin-top: 25px;
+	padding: 0 0 12px 170px;
+}
+
+.ping-ssosettings .ping-buttons {
+ //margin-left: 125px;
+	margin-top: 10px;
+	float: none;
+}
+
+.connection-status {
+	line-height: 29px
+}
+
+.loading {
+	padding-left: 20px;
+	background-image: url('../images/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-style: italic;
+}
+
+.connection-status.pass {
+	padding-left: 20px;
+	background-image: url('../images/tick.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.connection-status.fail {
+	padding-left: 20px;
+	background-image: url('../images/cross.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.connection-status.untested {
+	font-style: italic
+}
+
+/* //////////////////////////////
+ *   Wicket AJAX Tabs
+ * //////////////////////////////
+ */
+
+
+.breadCrumbWorkflowTabs {
+	display: inline-table;
+	clear: both;
+	margin-bottom: 30px;
+}
+
+.breadCrumbWorkflowTabs ol {
+	margin: 0;
+	padding: 0;
+}
+
+.breadCrumbWorkflowTabs ul {
+	overflow: hidden;
+	border-top: 1px solid #ebeaea;
+	border-bottom: 1px solid #ebeaea;
+	padding: 5px 0;
+	margin: 10px 0 0 0;
+}
+
+.breadCrumbWorkflowTabs li {
+	float: left;
+	padding: 5px 0;
+	margin: 0 18px 0 0;
+	display: inline;
+}
+
+.breadCrumbWorkflowTabs li a {
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 37px;
+}
+
+.breadCrumbWorkflowTabs li.selected a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #000000;
+	background: none;
+	padding-right: 0px;
+}
+
+.integrationGuide {
+	margin: 20px 0px 20px 0px
+}
+
+.integrationGuide h1 {
+	margin: 10px 5px 5px 0px
+}
+
+.integrationGuide h2,
+.integrationGuide h3 {
+	margin: 10px 5px 5px 10px
+}
+
+.integrationGuide h4,
+.integrationGuide h5,
+.integrationGuide h6 {
+	margin: 15px 0px 5px 15px
+}
+
+.integrationGuide dl,
+.integrationGuide pre {
+	margin-left: 40px
+}
+
+.integrationGuide img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.integrationGuide img.fullWidth {
+	width: 625px;
+	padding: 10px 0px 10px 0px;
+	margin: 20px 0px 20px 0px;
+}
+
+#codePlaceholder pre {
+	margin: 10px
+}
+
+ul.sampleCode {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+}
+
+ul.sampleCode li {
+	float: left;
+	cursor: pointer;
+	width: 75px;
+	height: 16px;
+	padding: 0 0 10px 0;
+	color: #37B9CC;
+	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul.sampleCode li:hover {
+	text-decoration: none;
+	color: #60C7D6;
+}
+
+#noSampleCodeDialog {
+	margin: 10px
+}
+
+.integrationGuide div#tableOfContents {
+	border: 1px solid threedface;
+	padding: 7px;
+	background-color: #F3EBCC;
+	width: 450px;
+}
+
+.integrationGuide div#tableOfContents h5 {
+	margin-top: 10px
+}
+
+.code {
+}
+
+.indent {
+	padding-left: 12px
+}
+
+/* ------------------------------------------------
+
+   Account information & SSO configuration details pages
+
+   ------------------------------------------------ */
+
+
+dt {
+	font: 14px/20px
+}
+
+dd {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font: 14px/20px;
+}
+
+dd a {
+	text-decoration: underline
+}
+
+.ssoDetails dd.goodCertificate {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-image: url('../images/accept.png');
+}
+
+.ssoDetails dd.expiring,
+.exclamation {
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 0px 4px;
+	background-image: url('../images/error.png');
+}
+
+.ssoDetails dd.expired {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url('../images/exclamation.png');
+}
+
+.ping-accountinfo .ping-input .ping-accountinfo-email,
+.ping-accountinfo .ping-input .ping-domain-name,
+.ping-ssosettings .ping-input .ping-altLabel,
+.greenText {
+	font-size: 17px;
+	color: #6C9A73;
+	clear: none;
+	line-height: 42px;
+}
+
+.ping-ssosettings .ping-input .ping-altLabel {
+	margin: 0 10px 0 8px
+}
+
+.ping-ssoconfig .ping-input label a.ping-help {
+	margin: 0 0 2px 0
+}
+
+.ping-ssoconfig .ping-input.indented .ping-textinput {
+	width: 468px
+}
+
+.ping-ssoconfig .ping-input.indented p.hint {
+	width: 482px;
+	color: #999691;
+	font-size: 12px;
+	line-height: 120%;
+}
+
+.ping-instructions-1col,
+.ping-instructions-2col {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding: 18px 14px;
+	margin: 0 0 0 47px;
+}
+
+.ping-instructions-2col {
+	border-top: 1px solid #ebeaea
+}
+
+.ping-instructions-nomargin {
+	margin: 0px
+}
+
+.ping-instructions-2col.highlight {
+	margin-top: 16px;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #ebeaea;
+}
+
+.ping-instructions-2col.bottom-border {
+	border-bottom: 1px solid #ebeaea
+}
+
+.ping-instructions-2col .ping-instructions-desc,
+.ping-instructions-2col .ping-instructions-body,
+.ping-instructions-2col .ping-instructions-col {
+	float: left;
+	width: 275px;
+}
+
+.ping-instructions-2col .ping-instructions-desc {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	z-index: 10;
+	font-size: 18px;
+	text-align: center;
+	color: #22505f;
+}
+
+.ping-instructions-2col .ping-instructions-body {
+	margin: 0 0 0 275px
+}
+
+.ping-instructions-2col .ping-instructions-body strong {
+	display: block;
+	font-size: 12px;
+	line-height: 115%;
+	color: #363534;
+}
+
+.ping-instructions-2col .ping-instructions-body a {
+	display: block;
+	font-size: 14px;
+	line-height: 100%;
+	color: #37B9CC;
+	padding: 4px 0;
+}
+
+.ping-instructions-2col .ping-instructions-body p {
+	font-size: 11px;
+	line-height: 120%;
+	color: #b3afa9;
+	margin: 0;
+	padding: 0;
+}
+
+.ping-instructions-1col .ping-url-structure {
+	font-size: 14px;
+	color: #a5a4a0;
+}
+
+.ping-instructions-1col .ping-url-structure strong {
+	color: #5c5b5a
+}
+
+.ping-instructions-2col .ping-instructions-col {
+	color: #a5a4a0;
+	font-size: 12px;
+	line-height: 115%;
+}
+
+.ping-instructions-2col .ping-instructions-col p {
+	padding: 8px 12px 0 0;
+	margin: 0;
+}
+
+.ping-instructions-2col .ping-instructions-col label.dark {
+	display: block;
+	color: #5c5b5a;
+	padding: 0 0 8px 0;
+}
+
+.ping-instructions-2col .ping-instructions-col label.dark .note {
+	font-style: italic;
+	font-weight: normal;
+	color: #a5a4a0;
+}
+
+.ping-instructions-2col .ping-instructions-col .ping-instructions-helplink {
+	font-size: 11px;
+	color: #a5a39f;
+	background-color: #f6f6f6;
+	padding: 5px 7px;
+	margin: 10px 0 0 0;
+}
+
+.ping-instructions-1col .ping-instructions-body .ping-url,
+.ping-instructions-2col .ping-instructions-body .ping-url {
+	font-size: 14px;
+	color: #00939d;
+}
+
+.ping-help-instructions {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding: 18px 14px;
+	margin: 0;
+}
+
+.ping-help-instructions.highlight {
+	margin-top: 16px;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #ebeaea;
+}
+
+.ping-help-instructions-nopadding {
+	padding: 0
+}
+
+.ping-help-instructions .ping-instructions-desc,
+.ping-help-instructions .ping-instructions-body,
+.ping-help-instructions .ping-instructions-col {
+	float: left;
+	width: 275px;
+}
+
+.ping-help-instructions .ping-instructions-desc {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	z-index: 10;
+	font-size: 18px;
+	text-align: center;
+	color: #22505f;
+}
+
+.ping-help-instructions .ping-instructions-body {
+	margin: 0 0 0 275px
+}
+
+.ping-help-instructions .ping-instructions-body strong {
+	display: block;
+	font-size: 12px;
+	line-height: 115%;
+	color: #363534;
+}
+
+.ping-help-instructions .ping-instructions-body a {
+	display: block;
+	font-size: 14px;
+	line-height: 100%;
+	color: #37B9CC;
+	padding: 4px 0;
+}
+
+.ping-help-instructions .ping-instructions-body p {
+	font-size: 11px;
+	line-height: 120%;
+	color: #b3afa9;
+	margin: 0;
+	padding: 0;
+}
+
+.ping-help-instructions .ping-url-structure {
+	font-size: 14px;
+	color: #a5a4a0;
+}
+
+.ping-help-instructions .ping-url-structure strong {
+	color: #5c5b5a
+}
+
+.ping-help-instructions .ping-instructions-col {
+	color: #a5a4a0;
+	font-size: 12px;
+	line-height: 115%;
+}
+
+.ping-help-instructions p {
+	padding: 8px 0 0 0;
+	margin: 0;
+}
+
+.ping-help-instructions .ol-decimal {
+	list-style-type: decimal
+}
+
+.ping-help-instructions .ol-decimal li {
+	margin: 5px 0 0 0
+}
+
+.ping-help-instructions .ol-lower-alpha {
+	list-style-type: lower-alpha
+}
+
+.ping-help-instructions label.dark {
+	display: block;
+	color: #5c5b5a;
+	padding: 0 0 8px 0;
+}
+
+.ping-help-instructions label.dark .note {
+	font-style: italic;
+	font-weight: normal;
+	color: #a5a4a0;
+}
+
+.ping-help-instructions .ping-instructions-helplink {
+	font-size: 11px;
+	color: #a5a39f;
+	background-color: #f6f6f6;
+	padding: 5px 7px;
+	margin: 10px 0 0 0;
+}
+
+/* ------------------------------------------------
+
+   Tabs
+
+   ------------------------------------------------ */
+
+
+.ui-tabs {
+	position: relative;
+	padding: .2em;
+	zoom: 1;
+}
+
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+
+
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: 1px 1px 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	font-size: 14px;
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 1px;
+	margin: 0 1px 1px 0;
+	border-bottom: 0 !important;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	padding: 2px 4px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav .ui-tabs-selected a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li a,
+a:visited {
+	font-weight: normal
+}
+
+/* base tabs styling - based on jquery-ui-1.8.10.custom.css - removed margins/padding */
+
+
+.ui-tabs {
+	position: relative; /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	;
+    :;
+	padding: 0;
+ *zoom: 1;
+}
+
+.ui-tabs .ui-tabs-nav {
+}
+
+.ui-tabs-nav .ui-state-default {
+}
+
+.ui-tabs .ui-tabs-nav li {
+	background: none;
+	border: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-state-processing a {
+}
+
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+	cursor: pointer
+}
+
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+
+
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 0;
+	background: none;
+}
+
+.ui-tabs .ui-tabs-hide {
+	display: none !important
+}
+
+.ui-tabs .ui-widget-content {
+	border: none;
+	background: none;
+}
+
+.ui-tabs.ui-widget-content {
+	border: none;
+	background: none;
+}
+
+.ui-tabs .ui-widget-header {
+	border: none;
+	background: none;
+}
+
+.ping-sample-panel {
+	padding: 0 0 14px 0;
+	margin: 0 0 0 47px;
+}
+
+.ping-sample-panel-nomargin {
+	padding: 0;
+	margin: 0;
+}
+
+.ping-sample-panel .ping-sample-tabnav {
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 15px;
+	border: 1px solid #e6e6e4;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	padding: 5px 8px;
+	text-shadow: 0 1px 0 #fff;
+	background-color: #f9f8f6;
+}
+
+.ping-sample-panel .ping-sample-tabnav strong,
+.ping-sample-panel .ping-sample-tabnav ul {
+	float: left
+}
+
+.ping-sample-panel .ping-sample-tabnav strong,
+.ping-sample-panel .ping-sample-tabnav .ping-sample-downloadlink {
+	padding: 2px 0
+}
+
+.ping-sample-panel .ping-sample-tabnav ul {
+	margin: 0 0 0 8px
+}
+
+.ping-sample-panel .ping-sample-tabnav ul li {
+	margin: 0 0 0 6px
+}
+
+.ping-sample-panel .ping-sample-tabnav ul li a {
+	text-decoration: underline;
+	height: 15px;
+	padding: 2px 6px;
+}
+
+.ping-sample-panel .ping-sample-tabnav ul li a:hover {
+	text-decoration: none
+}
+
+.ping-sample-panel .ping-sample-tabnav ul li.ui-tabs-selected a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #007f89;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: none;
+}
+
+.ping-sample-panel .ping-sample-tabnav strong {
+	color: #363534
+}
+
+.ping-sample-panel .ping-sample-tabnav .ping-sample-downloadlink {
+	float: right;
+	color: #5b5b59;
+}
+
+.ping-sample-panel .ping-sample-tabnav .ping-sample-downloadlink a {
+}
+
+.ping-sample-panel .ping-sample-code {
+	clear: left;
+	overflow: auto;
+	border: 1px solid #edecea;
+	border-top: 0;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+	margin: 0;
+	padding: 8px;
+	max-height: 246px;
+	max-width: 610px;
+}
+
+.ping-sample-panel .ping-sample-code pre {
+	white-space: pre;
+	background-color: #fff;
+	font-size: 11px;
+	line-height: 150%;
+	color: #a5a39f;
+	border: 0;
+	border-spacing: 0;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: #e6e6e6;
+	font-weight: 400;
+	color: #555;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	background: #dadada;
+	font-weight: 400;
+	color: #212121;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #aaa;
+	background: #fff;
+	font-weight: 400;
+	color: #212121;
+}
+
+.ui-widget :active {
+	outline: none
+}
+
+.ui-widget .ui-widget {
+	font-size: 1em
+}
+
+.ui-widget-content {
+	border: 1px solid #aaa;
+	background: #fff;
+	color: #222;
+}
+
+#ui .ui-menu-item {
+	list-style: none;
+	padding: 1px 7px;
+}
+
+.ui-widget-header {
+	border: 1px solid #aaa;
+	background: #ccc;
+	color: #222;
+	font-weight: 700;
+}
+
+a.ui-state-hover,
+a.ui-state-hover:hover,
+a.ui-state-active,
+a.ui-state-active:link,
+a.ui-state-active:visited {
+	color: #212121;
+	text-decoration: none !important;
+}
+
+.ui-menu-item a {
+	display: block;
+	width: auto;
+	color: #666;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+
+
+.ui-corner-tl {
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.ui-corner-tr {
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.ui-corner-bl {
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.ui-corner-br {
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.ui-corner-top {
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.ui-corner-bottom {
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.ui-corner-right {
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.ui-corner-left {
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+/* 
+----------------------------------*/
+/* Icons
+----------------------------------*/
+/* states and images */
+
+
+.ui-icon {
+	/* obsolete class; if appears somewhere, should be replaced with BS _NO__DOTCOMMA__AFTER__*/
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.ui-icon {
+	width: 16px;
+	height: 16px;
+	background-color: #09F;
+}
+
+/* ------------------------------------------------
+
+   Modal dialogs
+
+   ------------------------------------------------ */
+
+
+.ui-dialog {
+	position: absolute;
+	width: 480px;
+	overflow: hidden;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	position: relative
+}
+
+.ui-dialog .ui-dialog-title {
+	float: left
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute
+}
+
+.ui-dialog .ui-dialog-titlebar-close span {
+	display: block
+}
+
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	overflow: auto;
+ *zoom: 1;
+}
+
+.ping-dialog {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 0 0 7px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 0 7px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 0 7px rgba(0,0,0,0.4);
+}
+
+.ping-dialog .ui-dialog-titlebar {
+	overflow: hidden;
+	background-color: #f4fdfe;
+	padding: 18px 20px 16px 20px;
+	border-bottom: 1px solid #d1e7e9;
+	border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+}
+
+.ping-dialog .ui-dialog-titlebar.sent {
+	border: 0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.ping-dialog .ui-dialog-titlebar .ui-dialog-title {
+	position: relative
+}
+
+.ping-dialog .ui-dialog-titlebar .ui-dialog-title h1 {
+	font-size: 30px;
+	line-height: 120%;
+	color: #22505f;
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.ping-dialog .ui-dialog-titlebar .ui-dialog-title h4 {
+	font-size: 14px;
+	line-height: 120%;
+	color: #8a9a9b;
+	margin: 0;
+	padding: 0;
+}
+
+.ping-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	z-index: 1099;
+	color: #37B9CC;
+	text-decoration: underline;
+}
+
+.ping-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close:hover {
+	color: #20505f
+}
+
+.ping-dialog .ping-body {
+	overflow: hidden;
+	background: none !important;
+	background-color: transparent !important;
+	padding: 0;
+	min-height: 0;
+}
+
+.ping-dialog .ping-body .ping-input label {
+	width: 53px
+}
+
+.ping-dialog .ping-body .ping-input.flush label {
+	width: auto
+}
+
+.ping-dialog .ping-body .ping-input .ping-textinput,
+.ping-dialog .ping-body .ping-input .selector {
+	margin-left: 70px
+}
+
+.ping-dialog .ping-body .ping-input.flush .ping-textinput,
+.ping-dialog .ping-body .ping-input,
+flush .selector {
+	margin-left: 0px
+}
+
+.ping-login-dialog,
+.ping-registration-dialog {
+	overflow: hidden;
+	background-color: #fff;
+	padding: 14px 20px 25px 20px;
+}
+
+/* modal dialog overlay - taken from jquery-ui-1.8.10.custom.css */
+
+
+.ui-widget-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ui-widget-overlay {
+	background-color: #000;
+	opacity: .40;
+	filter: Alpha(Opacity=40);
+}
+
+/* ------------------------------------------------
+
+   Footer
+
+   ------------------------------------------------ */
+/* Footer
+------------------------------------ */
+
+
+.push {
+	clear: both;
+	height: 160px;
+}
+
+/* sorted table. note, the only difference between this and ping-table is the fact that headers don't have a gradient. otherwise
+   they are identical */
+
+
+.ping-table-sorted {
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0 0 38px 0;
+}
+
+.ping-table-sorted thead th {
+	font-size: 12px;
+	line-height: 16px;
+	color: #353533;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	text-align: left;
+	padding: 5px 4px 3px 14px;
+	border-top: 1px solid #e6e6e4;
+	border-bottom: 1px solid #ececeb;
+}
+
+.ping-table-sorted thead th.ping-table-sorted-customer {
+	-webkit-border-radius: 3px 0 0 0;
+	-moz-border-radius: 3px 0 0 0;
+	border-radius: 3px 0 0 0;
+	border-left: 1px solid #e6e6e4;
+	padding-left: 9px;
+	padding-right: 14px;
+	width: 210px;
+}
+
+.ping-table-sorted thead th.ping-table-sorted-status {
+	-webkit-border-radius: 0 3px 0 0;
+	-moz-border-radius: 0 3px 0 0;
+	border-radius: 0 3px 0 0;
+	border-right: 1px solid #e6e6e4;
+}
+
+.ping-table-sorted thead th .ping-note {
+	font-weight: normal
+}
+
+.ping-table-sorted thead th a {
+	color: #353533;
+	text-decoration: none;
+}
+
+.ping-table-sorted thead th a:hover {
+	text-decoration: underline
+}
+
+.ping-table-sorted thead th a.ping-table-sorted-sort {
+	display: inline-block;
+	overflow: hidden;
+	width: 9px;
+	height: 12px;
+	text-indent: -200px;
+	text-decoration: none;
+	font-size: 1px;
+	background: transparent url('../table_sort_arrows.png') no-repeat 0 -12px;
+}
+
+.ping-table-sorted thead th a.ping-table-sorted-sort.reverse {
+	background-position: 0 0
+}
+
+.ping-table-sorted tbody td,
+.ping-table-sorted tfoot td {
+	font-size: 12px;
+	line-height: 115%;
+	color: #353533;
+	padding: 12px 4px 12px 14px;
+	vertical-align: top;
+	border-bottom: 1px solid #f1f0ee;
+}
+
+.ping-table-sorted tbody tr:first-child td {
+	border-top: 1px solid #e6e6e4
+}
+
+.ping-table-sorted tbody td a {
+	font-weight: normal
+}
+
+.ping-table-sorted tbody td.ping-table-sorted-customer {
+	padding-left: 10px;
+	padding-right: 14px;
+	width: 210px;
+}
+
+.ping-table-sorted tbody td.ping-table-sorted-customer {
+	background-color: #fcfcfc
+}
+
+.ping-table-sorted thead th.ping-table-sorted-status,
+.ping-table-sorted tbody td.ping-table-sorted-status {
+	width: 116px
+}
+
+.ping-table-sorted tbody td.ping-table-sorted-status {
+	color: #007F89
+}
+
+.ping-table-sorted tbody td.ping-table-sorted-status.pending {
+	font-style: italic;
+	color: #b7b3ad;
+}
+
+.ping-table-sorted .norecords {
+}
+
+th.sorting_desc,
+th.wicket_orderDown {
+	background-image: url(../images/arrow_down.png), -webkit-gradient(linear, 0 0, 0 100%, from(#f8f7f7), to(#e0dfdf));
+	background-image: url(../images/arrow_down.png), -moz-linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background-image: url(../images/arrow_down.png), linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+th.sorting_asc,
+th.wicket_orderUp {
+	background-image: url(../images/arrow_up.png), -webkit-gradient(linear, 0 0, 0 100%, from(#f8f7f7), to(#e0dfdf));
+	background-image: url(../images/arrow_up.png), -moz-linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background-image: url(../images/arrow_up.png), linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+th,
+th.sorting_disabled,
+th.wicket_orderNone {
+	background-image: url(../images/arrow_off.png), -webkit-gradient(linear, 0 0, 0 100%, from(#f8f7f7), to(#e0dfdf));
+	background-image: url(../images/arrow_off.png), -moz-linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background-image: url(../images/arrow_off.png), linear-gradient(#f8f7f7, #e0dfdf 100%);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+h3.ui-accordion-header {
+	border-radius: 0px;
+	border: none;
+	color: #22505f;
+	background: none;
+}
+
+h3.ui-accordion-header.ui-state-default {
+	margin-bottom: 35px
+}
+
+h3.ui-accordion-header.ui-state-active {
+	margin-bottom: 0px
+}
+
+h3.ui-accordion-header > span.hidden {
+	color: #000000;
+	font-size: 13px;
+	line-height: 19px;
+	font-weight: normal;
+}
+
+h3.ui-accordion-header.ui-state-default a,
+h3.ui-accordion-header.ui-state-default a:link,
+h3.ui-accordion-header.ui-state-default a:visited {
+	color: #37B9CC;
+	text-decoration: underline;
+}
+
+h3.ui-accordion-header > span.hidden > a:hover {
+	color: #20505F;
+	text-decoration: none;
+}
+
+.ui-accordion-content,
+.ui-accordion-content-active {
+	border-radius: 0px;
+	border: none;
+	background: none;
+}
+
+#accordion h3 .ui-icon-triangle-1-e,
+#accordion h3 .ui-icon-triangle-1-s {
+	display: none
+}
+
+.hidden {
+	display: none
+}
+
+.restApiGuide div#tableOfContents {
+	margin-top: 15px
+}
+
+.restApiGuide h3 {
+	margin-top: 35px
+}
+
+.restApiGuide h4.method {
+	margin-top: 35px
+}
+
+.restApiGuide h5 {
+	margin-top: 20px;
+	font-size: 13px;
+	line-height: 19px;
+}
+
+.restApiGuide h5.methodTitle {
+	margin-bottom: 3px;
+	margin-top: 13px;
+}
+
+.restApiGuide div.methodContent {
+	display: none;
+	margin-left: 16px;
+}
+
+.restApiGuide h5.methodTitle span {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: top top;
+	display: inline-block;
+}
+
+span.icon-section-closed {
+	background-image: url('../images/bullet_arrow_right.png')
+}
+
+span.icon-section-open {
+	background-image: url('../images/bullet_arrow_down.png')
+}
+
+.restApiGuide p {
+	margin-top: 5px
+}
+
+.restApiGuide ul,
+.restApiGuide dl {
+	margin: 0px
+}
+
+.restApiGuide .strong {
+	font-weight: 600;
+	color: #333333;
+}
+
+.restApiGuide .parameter:first-child {
+	border-top: 1px solid #dddddd
+}
+
+.restApiGuide .parameter {
+	border-bottom: 1px solid #dddddd;
+	padding: 5px 0;
+	clear: both;
+}
+
+.restApiGuide .parameter .parameterName {
+	width: 200px;
+	display: block;
+	float: left;
+	font-weight: 600;
+	color: #333333;
+}
+
+.restApiGuide .parameter .parameterName .parameterRequiredness {
+	color: #666666;
+	font-weight: normal;
+}
+
+.restApiGuide .parameter .parameterDescription {
+	margin: 0 0 0 200px
+}
+
+.restApiGuide .parameterNone {
+	font-weight: 600;
+	color: #333333;
+}
+
+.restApiGuide div.example {
+	width: 620px;
+	overflow: auto;
+	border: 1px solid #dddddd;
+}
+
+.restApiGuide div.example pre {
+	margin: 3px;
+	font-size: 11px;
+}
+
+.panel-title {
+	font-size: 20px;
+	margin-bottom: 35px;
+}
+
+.panel-paragraph-title {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+/* ------- IdP Setup ------- */
+
+
+.idpSetupStep {
+	display: block;
+	border: 1px solid #888888;
+}
+
+.idpSetupTitleContainer {
+	display: block;
+	padding: 20px;
+	background-color: #4bc4d5;
+	border-bottom: 1px solid #888888;
+}
+
+.idpSetupTitle {
+	font-size: 20px
+}
+
+.idpSetupStepChoicesContainer {
+	display: block
+}
+
+.idpSetupChoiceRepeater {
+	display: table-cell;
+	border-right: 1px solid #888888;
+}
+
+.idpSetupChoiceRepeater:last-child {
+	border-right: none
+}
+
+.idpSetupStepContentContainer {
+	display: block
+}
+
+.idpSetupStepContent {
+	margin: 0 auto;
+	padding: 25px 25px 25px 25px;
+	border-top: 1px solid #888888;
+}
+
+.idpSetupChoiceContainer {
+	display: block;
+	width: 300px;
+	height: 320px;
+}
+
+.idpSetupChoiceContainerUnselected {
+	background-color: #dddddd
+}
+
+.idpSetupChoice {
+	display: block;
+	width: 220px;
+	margin-top: 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.idpSetupChoiceTitleContainer {
+	display: block;
+	height: 50px;
+	vertical-align: top;
+}
+
+.idpSetupChoiceTitle {
+	font-size: 26px
+}
+
+.idpSetupChoiceContentContainer {
+	display: block;
+	height: 140px;
+	vertical-align: top;
+}
+
+.idpSetupChoiceButtonContainer {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.idpSetupChoiceButton {
+	width: 220px;
+	font-size: 13px;
+}
+
+.choicePanelTitle {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.choicePanelText {
+	font-size: 13px
+}
+
+#ui .choicePanelText form input[type="radio"] {
+	margin: 4px 5px 0 0
+}
+
+.p-title {
+	/* former page-title, now used for some headings in a few pannels */
+	font-weight: bold;
+}
+
+.page-sub-title {
+	font-size: 18px;
+	color: #333;
+	margin: 0 0 20px 0;
+	font-weight: bold;
+}
+
+.section-separator {
+	background-repeat: repeat-x;
+	padding-bottom: 3px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 99%;
+}
+
+.ping-textinput-related {
+	margin-left: 171px;
+	clear: both;
+	color: #333;
+}
+
+.ping-postRegistration {
+	padding-left: 100px;
+	font-size: 18px;
+}
+
+.ping-postRegistration .ping-buttons {
+	margin-top: 35px
+}
+
+.ping-overview {
+	width: 960px
+}
+
+.ping-overview .clouddesktop {
+	height: 160px;
+	padding-top: 20px;
+}
+
+.ping-overview .clouddesktop img {
+	float: left;
+	padding-left: 20px;
+	width: 230px;
+}
+
+.ping-overview .clouddesktop .panel {
+	padding-top: 10px;
+	width: 685px;
+	float: right;
+}
+
+.ping-overview .clouddesktop .title {
+	font-size: 28px;
+	padding: 0 0 20px 0;
+}
+
+.ping-overview .clouddesktop .panel .cdp-url {
+	word-wrap: break-word
+}
+
+.ping-overview .clouddesktop .panel .status-message {
+	display: inline-block;
+	padding-left: 25px;
+	color: #999999;
+}
+
+.ping-overview .clouddesktop .panel a {
+	font-size: 20px
+}
+
+.ping-overview .message-indicator:before {
+	content: '';
+	display: inline-block;
+	margin-top: 1px;
+	width: 14px;
+	vertical-align: middle;
+	margin-bottom: -2500px;
+	padding-bottom: 2515px;
+}
+
+.ping-overview .message-indicator.green:before {
+	background: none repeat scroll 0 0 #6C9A73
+}
+
+.ping-overview .message-indicator.red:before {
+	background: none repeat scroll 0 0 #E61D3C
+}
+
+.ping-overview .message-indicator.yellow:before {
+	background: none repeat scroll 0 0 #FFC620
+}
+
+.ping-overview .title {
+	font-size: 28px;
+	padding: 40px 0 15px 0;
+}
+
+.ping-overview .serviceSelectionBox {
+	float: right
+}
+
+.ping-overview .serviceSelectionBox .serviceSelectionOption {
+	float: left;
+	width: 360px;
+	font-size: 40px;
+	line-height: 32px;
+	padding: 40px 25px 40px 25px;
+	position: relative;
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	margin: 0px 5px;
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-o-border-radius: 18px;
+}
+
+.ping-overview .serviceSelectionBox .serviceSelectionOption:first-child {
+	border-right: none
+}
+
+.ping-overview .serviceSelectionBox .serviceSelectionOption .serviceSelectionOptionImage {
+	text-align: center;
+	height: 81px;
+	padding: 20px;
+}
+
+.ping-overview .serviceSelectionBox .serviceSelectionOption .serviceSelectionOptionText {
+	text-align: center;
+	line-height: 1;
+	height: 125px;
+}
+
+.ping-overview .serviceSelectionBox .serviceSelectionOption .buttons-layout {
+	text-align: center
+}
+
+.ping-legal .legalSelectionBox .legalText {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 450px;
+	white-space: pre-wrap;
+	padding: 25px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #F0F0F0;
+}
+
+.ping-legal .legalSelectionBox .legalSelectionOption {
+	float: right;
+	padding: 25px 0px 0px 0px;
+}
+
+.generateAdConnectKeyWarning {
+	color: red;
+	font-style: italic;
+	margin: 0 0 25px 177px;
+}
+
+.adConnectInstallationPending {
+	visibility: hidden
+}
+
+.adConnectInstallationNotDetected {
+	background-image: url('../images/cancel.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	visibility: visible;
+}
+
+.adConnectInstallationDetected {
+	background-image: url('../images/accept.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	visibility: visible;
+	margin-left: 177px;
+}
+
+/* Data Tables */
+
+
+.dataTables_wrapper .dataTables_length {
+	float: right
+}
+
+.dataTables_wrapper .dataTables_filter {
+	float: left
+}
+
+.dataTables_wrapper .dataTables_filter input {
+	padding: 5px;
+	width: 300px;
+}
+
+.dataTables_truncated {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.dataTables_paginate {
+	float: right
+}
+
+.dataTables_paginate .paginate_enabled_previous {
+	float: left;
+	height: 16px;
+	width: 16px;
+}
+
+.dataTables_paginate .paginate_disabled_previous {
+	float: left;
+	height: 16px;
+	width: 16px;
+}
+
+.dataTables_paginate .paginate_enabled_next {
+	float: right;
+	height: 16px;
+	width: 16px;
+}
+
+.dataTables_paginate .paginate_disabled_next {
+	float: right;
+	height: 16px;
+	width: 16px;
+}
+
+.idpAclInstructions {
+	font-size: 13px;
+	padding-bottom: 30px;
+}
+
+.idpAclAppColumn,
+.idpAclGroupColumn {
+	width: 240px;
+	float: left;
+}
+
+.idpAclAppColumn .appListHeaderContainer,
+.idpAclGroupColumn .groupListHeaderContainer {
+	display: table
+}
+
+.idpAclAppColumn .appListHeader,
+.idpAclGroupColumn .groupListHeader {
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #333333;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	border-bottom: none;
+}
+
+.idpAcl .aclButton {
+	cursor: pointer;
+	background-color: #aa87dd;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	width: 202px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	display: inline;
+}
+
+.idpAcl input.aclButton:disabled,
+.idpAcl input.aclButton[disabled] {
+	background-color: silver;
+	cursor: default;
+}
+
+.idpAcl .addGroup {
+	font-size: 14px;
+	font-weight: 900;
+	width: 130px;
+	float: left;
+}
+
+.idpAcl .done {
+	background-color: #ff0000;
+	border-left: none;
+	width: 70px;
+	float: left;
+}
+
+.idpAcl .removeGroup {
+	width: 15px;
+	height: 20px;
+	float: right;
+	font-weight: 700;
+}
+
+.idpAclAppColumn .appContainer {
+	background-color: #dddddd;
+	border: 1px solid #aaaaaa;
+	border-bottom: none;
+	width: 200px;
+	float: left;
+	height: 100px;
+}
+
+.idpAclAppColumn .appDetailsContainer {
+	display: table;
+	width: 179px;
+	height: 100%;
+	float: left;
+}
+
+.idpAcl .appAction,
+.idpAcl .groupAction {
+	padding-left: 10px;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+.idpAcl .appAction.selected,
+.idpAcl .groupAction.selected {
+	background-color: #777777;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.idpAclAppColumn .appIcon {
+	float: left
+}
+
+.idpAclAppColumn .appDescription {
+	float: left;
+	margin-left: 10px;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+.idpAcl .connectorMargin {
+	background-color: #555555;
+	display: table-cell;
+	width: 20px;
+	height: 100%;
+}
+
+.idpAcl .connectorMargin.left {
+	border-right: 1px solid #aaaaaa
+}
+
+.idpAcl .connectorMargin.right {
+	border-left: 1px solid #aaaaaa
+}
+
+.idpAcl .connectorMargin .connectorMarginInner {
+	display: table;
+	width: 20px;
+	height: 100px;
+}
+
+.idpAcl .connectorMargin .connectorMarginText {
+	color: #ffffff;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.idpAclLinking {
+	width: 350px;
+	float: left;
+}
+
+.idpAclGroupColumn .groupContainer {
+	background-color: #dddddd;
+	border: 1px solid #aaaaaa;
+	border-bottom: none;
+	display: table;
+	width: 200px;
+	height: 75px;
+}
+
+.idpAcl .groupContainer.selected {
+	background-color: #777777
+}
+
+.idpAclGroupColumn .groupContainer .groupAction,
+.idpAclGroupColumn .groupContainer .groupEditDetails,
+.idpAclGroupColumn .groupContainer .groupX {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 8px;
+}
+
+.idpAclGroupColumn .groupContainer .groupAction {
+	padding-left: 25px
+}
+
+.idpAclGroupColumn .groupContainer .groupX {
+	vertical-align: top
+}
+
+.idpAclGroupColumn .groupContainer .groupName {
+	border: 1px solid #888888;
+	font-size: 10px;
+	padding: 3px;
+	width: 140px;
+}
+
+.idpAclGroupColumn.editMode .groupContainer .connectorMargin,
+.idpAclGroupColumn.editMode .groupContainer .groupAction,
+.idpAclGroupColumn.editMode .edit {
+	display: none
+}
+
+.idpAclGroupColumn.viewMode .groupContainer .groupEditDetails,
+.idpAclGroupColumn.viewMode .groupContainer .groupX,
+.idpAclGroupColumn.viewMode .addGroup,
+.idpAclGroupColumn.viewMode .done {
+	display: none
+}
+
+.wizard-buttons {
+	float: right
+}
+
+.wizard-buttons input {
+	padding: 5px;
+	height: 30px;
+	margin-right: 10px;
+	cursor: pointer;
+	white-space: nowrap;
+	font-weight: 600;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 6px;
+	border-width: 0px;
+	visibility: visible;
+}
+
+.wizard-buttons input.grayButton {
+	padding: 5px 15px;
+	background-color: #aaaaaa;
+}
+
+.wizard-buttons input.redButton {
+	width: 210px;
+	background-color: red;
+}
+
+.wizard-buttons input:disabled,
+.wizard-buttons input[disabled],
+.wizard-buttons input.grayButton:disabled,
+.wizard-buttons input.grayButton[disabled],
+.wizard-buttons input.redButton:disabled,
+.wizard-buttons input.redButton[disabled] {
+	background-color: silver;
+	background: silver;
+	cursor: default;
+}
+
+.paymentReceipt {
+	font-size: 18px;
+	font-style: normal;
+	text-decoration: none;
+	color: #333333;
+}
+
+/* Interim App Catalog Styles */
+
+
+a.transp-link {
+	background: rgba(96, 96, 96, .25);
+	-pie-background: rgba(96, 96, 96, .25);
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 32px;
+	color: #fafafa;
+	font: 15px/35px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,.2);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,.2);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,.2);
+	position: relative;
+	margin-left: 1px;
+}
+
+a.transp-link.single {
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	border-radius: 17px;
+	position: relative;
+	margin-left: 15px;
+	margin-right: 45px;
+	padding: 0 32px;
+}
+
+a.transp-link.dark-fill {
+	background: #525252;
+	position: relative;
+}
+
+a.transp-link.cyan-fill {
+	background: #00d6e1;
+	position: relative;
+	text-transform: uppercase;
+}
+
+a.left-round {
+	-moz-border-radius: 17px 0 0 17px;
+	-webkit-border-radius: 17px 0 0 17px;
+	border-radius: 17px 0 0 17px;
+	position: relative;
+}
+
+a.right-round {
+	-moz-border-radius: 0 17px 17px 0;
+	-webkit-border-radius: 0 17px 17px 0;
+	border-radius: 0 17px 17px 0;
+	position: relative;
+}
+
+.pricingPlans {
+	margin-left: 20px
+}
+
+#pricingPlanChoicepaymentSubmitButton {
+	margin-left: 20px
+}
+
+#adminInvitePanel {
+	font-size: 22px;
+	padding-top: 15px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+#pricingPlanChoiceFeedbackForm {
+	margin-left: 20px
+}
+
+#paymentSubmitPoCodeWapper {
+	margin-left: 20px;
+	margin-right: 2px;
+}
+
+#paymentCreditcardTitle {
+	margin-left: 20px
+}
+
+#paymentSubmitCreditCardWapper {
+	margin-left: 20px;
+	margin-right: 8px;
+}
+
+.paymentChoices {
+	width: 415px
+}
+
+.pricingPlanChoice {
+	width: 49%;
+	float: left;
+	height: 450px;
+	vertical-align: bottom;
+	border-width: 1px;
+	border-width-right: 0px;
+	border-style: solid;
+	margin-bottom: 20px;
+}
+
+.pricingPlanChoiceTitle {
+	font-size: 30px;
+	padding-top: 60px;
+	padding-left: 40px;
+	padding-bottom: 60px;
+}
+
+.pricingPlanDescription {
+	padding-bottom: 5px;
+	list-style-type: none;
+}
+
+.pricingPlanCost {
+	color: #6C9A73;
+	font-size: 24px;
+	text-transform: none;
+}
+
+.pricingPlanRadioDiv {
+	font-size: 36px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 60px;
+	text-align: center;
+}
+
+#pricingPlanRadioStandard {
+	padding-top: 92px
+}
+
+.pricingPlanCalculationContainer {
+	padding-top: 400px
+}
+
+.pricingPlanCalculationContainer fieldset {
+	padding: 40px 0 0 0;
+	height: 130px;
+	border-bottom: 2px solid #333;
+	width: 910px;
+}
+
+.pricingPlanCalculationContainer .som-st1 {
+	padding: 10px 20px 10px 20px;
+	height: 100px;
+}
+
+.pricingPlanCalculationContainer .som-st1 .st-1-1 {
+	float: left
+}
+
+.pricingPlanCalculationContainer .som-st1 .st-1-2 {
+	float: right
+}
+
+.pricingPlanCalculationFieldset {
+	padding: 40px 10px 10px 20px
+}
+
+.pricingPlanCalculationContainer .totalCostContainer {
+	padding: 0 10px 10px 10px
+}
+
+.pricingPlanRadioText {
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.pricingCostLabel {
+	float: right
+}
+
+.activationCode {
+	padding-bottom: 84px
+}
+
+.onleft-side {
+	text-align: left
+}
+
+.wicketWizardBreadCrumbs {
+	width: 959px;
+	height: 40px;
+	margin: 0 auto 22px auto;
+	font-size: 0;
+}
+
+.wicketWizardBreadCrumbs div {
+	display: inline
+}
+
+.wicketWizardBreadCrumbs a {
+	width: 18%;
+	padding-left: 1%;
+	display: inline-block;
+	text-align: center;
+	color: #FAFAFA;
+	font: 15px/40px;
+}
+
+.wicketWizardBreadCrumbs a + a {
+	width: 19%
+}
+
+.accordion-header {
+	background: #333333;
+	height: 35px;
+	font: 26px/64px;
+	padding-left: 25px;
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 16px 6px 0 0;
+	-o-border-radius: 6px 6px 0 0;
+	margin-bottom: 18px;
+}
+
+.accordion-header.black-header {
+	background: #333333;
+	color: #FFFFFF;
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	-o-border-radius: 6px 6px 0 0;
+	margin-bottom: 1px;
+	font-size: 22px;
+	line-height: 2.5;
+	height: 35px;
+	font-size: 15px;
+}
+
+.signin-acc .accordion-content,
+.black-accordion .accordion-content {
+	border: none;
+	background: none;
+}
+
+.accordion-content.filled {
+}
+
+h1.title {
+	font-size: 30px;
+	color: #6C9A73;
+	text-shadow: 1px 1px 1px rgba(17, 45, 41, 0.12);
+	margin: 0 0 20px 0;
+	letter-spacing: -0.3px;
+}
+
+/* Updated p1 style - Mar 21 */
+
+
+.block-desc-title {
+	color: #333;
+	font-size: 18px;
+	height: 20px;
+	margin: 0 0 20px;
+}
+
+.acc-block-title {
+	font-size: 28px;
+	margin: 0 0 20px;
+	line-height: 40px;
+}
+
+.three-block {
+	width: 230px;
+	border: 1px solid #C6C3C3;
+	-moz-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	-webkit-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	box-shadow: 0 0 4px rgba(128,128,128,.3);
+	position: relative;
+	float: left;
+	margin: 10px 0 10px 11px;
+	background: white;
+	padding: 50px 30px;
+	height: 225px;
+	text-align: left;
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-o-border-radius: 18px;
+}
+
+.three-block .block_bottom {
+	color: #FAFAFA;
+	display: block;
+	font-size: 15px;
+	background: #00D6E1;
+	border-top: 1px solid #7EBFDD;
+	height: 44px;
+	line-height: 44px;
+	text-transform: uppercase;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, .2);
+	text-align: center;
+	border-radius: 0 0px 18px 18px;
+	-moz-border-radius: 0 0px 18px 18px;
+	-webkit-border-radius: 0 0px 18px 18px;
+	-o-border-radius: 0 0px 18px 18px;
+}
+
+.two-block {
+	width: 383px;
+	border: 1px solid #C6C3C3;
+	-moz-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	-webkit-box-shadow: 0 0 4px rgba(128,128,128,.3);
+	box-shadow: 0 0 4px rgba(128,128,128,.3);
+	position: relative;
+	float: left;
+	margin: 10px 0 10px 11px;
+	background: white;
+	padding: 45px 30px;
+	height: 225px;
+	text-align: center;
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-o-border-radius: 18px;
+}
+
+.tall-block {
+	display: inline-block;
+	height: 300px;
+}
+
+.tall-block-payment {
+	display: inline-block;
+	height: 380px;
+}
+
+.two-block .block_bottom {
+	color: #FAFAFA;
+	display: block;
+	font: 15px/44px;
+	background: #00D6E1;
+	border-top: 1px solid #7EBFDD;
+	height: 44px;
+	line-height: 44px;
+	text-transform: uppercase;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-shadow: 1px 1px 1px rgba(128, 128, 128, .2);
+	border-radius: 0 0px 18px 18px;
+	-moz-border-radius: 0 0px 18px 18px;
+	-webkit-border-radius: 0 0px 18px 18px;
+	-o-border-radius: 0 0px 18px 18px;
+}
+
+.two-block .bn-bottom {
+	display: block;
+	font: 15px/44px;
+	text-transform: uppercase;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 60px;
+}
+
+.two-block .ping-bu-bottom {
+	display: block;
+	position: absolute;
+	clear: both;
+	overflow: visible;
+	margin: 0;
+	padding: 5px 5px 20px 5px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.two-block .ping-input .ping-textinput {
+	display: block;
+	width: 210px;
+	margin: 0 -16px 10px 8px;
+}
+
+.two-block .ping-input label {
+	float: left;
+	font-size: 16px;
+	line-height: 13px;
+	color: #353533;
+	width: 110px;
+	padding: 8px 17px 8px 0;
+	text-align: right;
+}
+
+.toggleable {
+	cursor: pointer
+}
+
+.inline-sh-image {
+	display: block;
+	border: 1px solid silver;
+	-moz-box-shadow: 0 0 4px solid #d9d9d9;
+	-webkit-box-shadow: 0 0 4px solid #d9d9d9;
+	box-shadow: 0 0 4px solid #d9d9d9;
+	float: left;
+	margin-right: 40px;
+	position: relative;
+}
+
+.sim-description {
+	color: #333;
+	font: 18px;
+	padding: 0 0 0 5px;
+}
+
+.sim-description-po-1 {
+	margin: 0 30px 50px 30px;
+	color: #333;
+	font: 18px;
+}
+
+.sim-description-po-2 {
+	margin-bottom: 30px;
+	color: #333;
+	font: 18px;
+}
+
+.sim-description-ccpayment {
+	margin-bottom: 50px;
+	color: #333;
+	font: 18px;
+}
+
+.sim-description.small {
+	font: 16px;
+	padding-top: 5px;
+}
+
+.sim-description ul {
+	list-style-type: square;
+	text-align: left;
+}
+
+.accordion-wrap { /* after refactoring of connection setup, all .accordion-wrap to be removed, incl html cls  */
+}
+
+.accordion-wrap p {
+	margin-bottom: 10px;
+	height: auto;
+}
+
+.accordion-wrap .light-text {
+	font: 14px/18px
+}
+
+.float-wrap {
+	margin-left: 340px
+}
+
+.fieldset-header {
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333333;
+}
+
+/* Simple data table formatting */
+
+
+.ping-simple-table .td-key {
+	text-align: right;
+	font-size: 16px;
+	padding-right: 10px;
+}
+
+.ping-simple-table .td-value {
+	text-align: left
+}
+
+.ajax-loader {
+	width: 16px;
+	height: 16px;
+	background: url('../images/ajax-loader.gif');
+	background-image: url('../images/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.required-line:after {
+	content: '*';
+	display: inline-block;
+	margin-top: 1px;
+	width: 7px;
+	height: 30px;
+	vertical-align: middle;
+	color: #C33;
+	margin-left: 2px;
+}
+
+.required-line-textarea:after {
+	content: '*';
+	display: inline-block;
+	margin-top: 1px;
+	width: 7px;
+	height: 135px;
+	vertical-align: middle;
+	color: #C33;
+	margin-left: 2px;
+}
+
+.required-line-dropdown:after {
+	content: '*';
+	display: inline-block;
+	margin-top: 2px;
+	margin-left: -2px;
+	width: 7px;
+	height: 30px;
+	vertical-align: middle;
+	color: #C33;
+}
+
+.adcFooter {
+	height: 30px;
+	width: auto !important;
+	padding: 10px;
+}
+
+.adcFooter div.label {
+	float: left;
+	margin-top: 10px;
+}
+
+.adcFooter span {
+	color: #454545;
+	font: 15px;
+}
+
+.buttons { /* it may be used in Java/JS, keep it for now */
+}
+
+.adcFooter .buttons .nextSection:disabled,
+.adcFooter .buttons .nextSection[disabled] {
+	visibility: hidden
+}
+
+.adminInvitePanel table.table-general > tbody > tr > td {
+	word-wrap: break-word;
+	padding: 0 5px 0 10px;
+ white-space:;
+}
+
+.adminInvitePanel .table-general td span {
+	word-wrap: break-word;
+	display: block;
+	margin: 3px 0;
+}
+
+.payment-order-summary {
+	padding: 38px 0 0 0
+}
+
+.connectionSetupDetailedInstructions {
+	font-size: 14px
+}
+
+.connectionSetupDetailedInstructions span {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: top top;
+	display: inline-block;
+}
+
+/* AdConnect */
+
+
+#idpPanel1,
+#idpPanel2 {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+#idpPanel1 #registrationPanel #feedbackRegistrationForm,
+#idpPanel2 #feedbackIdpLoginForm {
+	margin: 30px 0 0 0
+}
+
+#idpPanel1 .ping-body,
+#idpPanel2 .ping-body {
+	overflow: visible;
+	padding: 0;
+}
+
+#idpPanel2 form {
+	margin: 30px 0 0 0
+}
+
+#idpPanel1 .ping-input.nomargin.blockstart,
+#idpPanel2 .ping-input.nomargin.blockstart {
+}
+
+#idpPanel1 {
+}
+
+#idpPanel1 #registrationPanel {
+	border: none
+}
+
+#idpPanel1 .ping-input .radio-b-block {
+	margin: 10px 0 0 0
+}
+
+#idpPanel1 .ping-input .radio-b {
+	margin: 0 20px 0 0
+}
+
+#idpPanel1 .ping-input .radio-b span {
+	display: block;
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 2px 0 0;
+}
+
+#idpPanel1 .ping-input .radio-b input {
+	display: block;
+	float: left;
+	margin: 3px 10px 0 0;
+}
+
+#idpPanel1 .ping-buttons,
+#idpPanel2 .ping-buttons {
+	padding: 10px 0 0 318px
+}
+
+.pApp {
+	margin: 30px 0 0 0
+}
+
+.pApp .appTitleDescriptionContainer {
+	margin: 0 0 50px 0;
+	width: 730px;
+	float: right;
+}
+
+.pApp .appTitle {
+	color: #333333;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.pApp .appDescription {
+	width: auto
+}
+
+.pAppBlk {
+	display: table
+}
+
+.pAppBlk div {
+	float: left
+}
+
+.pAppBlk div.appLogo {
+	float: left;
+	clear: none;
+	margin-bottom: 50px;
+}
+
+.pAppBlk .ping-buttons {
+	width: 960px;
+	padding: 0px;
+}
+
+.pAppInfo1 {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+
+.pAppCnConfig {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+
+.pAppCnConfig .ping-buttons {
+	padding: 0
+}
+
+/**** ****/
+/**** STOP Original - components.css ****/
+/**** START Add Application - dropdown.css ****/
+/**** ****/
+
+
+.menu {
+	color: #3366CC;
+	height: 30px;
+}
+
+.menu a.menuItem:hover {
+	background-color: #f0f0f0
+}
+
+.menu a.menuItem {
+	text-decoration: none;
+	padding: 4px 8px 7px;
+	outline: none;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+.menu ul li {
+	padding: 0;
+	float: left;
+}
+
+.menu ul li ul li {
+	padding: 0;
+	float: none;
+	margin: 0 0 0 0px;
+	width: 100%;
+}
+
+.menu ul li ul {
+	position: absolute;
+	border: 1px solid #CCCCCC;
+	box-shadow: 0 1px 5px #CCCCCC;
+	margin: 0;
+	margin-top: -1px;
+	display: none;
+	padding: 0px 16px 0px 0;
+}
+
+.menuItemActive ul {
+	display: block !important
+}
+
+.menuItemActive a {
+	background-color: white;
+	border: 1px solid #C3D1EC;
+	border-bottom: 0;
+	box-shadow: 0 -1px 5px #CCCCCC;
+	display: block;
+	padding: 8px;
+	position: relative;
+	z-index: 1;
+	color: #666;
+}
+
+.menuItemActive a:hover {
+	background-color: white;
+	color: #333;
+	text-decoration: none;
+}
+
+.menuItemActive ul a:hover {
+	background-color: #f0f0f0
+}
+
+.menuItemActive ul a {
+	border: 0 !important;
+	box-shadow: 0 0 0 #CCCCCC;
+	border: 0;
+	width: 100%;
+}
+
+.menuItemArrow {
+	border-color: #3366CC transparent transparent;
+	border-style: solid dashed dashed;
+	margin-left: 5px;
+	position: relative;
+	top: 10px;
+}
+
+/**** ****/
+/**** START Add Application - dropdown.css ****/
+/**** START feedback.css ****/
+/**** ****/
+/* ------------------------------------------------
+
+   Customized style for use with wicket feedback panels.
+   The look and feel was based off of the validation 
+   styles in the screen.css.  This custom one had to be
+   made to make it work with wicket's feedback framework.
+
+------------------------------------------------ */
+
+
+#openIdFeedback ul li .feedbackPanelERROR,
+#entityIdFeedback ul li .feedbackPanelERROR,
+#endpointUrlFeedback ul li .feedbackPanelERROR,
+#step1ResponseURLFeedback ul li .feedbackPanelERROR,
+#step1ErrorURLFeedback ul li .feedbackPanelERROR,
+#step2Feedback ul li .feedbackPanelERROR,
+#feedbackPCFeedbackForm ul li .feedbackPanelERROR,
+#feedback ul li .feedbackPanelERROR,
+#entityIdFeedback ul li .feedbackPanelINFO,
+#endpointUrlFeedback ul li .feedbackPanelINFO,
+#step1ResponseURLFeedback ul li .feedbackPanelINFO,
+#step1ErrorURLFeedback ul li .feedbackPanelINFO,
+#step2Feedback ul li .feedbackPanelINFO,
+#feedbackPCFeedbackForm ul li .feedbackPanelINFO,
+#feedbackIdpLoginForm ul li .feedbackPanelINFO,
+#feedbackIdpRegistrationForm ul li .feedbackPanelINFO,
+#feedbackRegistrationForm ul li .feedbackPanelINFO,
+#feedbackLoginForm ul li .feedbackPanelINFO,
+#feedback ul li .feedbackPanelINFO,
+#addUserFormFeedback ul li .feedbackPanelERROR,
+#paymentFeedback ul li .feedbackPanelERROR,
+#managedApplicationFormFeedback ul li .feedbackPanelERROR,
+.feedback ul li .feedbackPanelINFO,
+.feedback ul li .feedbackPanelERROR {
+	background: transparent url('../images/bullet_validation_summary.png') no-repeat 0 center;
+	margin: 0;
+	padding: 0 0 0 12px;
+}
+
+#openIdFeedback ul,
+#entityIdFeedback ul,
+#endpointUrlFeedback ul,
+#step1ResponseURLFeedback ul,
+#step1ErrorURLFeedback ul,
+#step2Feedback ul,
+#feedbackPCFeedbackForm ul,
+#feedbackIdpLoginForm ul,
+#feedbackIdpRegistrationForm ul,
+#feedbackRegistrationForm ul,
+#feedbackLoginForm ul,
+#feedback ul,
+#addUserFormFeedback ul,
+#paymentFeedback ul,
+#managedApplicationFormFeedback ul,
+.feedback ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px 0 10px 20px;
+}
+
+#feedbackIdpLoginForm ul,
+#feedbackIdpRegistrationForm ul,
+#feedbackRegistrationForm ul,
+#feedbackLoginForm ul {
+	list-style-type: disc
+}
+
+#openIdFeedback,
+#entityIdFeedback,
+#endpointUrlFeedback,
+#step1ResponseURLFeedback,
+#step1ErrorURLFeedback,
+#step2Feedback,
+#feedbackPCFeedbackForm,
+#feedbackIdpLoginForm,
+#feedbackIdpRegistrationForm,
+#feedbackRegistrationForm,
+#feedbackLoginForm,
+#feedback,
+#addUserFormFeedback,
+#paymentFeedback,
+#managedApplicationFormFeedback,
+.feedback {
+	background-color: #FCF8E3;
+	border-radius: 4px 4px 4px 4px;
+	display: block;
+	float: none;
+	font-size: 14px;
+	line-height: 130%;
+	margin: 0 0 10px;
+}
+
+/**** ****/
+/**** STOP feedback.css ****/
+/**** START uniform.ping.css ****/
+/**** ****/
+/* Removed, Bootstrap is covering this */
+/**** ****/
+/**** STOP uniform.ping.css ****/
+/**** START IdpSetupWizard ****/
+/**** ****/
+
+
+.idpSetupWizardContainer .wicketExtensionsWizardInnerTable {
+	width: 980px
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardHeaderRow {
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardHeader {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #22505F;
+	padding: 0;
+	margin: 0;
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardView {
+}
+
+.wicketExtensionsWizardView ul {
+	list-style: disc
+}
+
+.wicketExtensionsWizardView ul li {
+	margin: 0;
+	padding: inherit;
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardViewInner {
+	margin: 10px 10px 10px 10px
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardViewRow {
+	height: 140px
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardButtonBar {
+	text-align: right
+}
+
+.idpSetupWizardContainer .wicketExtensionsWizardButtonBar input:disabled,
+.idpSetupWizardContainer .wicketExtensionsWizardButtonBar input[disabled] {
+	cursor: default !important;
+	background-color: #dddddd !important;
+	background: silver !important;
+}
+
+.removeme .idpSetupWizardContainer .wicketExtensionsWizardHeaderTitle {
+	margin: 10px 5px 10px 15px;
+	font-weight: bold;
+}
+
+.removeme .idpSetupWizardContainer .wicketExtensionsWizardHeaderSummary {
+	margin: 10px 5px 5px 5px;
+	font-style: italic;
+}
+
+.idpSetupWizardContainer .idpSetupOverview .overviewBarContainer {
+	background-color: #dddddd;
+	float: left;
+}
+
+.idpSetupWizardContainer .idpSetupOverview .overviewBarSeparator {
+	width: 25px
+}
+
+.idpSetupWizardContainer .idpSetupOverview .overviewBarStep {
+	width: 175px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.idpSetupWizardContainer .idpSetupOverview .overviewBarContainer .overviewBarStep a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #000000;
+	text-decoration: none;
+}
+
+.idpSetupWizardContainer .idpSetupOverview .overviewBarContainer.active .overviewBarStep a {
+	color: #ffffff
+}
+
+.idpSetupWizardContainer .reviewStep,
+.idpSetupWizardContainer .welcomeStep {
+	font-size: 16px
+}
+
+.idpSetupWizardContainer .reviewStep .stepTitle,
+.idpSetupWizardContainer .welcomeStep .stepTitle {
+	font-size: 28px;
+	margin-bottom: 35px;
+}
+
+.idpSetupWizardContainer .reviewStep .stepInstruction,
+.idpSetupWizardContainer .welcomeStep .stepInstruction {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+	display: inline-block;
+	float: left;
+}
+
+.idpSetupWizardContainer .reviewStep .stepInstruction .stepInstructionNo,
+.idpSetupWizardContainer .welcomeStep .stepInstruction .stepInstructionNo {
+	float: left;
+	width: 25px;
+	text-align: right;
+}
+
+.idpSetupWizardContainer .reviewStep .stepInstruction .stepInstructionText,
+.idpSetupWizardContainer .welcomeStep .stepInstruction .stepInstructionText {
+	float: left
+}
+
+.idpSetupWizardContainer .reviewStep .stepInstruction .stepInstructionText .stepInstructionTitle,
+.idpSetupWizardContainer .welcomeStep .stepInstruction .stepInstructionText .stepInstructionTitle {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.idpSetupPreviewTitle {
+	font-size: 28px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333;
+	margin-bottom: 35px;
+}
+
+.idpSetupPreviewSubTitle {
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333;
+	margin-bottom: 35px;
+}
+
+.idpSetupPreviewH3Header {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.idpSetupPreviewText {
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333;
+}
+
+.idpSetupPreviewTextHeader {
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #333;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/**** ****/
+/**** STOP IdpSetupWizard  ****/
+/**** START IdpSsoConfigurationWizard.css ****/
+/**** ****/
+
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardInnerTable {
+	width: 600px;
+	border-top: 1px solid threedface;
+	margin-top: 40px;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardHeaderRow {
+	height: 20px
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardHeader {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #22505F;
+	padding: 0;
+	margin: 0;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardView {
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardViewInner {
+	margin: 0
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardViewInner .accordion-wrap { /* remove it */
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardViewRow {
+	height: 140px
+}
+
+.buttonBarRow {
+	padding: 10px;
+	height: 36px;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardButtonBarRow {
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardButtonBar {
+	padding: 10px
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardButtonBar div.label {
+	float: left;
+	margin-top: 10px;
+	background-color: transparent;
+	text-shadow: none;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardButtonBar div.label span {
+	color: #454545;
+	font: 15px;
+	margin-left: 25px;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardButtonBar input:disabled,
+.idpSsoConfigWizardContainer .wicketExtensionsWizardButtonBar input[disabled] {
+	cursor: default !important;
+	visibility: hidden !important;
+}
+
+input.backButton:disabled,
+input.backButton[disabled] {
+	/* keep this, are used in Java files - L note */
+	display: none;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardHeaderTitle {
+	margin: 10px 5px 10px 15px;
+	font-weight: bold;
+}
+
+.idpSsoConfigWizardContainer .wicketExtensionsWizardHeaderSummary {
+	margin: 10px 5px 5px 5px;
+	font-style: italic;
+}
+
+.idpSsoConfigWizardContainer .serverLogoItem {
+	display: block;
+	padding-top: 10px;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.idpSsoConfigWizardContainer .serverLogoItem div.radioContainer {
+	font-size: 10px;
+	vertical-align: middle;
+	display: block;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+.idpSsoConfigWizardContainer .serverLogoItem label {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #514f4f;
+}
+
+.adConnectDownloadLink {
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #2C828E;
+	padding-top: 10px;
+	display: block;
+}
+
+/**** ****/
+/**** STOP IdpSsoConfigurationWizard.css  ****/
+/**** START IdpConnectionSetupWizard.css ****/
+/**** ****/
+
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardOuterTable {
+	width: 100%;
+	margin-top: -4px;
+	margin-bottom: 20px;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardInnerTable {
+	width: 100%;
+	background: transparent !important;
+}
+
+.idpConnectionSetupWizardContainer .overviewBar {
+	background-color: transparent !important;
+	color: #454545 !important;
+	padding: 20px 0 0 0 !important;
+	margin: 0 !important;
+	font-weight: bold;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardHeaderRow {
+	height: 20px;
+	display: none;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardHeader {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #22505F;
+	padding: 0;
+	margin: 0;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardView {
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardViewRow {
+	height: 100px
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardViewInner {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardButtonBar {
+	background-color: transparent !important;
+	padding: 0 15px 15px 0 !important;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardButtonBar div.label {
+	float: left;
+	margin-top: 10px;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardButtonBar div.label span {
+	color: #B3AFA9;
+	font: 15px;
+}
+
+input#wizardSaveNExitButton {
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardHeaderTitle {
+	margin: 10px 5px 10px 15px;
+	font-weight: normal;
+}
+
+.idpConnectionSetupWizardContainer .wicketExtensionsWizardHeaderSummary {
+	margin: 10px 5px 5px 5px;
+	font-style: italic;
+}
+
+.idpConnectionSetupWizardContainer .title {
+	font-weight: bold !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.idpConnectionSetupWizardContainer .content {
+	display: table;
+	margin-top: 20px;
+}
+
+.idpConnectionSetupWizardContainer .appLogo {
+}
+
+.idpConnectionSetupWizardContainer .content .appDescription {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.idpConnectionSetupWizardContainer .appDetails {
+	padding: 10px 0 10px 0
+}
+
+.idpConnectionSetupWizardContainer .appDetails .appTitle {
+	color: #333;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	width: 800px;
+}
+
+.idpConnectionSetupWizardContainer .appDetails .appDescription {
+}
+
+.idpConnectionSetupWizardContainer .content .ssoConfig {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.idpConnectionSetupWizardContainer .content .ssoConfigScreen {
+	display: table-cell;
+	vertical-align: bottom;
+	padding: 0 15px 20px 15px;
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .initSSOattributes {
+	margin-bottom: 25px
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .initSSOattributes .ssourl {
+	margin: 25px 0 25px 0;
+	text-decoration: underline;
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .previewWizardDescription {
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .description {
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .ssoConfigPathLink {
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .ssoConfigPath {
+	padding-top: 20px;
+	float: left;
+}
+
+.idpConnectionSetupWizardContainer .ssoConfig .ssoConfigLink {
+	clear: both;
+	padding: 20px 0 20px 0;
+}
+
+.idpConnectionSetupWizardContainer .content .instructions {
+}
+
+.idpConnectionSetupWizardContainer .initSSOattributes td {
+	vertical-align: middle;
+	padding: 4px 0;
+}
+
+.idpConnectionSetupWizardContainer .initSSOattributes td:first-child {
+	font-weight: 600
+}
+
+.idpConnectionSetupWizardContainer .initSSOattributes td.placeholderInstructions {
+	font-size: 11px;
+	font-style: italic;
+}
+
+.idpConnectionSetupWizardContainer .initSSOattributes p.hint {
+	display: block;
+	float: left;
+	margin: 0 0 0 177px;
+}
+
+.idpConnectionSetupWizardContainer .attrMapping {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.idpConnectionSetupWizardContainer .attrMapping th {
+	font-weight: 600;
+	padding: 10px 0 10px 10px;
+}
+
+.idpConnectionSetupWizardContainer .attrMapping td {
+	padding-left: 25px;
+	vertical-align: middle;
+}
+
+.idpConnectionSetupWizardContainer .attrMapping th:first-child,
+.idpConnectionSetupWizardContainer .attrMapping td:first-child {
+	font-weight: 600
+}
+
+.idpConnectionSetupWizardContainer .testConnection {
+}
+
+.idpConnectionSetupWizardContainer .testConnection .initSSOattributes {
+	font-size: 13px;
+	margin-bottom: 25px;
+	width: 900px;
+}
+
+.idpConnectionSetupWizardContainer .testConnection .launchApplication {
+}
+
+.idpConnectionSetupWizardContainer .ping-textinput {
+}
+
+.idpConnectionSetupWizardContainer .attrMapping .ping-textinput {
+	margin: 3px 0;
+	height: 13px;
+}
+
+.idpConnectionSetupWizardContainer #app_type_tabs ul {
+	margin: 0;
+	padding: 1px 1px 0;
+}
+
+.idpConnectionSetupWizardContainer #app_type_tabs li {
+	float: left;
+	position: relative;
+	top: 1px;
+	margin: 0 0px 25px 0;
+	padding: 0;
+}
+
+.idpConnectionSetupWizardContainer #app_type_tabs li a {
+	margin: 10px 5px 10px 0px;
+	background-color: #D6D6D6;
+	color: black;
+	display: block;
+	font: 15px/20px;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 300px;
+}
+
+.idpConnectionSetupWizardContainer #app_type_tabs li.selected a {
+	background-color: #868686;
+	color: #FAFAFA;
+}
+
+.idpConnectionSetupWizardContainer #app_type_tabs li:first-child a {
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+}
+
+.idpConnectionSetupWizardContainer #app_type_tabs li:last-child a {
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 18px;
+}
+
+.idpConnectionSetupWizardContainer .app_graphics-item {
+	width: 300px;
+	margin-left: 10px;
+	float: left;
+}
+
+.idpConnectionSetupWizardContainer .app_graphics-item.first {
+	width: 300px;
+	margin-left: 0px;
+	padding-right: 20px;
+}
+
+.idpConnectionSetupWizardContainer table td.app-logo {
+	text-align: left;
+	background-image : none;
+	border-width: 1px 0px 1px 1px !important;
+	padding: 0 !important;
+	width: 32px;
+	height: 32px;
+	margin-left: -60px;
+}
+
+.idpConnectionSetupWizardContainer table img.app-logo {
+	border-width: 1px;
+	border-color: #353533;
+	margin-top: auto;
+	margin-bottom: auto;
+	vertical-align: middle;
+}
+
+.idpConnectionSetupWizardContainer #app_graphics-container p.hint {
+	margin-top: -45px;
+	padding-bottom: 38px;
+}
+
+.idpConnectionSetupWizardContainer #app_graphics-container input {
+	padding-top: 5px;
+	height: 25px;
+}
+
+.idpConnectionSetupWizardContainer .graphic-header {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.idpConnectionSetupWizardContainer .ping-img-container {
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.idpConnectionSetupWizardContainer .ping-img-container img {
+	margin-right: 400px;
+	max-height: 128px;
+	max-width: 128px;
+	border: 1px solid #999;
+	margin: 20px 0 0 0;
+}
+
+.idpConnectionSetupWizardContainer div.app-icon .ping-img-container {
+	max-width: 128px
+}
+
+.idpConnectionSetupWizardContainer div.app-icon .ping-img-container img {
+	max-width: 75px
+}
+
+.idpConnectionSetupWizardContainer div.app-icon fieldset .ping-img-container {
+	width: 300px
+}
+
+.idpConnectionSetupWizardContainer div.app-logo .ping-img-container {
+	max-width: 300px
+}
+
+.idpConnectionSetupWizardContainer div.app-logo .ping-img-container img {
+	max-width: 300px
+}
+
+.idpConnectionSetupWizardContainer div.app-screenshot .ping-img-container img {
+	max-width: 550px
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig {
+	padding-bottom: 10px !important
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > thead tr > th:nth-child(2) {
+	/* border-radius: 6px 0 0 0;
+    border-right: 1px dotted ##;*/
+	border-left: none;
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > thead > tr > th:last-child {
+	border-radius: 0 6px 0 0;
+	border-left: 0px solid black;
+	border-right: none;
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > thead > tr > th:nth-child(3) {
+	min-width: 390px
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > thead > tr > th:nth-child(4) {
+	min-width: 75px
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > thead > tr > th:nth-child(5) {
+	min-width: 50px;
+	width: 50px;
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > tbody td {
+}
+
+.idpConnectionSetupWizardContainer .editMode #attributeMappingTable.table-general.clouddesktopconfig > tbody td:last-child {
+	white-space: normal
+}
+
+/**** ****/
+/**** STOP IdpConnectionSetupWizard.css  ****/
+/**** START PingOneWizard.css ****/
+/**** ****/
+
+
+.step .instruction-buttons {
+	margin: 0 0 10px 215px
+}
+
+.wizardContainer {
+	width: 100%
+}
+
+.wizardContainer .wicketExtensionsWizardOuterTable {
+	width: 100%
+}
+
+.wizardContainer .wicketExtensionsWizardInnerTable {
+	border-left: 1px solid #C6C3C3;
+	border-right: 1px solid #C6C3C3;
+	border-bottom: 1px solid #C6C3C3;
+	width: 909px;
+}
+
+.wizardContainer .wicketExtensionsWizardHeader {
+	font-size: 18px;
+	line-height: 20px;
+	color: #22505F;
+	padding: 0;
+	margin: 0;
+}
+
+.wizardContainer .wicketExtensionsWizardView {
+	padding-left: 0px
+}
+
+.wizardContainer .wicketExtensionsWizardViewInner {
+	margin: 10px 10px 10px 10px
+}
+
+.wizardContainer .wicketExtensionsWizardViewInner .step .ping-input label {
+	color: #333333;
+	text-decoration: none;
+	width: auto;
+	float: left;
+	font-size: 16px;
+	line-height: 16px;
+	width: 200px;
+	padding: 8px 17px 8px 0;
+	text-align: right;
+	cursor: pointer;
+}
+
+.wizardContainer .wicketExtensionsWizardViewRow {
+	height: auto
+}
+
+.wizardContainer .wicketExtensionsWizardButtonBar {
+	background-color: transparent !important;
+	padding: 0 15px 15px 0 !important;
+}
+
+.wizardContainer .wicketExtensionsWizardButtonBar div.label {
+	float: left;
+	margin-top: 10px;
+	background-color: transparent;
+}
+
+.wizardContainer .wicketExtensionsWizardButtonBar div.label span {
+	font: 15px;
+	text-shadow: none;
+	color: #666;
+}
+
+.wizardContainer .wicketExtensionsWizardButtonBar input:disabled,
+.wizardContainer .wicketExtensionsWizardButtonBar input[disabled] {
+	/* keep this one for now, althouh we removed old buttons classes: ;
+    visibility: hidden;*/
+	display: none;
+}
+
+.wizardContainer .wicketExtensionsWizardHeaderTitle {
+	font-size: 24px !important;
+	background-color: transparent !important;
+	color: #454545 !important;
+	padding: 20px 0 0 20px !important;
+	margin: 0 !important;
+}
+
+.wizardContainer #app_type_tabs ul {
+	margin: 0;
+	padding: 1px 1px 0;
+	list-style: none;
+}
+
+.wizardContainer #app_type_tabs li {
+	float: left;
+	position: relative;
+	top: 1px;
+	margin: 0 0px 25px 0;
+	padding: 0;
+}
+
+.wizardContainer #app_type_tabs li a {
+	margin: 10px 5px 10px 0px;
+	background-color: #D6D6D6;
+	color: black;
+	display: block;
+	font: 15px/20px;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 300px;
+}
+
+.wizardContainer #app_type_tabs li:first-child a {
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+}
+
+.wizardContainer #app_type_tabs li:last-child a {
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 18px;
+}
+
+.addInstructionStep {
+	color: #FFFFFF !important;
+	padding: 5px 5px 5px 15px;
+	margin-right: 10px;
+	border-radius: 6px 6px 6px 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.addAttribute { /* it may be used in Java, keep it for now */
+}
+
+.addInstructionStep {
+	margin-left: 214px
+}
+
+.addNewApplication {
+	width: 210px;
+	margin-left: 40px;
+	padding: 10px 5px 10px 15px;
+	height: 27px;
+	background-color: #4BC5D4 !important;
+	color: #FFFFFF !important;
+	margin-right: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+	border-width: 1px 1px 1px 1px !important;
+	border-color: #000000;
+}
+
+.addInstructionStep {
+	width: 64px
+}
+
+td.addNewApplication-selected {
+	background-color: #D6D6D6 !important;
+	padding: 12px 4px 12px 14px;
+	text-decoration: none !important;
+	font-size: 13px;
+	font-weight: 600;
+	color: #000000;
+}
+
+.wizardContainer #app_type_tabs li.selected a {
+	background-color: #4BC5D4;
+	color: #FFFFFF;
+}
+
+.wizardContainer .wicketExtensionsWizardHeaderSummary {
+	margin: 30px 20px 5px 70px;
+	color: #333;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	width: 800px;
+}
+
+.wizardContainer .serverLogoItem {
+	display: block;
+	padding-top: 10px;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.wizardContainer .serverLogoItem div.radioContainer {
+	font-size: 10px;
+	vertical-align: middle;
+	display: block;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+.wizardContainer .serverLogoItem label {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	color: #514f4f;
+}
+
+.app-graphics {
+	margin-left: 70px
+}
+
+.app_graphics-item {
+	width: 200px;
+	margin-left: 10px;
+	float: left;
+}
+
+.app_graphics-item.first {
+	width: 300px;
+	margin-left: 0px;
+	padding-right: 20px;
+}
+
+table td.app-logo {
+	text-align: left;
+	background-image : none;
+	border-width: 1px 0px 1px 1px !important;
+	padding: 0 !important;
+	width: 32px;
+	height: 32px;
+	margin-left: -60px;
+}
+
+table img.app-logo {
+	border-width: 1px;
+	border-color: #353533;
+	margin-top: auto;
+	margin-bottom: auto;
+	vertical-align: middle;
+}
+
+.app-name {
+	margin-top: 30px;
+	margin-bottom: 22px;
+	font-size: 1.3em;
+	clear: both;
+}
+
+td.first-column {
+	border-left-width: 0 !important
+}
+
+span.visibility {
+	padding: 0 15px 0 0;
+	width: 225px;
+	text-decoration: none;
+	text-align: left;
+	word-wrap: break-word;
+}
+
+.ping-img-container {
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.ping-img-container img {
+}
+
+.graphic-header {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.ping-input .ping-fileupload-container {
+	float: left;
+	clear: both;
+}
+
+.ping-input .ping-fileupload-container .uploader span.filename {
+	width: auto
+}
+
+div.app-icon .ping-img-container {
+	max-width: 128px
+}
+
+div.app-icon .ping-img-container img {
+	max-width: 75px
+}
+
+div.app-logo .ping-img-container {
+	max-width: 300px
+}
+
+div.app-logo .ping-img-container img {
+	max-width: 300px
+}
+
+div.app-screenshot .ping-img-container img {
+	max-width: 550px
+}
+
+.ping-input div.tabbedTextArea {
+	float: none;
+	display: block;
+	width: 360px;
+	margin: 10px 0 10px 210px;
+}
+
+.spMultiplexingEnabled {
+	float: right;
+	margin-top: 3px;
+	width: 650px;
+}
+
+.spMultiplexing div.checker {
+	margin-top: 6px
+}
+
+.spMultiplexing p,
+.spMultiplexing ul {
+	padding: 5px 0 0 5px
+}
+
+.spMultiplexing ul {
+	list-style-type: circle
+}
+
+.multiplexedInstructions_value {
+	color: #00D6E1
+}
+
+#app_graphics-container p.hint {
+	margin-top: -45px;
+	padding-bottom: 38px;
+}
+
+#app_graphics-container input {
+	padding-top: 5px
+}
+
+.applicationIntegrationGuide ol li {
+	list-style-type: decimal;
+	margin: 10px 0 0 20px!important;
+	list-style-position: inside;
+	clear: both;
+	font-size: 16px;
+}
+
+#app_preview_step {
+	padding-left: 100px
+}
+
+.app-url-label {
+	display: block;
+	text-decoration: underline;
+	padding-top: 20px;
+}
+
+.app-name {
+}
+
+#connection_info_step div.ping-input p {
+	font-size: 16px
+}
+
+.applicationType {
+	margin-top: 4px
+}
+
+/**** ****/
+/**** STOP PingOneWizard.css  ****/
+/**** START ConnectionIntegrationPage.css ****/
+/**** ****/
+
+
+.addingConnections {
+	font-size: 62.5%
+}
+
+.addingConnections p,
+.addingConnections li {
+	margin: 0.5em 0.5em 0.5em 0;
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+
+.addingConnections ul li {
+	list-style-type: circle
+}
+
+.addingConnections ul {
+	padding-left: 40px
+}
+
+.addingConnections b {
+	font-weight: bold
+}
+
+.addingConnections h4 {
+	margin-top: 18px
+}
+
+.addingConnections .buttons-layout {
+	padding: 5px 0 25px 0
+}
+
+/**** ****/
+/**** STOP ConnectionIntegrationPage.css  ****/
+/**** ****/
+/**** START JavaScriptIntegrationGuidePage.css  ****/
+
+
+.integrationGuideContainer .exampleImage {
+	margin-bottom: 15px
+}
+
+.integrationGuideContainer tr th,
+.integrationGuideContainer tr th span,
+.integrationGuideContainer tr td {
+	padding: 1.0em
+}
+
+.integrationGuideContainer table {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2.0em;
+	border: 1.0px solid #CCC;
+}
+
+/**** START JavaScriptIntegrationGuidePage.css ****/
+/**** ****/
+/**** ****/
+/**** START ApplicationIntegrationGuidePage.css  ****/
+
+
+.applicationIntegrationGuide {
+}
+
+.applicationIntegrationGuide p,
+.applicationIntegrationGuide li,
+.applicationIntegrationGuide dl,
+.applicationIntegrationGuide tr {
+	margin: 1.0em 0.5em 0.5em 1.0em;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.applicationIntegrationGuide tr th,
+.applicationIntegrationGuide tr th span,
+.applicationIntegrationGuide tr td {
+	padding: 1.0em
+}
+
+.applicationIntegrationGuide table {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2.0em;
+	border: 1.0px solid #CCC;
+}
+
+.applicationIntegrationGuide ol li {
+	list-style-type: decimal
+}
+
+.applicationIntegrationGuide ul,
+.applicationIntegrationGuide ol {
+}
+
+.applicationIntegrationGuide b {
+	font-weight: bold
+}
+
+.applicationIntegrationGuide h4 {
+	margin-top: 18px
+}
+
+dd {
+	padding-left: 3.0em
+}
+
+.dtRef {
+	font-weight: bold;
+	color: #37B9CC;
+}
+
+/**** STOP ApplicationIntegrationGuidePage.css ****/
+/**** ****/
+/**** ****/
+/**** START UI general fixes once migrated to BS ****/
+
+
+.ping-input.relative label {
+	width: 280px
+}
+
+.advancedconfig input[type="checkbox"] {
+	margin: 0
+}
+
+.smpan1 .ping-input label {
+	width: 270px
+}
+
+.tall-block-payment .ping-input.relative label {
+	width: 110px
+}
+
+.feedback ul.feedbackPanel li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.company-info {
+}
+
+.ping-accountinfo .ping-input.relative label {
+	width: 160px
+}
+
+#ui .nd-str-aut input[type="checkbox"] {
+	margin: 5px 10px 0 0
+}
+
+#registrationForm .ping-input.relative label {
+	width: 160px
+}
+
+.ping-ssosettings .ping-input.relative label,
+.ping-ssosettings .ping-input label {
+	width: 170px
+}
+
+.form-feedback {
+	clear: both;
+	height: auto;
+}
+
+.domain-name-panel {
+}
+
+.ping-ssosettings .domain-name-panel .ping-input.relative label {
+	width: 280px;
+	padding-top: 7px;
+}
+
+.smpan1 {
+}
+
+.ping-ssosettings .smpan1 .ping-input label {
+	width: 270px
+}
+
+#connectionMetadata input.ping-textinput.url {
+	width: 190px
+}
+
+.smpan1 .ping-input .ping-textinput {
+	margin-top: 5px
+}
+
+#connectionMetadata .ping-input label,
+.ping-fileupload-container label {
+	padding-top: 7px
+}
+
+.gaps-dm .ping-input label {
+	width: 270px;
+	padding-top: 10px;
+}
+
+#role.ping-select {
+	margin: 2px auto
+}
+
+#copySuccessMessage {
+	display: inline-block
+}
+
+.cmp-page {
+}
+
+.cmp-page .ping-accountinfo .ping-input.relative label,
+.cmp-page .ping-input label {
+	padding-top: 7px;
+	width: 180px;
+}
+
+.us-page {
+}
+
+.us-page .ping-accountinfo .ping-input.relative label {
+	padding-top: 7px
+}
+
+.testConnection .ping-input label {
+	padding-top: 10px
+}
+
+.ssoConfig .ping-input.relative label {
+	width: 160px;
+	padding-top: 10px;
+}
+
+#app_type_tabs .ping-input.relative label,
+#app_type_tabs .ping-input label {
+	padding-top: 7px
+}
+
+#pg-im-fix .applicationType {
+	margin-top: 7px
+}
+
+#pg-im-fix div.radio {
+	margin-top: 7px
+}
+
+.ping-input label.connection_info_step {
+	padding-top: 7px
+}
+
+#app_graphics-container label {
+	margin: 20px;
+	padding: 0;
+}
+
+.initSSOattributes #initSsoURL {
+/* float: right;
+    margin: 0;
+    padding: 0;
+    line-height: 19px;
+    text-align: left;
+    width: 600px;*/
+}
+
+.wicketExtensionsWizardOuterTable form {
+	width: 860px
+}
+
+.menu .menuItemActive ul {
+	display: inline-table;
+	width: 650px;
+}
+
+.pg-group-fix {
+	margin: 0 20px
+}
+
+.pg-group-fix.wizardContainer {
+	width: auto
+}
+
+#attributeTable form {
+	width: auto
+}
+
+#ui .choicePanelText input[type="radio"] {
+	margin: 4px 5px 0 0
+}
+
+#ui #basic_info_step input[type="radio"] {
+	margin: 4px 5px 0 0;
+	float: left;
+}
+
+.ping-ssosettings .payment-form .ping-input.relative label {
+	width: 110px
+}
+
+.ping-ssosettings .payment-form ul.feedbackPanel {
+	text-align: left
+}
+
+#instructionTable form {
+	width: auto
+}
+
+#ui .pg-idp-info input[type="checkbox"],
+#ui .pg-idp-adcon input[type="checkbox"] {
+	float: left;
+	margin-top: 3px;
+}
+
+#cloudDesktopUrl {
+	line-height: 32px
+}
+
+.domain-name-panel #clip_clouddesktop_link {
+}
+
+#successfulCopyMessageAdconnectLink {
+	float: right;
+	margin: 8px 20px 0 0;
+}
+.pv-fix {
+	display: block;
+	padding: 5px 0 0;
+}
+
+.pv-fix input[type="radio"],
+.pv-fix input[type="checkbox"] {
+	margin: 0
+}
+
+.pv-fix .spn-a1 {
+}
+
+.pv-fix .spn-a2 {
+	margin: 0 0 0 20px
+}
+
+#inviteEmailPopup {
+	width: 840px;
+	left: 40%;
+}
+
+.wicketExtensionsWizardViewInner .ping-input .radio-b-block {
+	margin: 9px 0 0 0
+}
+
+.wicketExtensionsWizardViewInner .ping-input .radio-b-block .radio-b {
+	margin: 0 10px 0 0
+}
+
+.wicketExtensionsWizardViewInner .ping-input .radio-b-block .radio-b input[type="radio"] {
+	margin: 0
+}
+
+.ping-login-signup .radio-b input[type="radio"] {
+	margin: 1px 0 0 0
+}
+
+#cloudDesktopBackgroundPanel label {
+	margin-top: -4px
+}
+
+#ui .groupApp input {
+	margin-right: 6px;
+	float: left;
+}
+
+#ui .groupApp label {
+	font-weight: bold
+}
+
+#ui .groupApp .ssoSelected label,
+#ui .groupApp .provisioningSelected label {
+	font-weight: normal
+}
+
+#ui #cloudDesktopBackgroundPanel input[type="file"] {
+	width: 88px
+}
+
+/**** STOP UI general fixes once migrated to BS ****/
+/**** ****/
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////// moved entire content from screen-headfootonly.css to screen.css //////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+/* Accommodate the new UI changes and prep migration to BS */
+/*  * { color:red !important}  */
+/* ====NoJSMessage==== */
+/**** START NEW STYLES: new .nojs-message ****/
+
+
+.nojs-message {
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin: 0;
+	z-index: 3000;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	padding: 50px;
+	background-color: #FFF;
+}
+
+.nojs-message .alert { /* .alert will come from bootstrap */
+}
+
+.nojs-message .nojsm-1 {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0 0 20px 0;
+}
+
+.nojs-message .nojsm-2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/**** STOP NEW STYLES: new .nojs-message ****/
+/* ====/NoJSMessage==== */
+/* ====Main==== */
+/**** START NEW STYLES: Refactored - Main Body ****/
+
+
+#main {
+	/* macking the footer sticky, see .pingfooter */
+	overflow: auto;
+	padding-bottom: 56px;
+}
+
+/**** STOP NEW STYLES: Refactored - Main Body ****/
+/**** START: CrazyTable old moved from components.css ****/
+
+
+.table-general {
+	border: none;
+	border-bottom: none;
+	margin: 0 0 20px 0;
+	border-spacing: 0px;
+	border-collapse: separate;
+	padding: 0;
+	width: 98%;
+}
+
+.table-general thead {
+	font: 15px/19px;
+	color: #FAFAFA;
+	padding: 10px 5px;
+	font-weight: 400 !important;
+}
+
+.table-general thead th {
+	background: #333333;
+	border-left: none;
+	padding: 5px 5px 5px 25px;
+	text-align: left;
+	font-weight: normal !important;
+}
+
+.table-general thead th:first-child {
+	border-radius: 6px 0 0 0;
+	border-left: none;
+}
+
+.table-general thead th:last-child {
+	border-radius: 0 6px 0 0;
+	border-left: none;
+	border-right: none;
+}
+
+.table-general tfoot th {
+	background-color: #F0F0F0;
+	background-image: none;
+	text-align: left;
+	padding: 5px 0;
+	border-bottom: 1px solid #A7A7A7;
+	padding: 10px 5px;
+	vertical-align: middle;
+}
+
+.table-general tfoot th:first-child {
+	border-left: 1px solid #A7A7A7
+}
+
+.table-general tfoot th:last-child {
+	border-right: 1px solid #A7A7A7
+}
+
+.table-general thead th a,
+.table-general thead th a:link,
+.table-general thead th a:hover,
+.table-general thead th a:visited {
+	text-decoration: none;
+	color: #FAFAFA;
+}
+
+.table-general thead th.wicket_orderNone {
+	background-image: url("../images/arrow_off_white.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.table-general thead th.wicket_orderUp {
+	background-image: url("../images/arrow_up_white.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.table-general thead th.wicket_orderDown {
+	background-image: url("../images/arrow_down_white.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+table.table-general>tbody {
+	border: none
+}
+
+table.table-general>tbody>tr {
+	border: none;
+	border-bottom: none;
+	border-radius: 10px 10px 0 10px !important;
+}
+
+table.table-general>tbody>tr>td {
+	height: 50px;
+	font-size: 14px;
+	color: #333;
+	background: url('../images/table-cell-divider.png') no-repeat 0, #F0F0F0;
+	text-align: left;
+	vertical-align: middle;
+	padding: 0 5px 0 25px;
+	border-bottom: 1px solid #A7A7A7 !important;
+}
+
+table.table-general>tbody>tr>td:first-child {
+	background: #F0F0F0;
+	border: none;
+	border-right: none;
+	border-left: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+}
+
+table.table-general>tbody>tr>td:last-child {
+	padding: 0 10px;
+	border-right: 1px solid #A7A7A7 !important;
+	border-left: none;
+	border-radius: 0 0 0 0;
+}
+
+.table-general tfoot th {
+	padding: 0 5px 0 25px
+}
+
+.table-general tfoot th select.ping-select {
+	width: 120px
+}
+
+.table-general tfoot th .addUser-textinput {
+	font-size: 13px;
+	line-height: 15px;
+	margin: 2px 0;
+	height: 14px;
+}
+
+.table-general tfoot th .addUser-textinput.firstNameInput {
+	width: 66px
+}
+
+.table-general tfoot th .addUser-textinput.lastNameInput {
+	width: 116px
+}
+
+.table-general tfoot th .addUser-textinput.emailInput {
+	width: 206px
+}
+
+.table-general tfoot th .addUser-select {
+	font-size: 13px;
+	line-height: 15px;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.table-general.myapplications {
+	margin-bottom: 20px !important
+}
+
+.table-general.myapplications thead {
+	background: transparent;
+	border-radius: 0;
+	font: 15px/19px;
+	font-weight: normal;
+	border-bottom: 1px solid #a7a7a7 !important;
+}
+
+.table-general.myapplications>thead>tr>td:first-child:hover {
+	background: transparent !important
+}
+
+.table-general.myapplications thead th:nth-child(4) {
+	width: 100px
+}
+
+.table-general.myapplications thead th:last-child {
+	border-radius: 0 6px 0 0;
+	border-left: none;
+	border-right: none;
+}
+
+.table-general.myapplications thead th:first-child,
+.table-general.actions thead th:last-child {
+	border-right: none;
+	border-left: none;
+}
+
+.table-general.actions tbody tr td:last-child {
+}
+
+.table-general.actions tbody tr td:first-child {
+	width: 16px!important
+}
+
+.table-general.myapplications thead th:nth-child(2) {
+	border-left: none
+}
+
+.table-general.myapplications>tbody>tr>td {
+	text-align: left;
+	border-bottom: 1px solid #a7a7a7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+	box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+}
+
+.table-general.myapplications>tbody>tr:first-child td {
+}
+
+/* START: ONDEMAND-4414: APS setup fix header*/
+
+
+.table-general.myapplications > tbody > tr.myApplication.active > td,
+.table-general.myapplications > tbody > tr.myApplication.active > td:nth-child(1):hover {
+	background-color: #FFF !important;
+	background: url('../images/table-cell-divider.png') no-repeat 0;
+}
+
+.table-general.myapplications > tbody > tr.myApplication.active > td:nth-child(1),
+.table-general.myapplications > tbody > tr.myApplication.active > td:nth-child(1):hover {
+	background-image: none
+}
+
+/* STOP: ONDEMAND-4414: APS setup fix header*/
+
+
+.table-general.myapplications>tbody>tr>td:nth-child(1):hover {
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #F0F0F0));
+	background: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	-pie-background: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+}
+
+.table-general.myapplications>tbody>tr td:last-child {
+	text-align: left
+}
+
+.table-general.myapplications tr:hover td {
+	background: url('../images/table-cell-divider.png') no-repeat 0, -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: url('../images/table-cell-divider.png') no-repeat 0, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #F0F0F0));
+	background: url('../images/table-cell-divider.png') no-repeat 0, -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: url('../images/table-cell-divider.png') no-repeat 0, -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: url('../images/table-cell-divider.png') no-repeat 0, -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: url('../images/table-cell-divider.png') no-repeat 0, linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	-pie-background: url('../images/table-cell-divider.png') no-repeat 0, linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+}
+
+.table-general.myapplications tr:hover td:nth-child(1) {
+	/* ONDEMAND-4414 fixed hover divider bug for firs element */
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #F0F0F0));
+	background: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	-pie-background: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+}
+
+.table-general.myapplications>tbody>tr>td.active {
+	text-align: left;
+	color: #669966;
+	border-right: 1px dotted #a7a7a7;
+}
+
+.table-general.myapplications>tbody>tr>td.inactive {
+	text-align: left;
+	color: #CC6666;
+}
+
+.table-general.instructions {
+	width: 550px
+}
+
+.table-general.instructions thead th:first-child {
+	border-radius: 6px 0 0 0; /* LS */
+	border-right: none;
+	border-left: none;
+	width: 10px;
+}
+
+.table-general.instructions thead th:nth-child(2) {
+	border-left: none
+}
+
+.table-general.instructions thead th:last-child {
+	width: 10px
+}
+
+/* START: .table-general.clouddesktopconfig */
+
+
+.table-general.clouddesktopconfig > thead {
+	background: transparent;
+	border-radius: 0;
+	font: 15px/19px;
+}
+
+.table-general.clouddesktopconfig > thead tr > th {
+	border-left: none;
+	text-align: left;
+	font-weight: normal !important;
+}
+
+.table-general.clouddesktopconfig > thead tr > th:first-child {
+	border-radius: 6px 0 0 0;
+	border-right: none;
+	border-left: none;
+}
+
+.table-general.clouddesktopconfig > thead tr > th:nth-child(2) {
+	border-left: none
+}
+
+.table-general.clouddesktopconfig > thead > tr > th:last-child {
+	border-radius: 0px 6px 0px 0;
+	border-left: 0px solid black;
+	border-right: none;
+	width: 490px;
+}
+
+.table-general.clouddesktopconfig > tbody td:last-child {
+	white-space: normal
+}
+
+.table-general.clouddesktopconfig > thead th:nth-child(2) {
+	min-width: 120px
+}
+
+.table-general.clouddesktopconfig > tbody > tr > td:nth-child(2) {
+	min-width: 120px
+}
+
+.table-general.clouddesktopconfig > thead th:nth-child(3) {
+	min-width: 240px
+}
+
+.table-general.clouddesktopconfig > tbody > tr > td:nth-child(3) {
+	min-width: 240px
+}
+
+/* STOP: .table-general.clouddesktopconfig */
+/* START: .table-general.attributeMapping */
+
+
+.table-general.attributeMapping > thead tr > th:first-child {
+	border-radius: 6px 0 0 0;
+	border-right: none;
+	border-left: none;
+}
+
+table.table-general.attributeMapping > tbody > tr > td:nth-child(2) input.sourceValue {
+	width: 250px
+}
+
+.table-general.attributeMapping > thead tr th:nth-child(3) {
+	min-width: 60px;
+	text-align: center;
+}
+
+table.table-general.attributeMapping > tbody > tr > td:nth-child(3) {
+	min-width: 60px;
+	text-align: center;
+}
+
+.table-general.attributeMapping > thead th:last-child {
+	min-width: 60px !important
+}
+
+table.table-general.attributeMapping > tbody > tr > td:last-child {
+	min-width: 60px !important
+}
+
+.table-general.attributeMapping > thead tr th:nth-last-child(2) {
+	min-width: 230px
+}
+
+table.table-general.attributeMapping > tbody > tr > td:nth-last-child(2) {
+	min-width: 230px
+}
+
+table.table-general.attributeMapping div.selector {
+	float: left
+}
+
+table.sourceAttributeTable.table-general > tbody > tr > td:nth-child(3) {
+	padding-left: 5px
+}
+
+/* STOP: .table-general.attributeMapping */
+/* START: modal popup old */
+
+
+.overlay {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.popover {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+	border-radius: 8px 8px 8px 8px;
+	left: 50%;
+	margin-left: -300px;
+	padding: 8px;
+	position: fixed;
+	top: 140px;
+	z-index: 1100;
+	text-align: left;
+}
+
+.myapplications .popover {
+	min-width: 550px
+}
+
+#authorizePopOverContainer .popover {
+	width: 550px
+}
+
+#authorizePopOverContainer .popover .content {
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.popover .content {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius: 4px 4px 4px 4px;
+	padding: 40px 35px 30px;
+	position: relative;
+}
+
+.popover .close,
+#popOverClose {
+	display: block;
+	height: 30px;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	width: 30px;
+}
+
+h3.pop-header {
+	font: 24px;
+	padding-bottom: 10px;
+}
+
+.pop-text {
+	margin: 5px 0 25px
+}
+
+.pop-text dt {
+	padding-top: 5px
+}
+
+.pop-text dd {
+	margin: 0;
+	padding: 0;
+}
+
+.pop-text .ping-buttons {
+	padding: 0 0 12px;
+	position: relative;
+}
+
+.popup-icon {
+	display: block;
+	float: left;
+	width: 46px;
+	height: 46px;
+	padding-left: 20px;
+}
+
+.popover .i-float-text {
+}
+
+.popover.advancedAttributeMapping {
+	margin-left: -440px;
+	position: relative;
+	left: auto;
+	margin-top: -170px;
+}
+
+.popover.inviteEmailPanel {
+	margin-left: -440px;
+	position: relative;
+	left: auto;
+	margin-top: -140px;
+}
+
+/* STOP: modal popup old */
+/* START: ui fixes */
+
+
+#attributeMappingTable {
+	width: 98%
+}
+
+* td:hover * #attributeMappingTable * td {
+	background-color: #F0F0F0 !important;
+	background-image: url("../images/table-cell-divider.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0 center !important;
+}
+
+* td:hover * #attributeMappingTable * td:first-child {
+	background-image: none !important
+}
+
+* td:hover .wicketExtensionsWizard .wicketExtensionsWizardViewInner * td {
+	background-color: #F0F0F0 !important;
+	background-image: url("../images/table-cell-divider.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: 0 center !important;
+}
+
+* td:hover .wicketExtensionsWizard .wicketExtensionsWizardViewInner * td:first-child {
+	background-image: none !important
+}
+
+/* START: ONDEMAND-4414 */
+
+
+.myapps-item > .myapp-actions,
+.table-general.myapplications > tbody > tr > td:last-child {
+	/*ONDEMAND-4414*/
+	padding: 7px 15px;
+	height: 36px;
+ *padding: 4px 5px;
+ *height: 42px;
+	border-right: 1px solid #a7a7a7;
+}
+
+.table-general.myapplications > tbody > tr.wizardRow > td.wizardRow,
+.table-general.myapplications > tbody > tr.wizardRow > td:hover,
+.table-general.myapplications > tbody > tr.wizardRow > td:hover td {
+	background-image: none;
+	background-color: #FFF;
+}
+
+.table-general.myapplications > tbody > tr.wizardRow > td.wizardRow {
+	padding: 0 0 0 30px !important;
+	border: 1px solid #C6C3C3;
+}
+
+.table-general.myapplications > tbody > tr.wizardRow > td:last-child {
+	border-top: 0px none red
+}
+
+.wizardContainer .wicketExtensionsWizardInnerTable {
+	margin: 0
+}
+
+.wizardContainer .wicketExtensionsWizardInnerTable {
+	border-bottom: 0px none #C6C3C3 !important;
+	border-left: 0px none #C6C3C3 !important;
+	border-right: 0px none #C6C3C3 !important;
+	width: 909px;
+}
+
+/* STOP: ONDEMAND-4414 */
+/* other hacks */
+
+
+.fix-check-1 {
+	margin-top: -10px
+}
+
+.sign-authn-request input.ln-hk1 {
+	margin-top: 10px
+}
+
+.ping-ssosettings .sign-authn-request p.hn-hk1 {
+}
+
+.sign-authn-request {
+	margin-bottom: -10px
+}
+
+/* STOP: ui fixes */
+/* START: misc elements inside crazy table */
+
+
+input.sourceValue.autocomplete {
+	width: 170px
+}
+
+.functionList {
+	/* fix near inline help*/
+	width: 250px;
+}
+
+.functionList a.ping-help {
+	/* fix near inline help*/
+	margin-top: -10px;
+}
+
+.functionList.expr { }
+.functionList.expr .fl-1 { }
+.functionList.expr .fl-2 { }
+.functionList.expr .fl-2 .fl2-1 { }
+.functionList.expr .fl-2 .fl2-2 { }
+.functionList.expr .fl-2 .fl2-2 .ping-help {
+    float: right;
+    margin-right: 15px;
+    margin-top: -20px;
+}
+.functionList.expr .fl-2 .fl2-2 a.ex-try label,
+.functionList.expr .fl-2 .fl2-2 a.ex-try {
+	display:block;
+	width:220px;
+}
+.functionList.expr .fl-2 .fl2-3 { }
+.functionList.expr .fl-2 .fl2-3 { }
+
+.attributeMapPanel table.table-general > tbody > tr > td {
+	padding-top: 10px
+}
+
+#ui table.table-general > tbody > tr > td:first-child {
+	padding: 0 10px 0 15px
+}
+
+#ui .attributeMapPanel table.table-general > tbody > tr input[type="checkbox"] {
+	margin-top: -15px
+}
+
+#ui .attributeMapPanel table.table-general > tbody > tr > td:nth-child(2) {
+	padding-top: 0px
+}
+
+#ui table.table-general.fix-luc1 > tbody > tr > td:last-child {/* attr mapping table: table.table-general.fix-luc1 */;
+	padding-top: 0;
+}
+
+#attributeMappingTable input[type="text"] {
+	margin: 0
+}
+
+/* STOP: misc elements inside crazy table */
+/**** STOP: CrazyTable old moved from components.css ****/
+/**** START: general elements UI fixes ****/
+
+
+#appContainer .radio,
+#appContainer .checkbox {
+	padding-left: 0; /* fix BSconflict */
+}
+
+/**** STOP: general elements UI fixes ****/
+/* ====/Main==== */
+/* ====ETCMessage==== */
+/**** START NEW STYLES: new .etc-msg ****/
+
+
+.etc-msg {
+	font-weight: normal
+}
+
+.etcm-1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	color: #999999;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.etcm-2 {
+	position: absolute;
+	top: 14px;
+	right: 0;
+	width: 200px;
+}
+
+.etcm-3 {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 150px;
+	margin-top: 15px;
+	color: black;
+	text-decoration: underline;
+}
+
+/**** STOP NEW STYLES: new .etc-msg ****/
+/* ====/ETCMessage==== */
+/* minor fixes just before BS release */
+
+
+#app_graphics-container img {
+	border: none
+}
+
+.goto em span {
+	color: #333
+}
+
+/* low gang fr pam */
+
+
+.info-1 {
+	padding: 20px 20px 10px 20px
+}
+
+.info-2 {
+	padding: 10px 20px 10px 20px
+}
+
+.info-1-warn {
+	padding: 0 20px 0 20px
+}
+
+.cca-x {
+	float: right;
+	width: 440px;
+}
+
+.eu-cloud-desk-conf {
+	margin: 40px 0 0 0
+}
+
+/* .cxct-1 & .ping-img-container shall be removed from css and templates - old garbage
+#ui .cxct-1 {
+	margin-top: -20px
+}
+
+#ui .cxct-1 .ping-img-container {
+	clear: none;
+	float: none;
+	width: auto;
+}
+*/
+
+.lb-hk1 {
+	margin-bottom: 0
+}
+
+.blk-txt-x1,
+.blk-txt-x2,
+.blk-txt-x3,
+.blk-txt-x4,
+.blk-txt-x5,
+.blk-txt-x6 {
+}
+
+.blk-txt-x4 {
+	margin: 20px 0
+}
+
+.blk-txt-x3 .ping-input.padded {
+	margin: 0;
+	padding: 0;
+}
+
+.blk-txt-x2 {
+	margin: 20px 0px 0px 0px
+}
+
+.blk-txt-x5 #connectionMetadata {
+	margin-bottom: -30px;
+	padding: 20px 0 0;
+}
+
+.ug-txt1 {
+	margin-bottom: 25px
+}
+
+/* Added to fix long strings in Office 365 Plugin with blessing from Lucian */
+
+
+.forcebrk-code {
+	display: block;
+	float: right;
+	line-height: 20px;
+	width: 600px;
+	margin: 9px 0 0 0;
+}
+
+/* label */
+
+
+#advancedConfigPanel {
+}
+
+.tempo-1 {
+	margin-top: 20px
+}
+
+.adc-download-url {
+	padding: 10px 0 30px 0
+}
+
+#ui legend {
+	color: red
+}
+
+#adConnectInstallationStatus {
+	margin: 0;
+	background-color: red;
+	margin-bottom: 40px;
+	display: block;
+	background-color: #FCF8E3;
+	width: 50%;
+}
+
+.dshb-url-spacer {
+	display: block;
+	clear: both;
+	width: 940px;
+	font-size: 0px;
+	height: 20px;
+}
+
+/* ONDEMAND-5820 */
+
+
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content {
+	overflow: auto;
+	height: 250px;
+	overflow-x: hidden;
+}
+
+/* ONDEMAND-5820 */
+
+
+#ui .sb-fix1 {
+	border-radius: 0 5px 5px 0 !important;
+	height: 36px !important;
+	margin-left: -1px;
+	margin-top: 0;
+}
+
+/* 3829 */
+
+
+.mandatr {
+	color: #CC3333;
+	padding-left: 3px;
+	line-height: 25px;
+}
+
+/* 5631 */
+
+
+#ui .connectionSetupWizard .ping-img-container img {
+	margin: 25px 0 5px 0
+}
+
+#ui .fix5807 {
+	margin: 8px 0 0 0
+}
+
+#ui .fix5807 input[type="radio"] {
+	margin: 0 3px 0 0
+}
+
+#ui .fix5807 .radio-b {
+	margin: 0 20px 0 0
+}
+
+#ui .dataTables_wrapper #instructionTable input {
+	margin: 0
+}
+
+.edit { /* used in java code, keep it for now */
+}
+
+.ssoUrls { /* used in java code, keep it for now */
+}
+
+#ui form.inviteEmailPanel {
+	width: auto
+}
+
+#ui input.cancelButton.span1 {
+	/* BS is defining width for inputs different than for buttons. We shall move all to buttons. This is a quick fix */
+	width: 66px;
+}
+
+/* ONDEMAND-5073 including all align of info from fields in general */
+
+
+#ui .ping-input .code.greenText {
+	float: left;
+	line-height: 19px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 600px;
+	word-wrap: break-word;
+	display: block;
+	padding-top: 10px;
+}
+
+#ui .ping-input span.code.greenText {
+}
+
+#ui .ping-input a.code.greenText {
+	font-size: 16px;
+	color: #37B9CC;
+	width: auto;
+	padding-top: 10px;
+}
+
+#ui #app_type_tabs .ping-input.relative a.code.greenText,
+#ui #app_type_tabs .ping-input a.code.greenText {
+	padding-top: 5px
+}
+
+#ui .v-idp-con .ping-input.relative label,
+#ui .v-idp-con .ping-input label {
+	width: 300px
+}
+
+#ui .v-idp-con .ping-input span.code.greenText {
+	padding: 12px 0 0
+}
+
+#ui #app_type_tabs .ping-input span.code.greenText {
+	padding-top: 5px
+}
+
+#ui .table-general.myapplications > tbody > tr > td:last-child {
+	min-width: 220px;
+	text-align:center;
+}
+#ui #IdpApplicationCatalogPanel.table-general.myapplications > tbody > tr > td:last-child {
+	min-width: 100px;
+}
+
+#ui .table-general.myapplications > tbody > tr > td:first-child {
+	text-align: left
+}
+
+#ui #confirmationDialogBody {
+     text-align: left;
+}
+
+/* ONDEMAND-5986 */
+#ui .initSSOattributes div .content  {}
+
+#ui .initSSOattributes div .content .ping-input.relative label {
+	width:280px;
+}
+
+#ui .initSSOattributes div .content .ping-input.relative .field-val {
+    display: block;
+    float: left;
+    line-height: 19px;
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: left;
+    word-wrap: break-word;
+	font-size: 17px;
+}
+
+#ui .navigatorLabel {
+	color:#999999;
+}
+
+#ui .lg-copy {
+	margin-top: 36px;
+	line-height:normal;
+}
+
+#ui .lg-copy .old-cp {
+}
+
+#ui .lg-copy .old-cp-conf {
+	margin:0 20px;
+}
+
+#ui .initSSOattributes div .content #attributeMappingTable td {
+	padding-left:20px;
+	padding-right:20px;
+}
+#ui .initSSOattributes div .content #attributeMappingTable td:nth-child(2) {
+	min-width:160px;
+}
+
+
+/* Temporary usermanagement page customizations */
+
+#ui #UserManagementPanel tr td:nth-child(1) { width: 40px; }
+#ui #UserManagementPanel tr td:nth-child(2) { width: 140px; }
+#ui #UserManagementPanel tr td:nth-child(3) { width: 140px; }
+#ui #UserManagementPanel tr td:nth-child(4) { width: 200px; }
+#ui #UserManagementPanel tr td:nth-child(5) { width: 90px; }
+#ui #UserManagementPanel tr td:nth-child(6) { width: 70px; }
+#ui #UserManagementPanel tr td:nth-child(7) { width: 70px; min-width: 70px; }
+
+/* END usermanagement page customizations */

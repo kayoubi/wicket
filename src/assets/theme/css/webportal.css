@@ -1,0 +1,1899 @@
+@charset "UTF-8";
+
+/* more future fixes 
+- remove dotted lines http://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff
+*/
+
+/* START: bootstrap-fileupload.css 12 march 2013 */
+/*!
+ * Bootstrap v2.3.1-j6
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat, extended by @ArnoldDaniels.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn-file {
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+.btn-file > input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+.fileupload {
+  margin-bottom: 9px;
+}
+.fileupload .uneditable-input {
+  display: inline-block;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  cursor: text;
+}
+.fileupload .thumbnail {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+.fileupload .thumbnail > img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+}
+.fileupload .btn {
+  vertical-align: middle;
+}
+.fileupload-exists .fileupload-new,
+.fileupload-new .fileupload-exists {
+  display: none;
+}
+.fileupload-inline .fileupload-controls {
+  display: inline;
+}
+.fileupload-new .input-append .btn-file {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.thumbnail-borderless .thumbnail {
+  border: none;
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.fileupload-new.thumbnail-borderless .thumbnail {
+  border: 1px solid #ddd;
+}
+.control-group.warning .fileupload .uneditable-input {
+  color: #a47e3c;
+  border-color: #a47e3c;
+}
+.control-group.warning .fileupload .fileupload-preview {
+  color: #a47e3c;
+}
+.control-group.warning .fileupload .thumbnail {
+  border-color: #a47e3c;
+}
+.control-group.error .fileupload .uneditable-input {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+.control-group.error .fileupload .fileupload-preview {
+  color: #b94a48;
+}
+.control-group.error .fileupload .thumbnail {
+  border-color: #b94a48;
+}
+.control-group.success .fileupload .uneditable-input {
+  color: #468847;
+  border-color: #468847;
+}
+.control-group.success .fileupload .fileupload-preview {
+  color: #468847;
+}
+.control-group.success .fileupload .thumbnail {
+  border-color: #468847;
+}
+/* WebPortal customization*/
+#ui .fileupload-new.thumbnail {
+	width: 200px; height: 150px;
+}
+#ui .fileupload-preview.fileupload-exists.thumbnail {
+	max-width: 200px; max-height: 150px; line-height: 20px;
+}
+#ui .fileupload-new.thumbnail.icon50 {
+	width: 50px; height: 50px;
+}
+#ui .fileupload-preview.fileupload-exists.thumbnail.icon50 {
+	width: 50px; height: 50px;
+}
+/* STOP: bootstrap-fileupload.css 12 march 2013 */
+
+
+/* PingOne WebPortal custom CSS */
+/* #ui * { color:pink; background-color: blue;} */
+
+/*! @import '../../twitter-bootstrap-c52368d/less/tests/css-tests.css';  */
+
+
+#ui {
+	/* all classes are prefixed with #ui which is the ID used in the page <html> tag for the migrated pages */
+	/* color:pink; background-color: blue; */ 
+}
+
+html#ui {
+	background-image: url(../img/pg-light-gradient-bg.gif);
+	overflow-y: scroll;
+}
+html#ui body {	/* removed bg so will have more contrast for form with view-only | edit */
+	background-color:transparent;
+	/* background-image:url(../img/pg-top-template-gradient-bg.png);
+	background-position:0 0;
+	background-repeat:repeat-x; */
+}
+html#ui body #appContainer {
+	background-image: url(../img/pg-content-box-bg.png);
+	background-position: top center; 
+	background-repeat:repeat-y;
+}
+html#ui body #appContainer #main {
+	padding-left:20px; /*BS fix negative margins*/
+}
+
+/* generic styles - extend BS*/
+#ui .visi-hid {
+	visibility:hidden;
+}
+
+/* START: #ping-head */
+#ui #ping-head {
+	background-image:url(../img/header-clouds-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:center top;
+	/* height: .th-cont(65px) + ul.mn-nav(45px) + [] */
+}
+
+/* customize BS: */
+#ui .alert {
+	border:0px none;
+	text-shadow: none;
+}
+
+/* overwrite-customize wicket and old styles which we have to keep..*/
+#ui #ping-content #feedback {
+	margin:0 0 10px 0;
+}
+
+/* top-head */
+#ui .top-head {
+	padding-left:20px; /* BS fix negatibe margins*/
+}
+#ui .th-cont {
+	height:55px;
+}
+#ui .th-cont .app-name {
+	margin:9px 0 0 0px;
+	width:450px;
+	height:35px;
+	float:left;
+}
+#ui .th-cont .app-name #pingone-logo {
+	display:block;
+	text-indent: -999999px;
+	width:115px;
+	height:35px;
+	float:left;
+	background-image:url(../img/pingone-logo.png);
+}
+#ui .th-cont .app-name h4.an-type {
+	font-weight:normal;
+    color: #FFFFFF;
+    float: left;
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin: 8px 0 0 27px;
+    width: auto;
+}
+
+#ui .th-cont .top-navtop {
+	width:480px;
+	float:right;
+	line-height:12px;
+	margin:18px 0 0 0;
+	padding:0;
+	height:21px;
+}
+#ui .th-cont ul.top-navtop li.litp {
+	font-size:12px;
+	line-height:19px;
+	display: inline-block;
+	color:#666666;
+	float:right;
+	margin: 0 10px 0 0;
+}
+#ui .th-cont ul.top-navtop li.lifix .btn {
+	margin-top:-2px;
+}
+
+
+.th-cont .top-navtop li.ping-user { 
+	/* re-do it after we cumulate the top-top nav */
+	font-size:12px;
+	line-height:12px;
+	display: inline-block;
+}
+.th-cont .top-navtop li.ping-user a { 
+	/* re-do it after we cumulate the top-top nav */
+	color:#000000;
+	text-decoration:underline;
+}
+
+#ui .btn-ping-spec-1 {
+	text-decoration:none;
+	border:none;
+	font-size:12px;
+	color:#37B9CC; /* default brand color */
+	background-color:#171717;
+	background-image:none;
+	text-shadow:none;
+}
+#ui .btn-ping-spec-1.btn-inverse-1 {
+	background-color: #FFF;
+}
+#ui .btn-ping-spec-1.btn-inverse-1:hover {
+	background-color: #FFF;
+	background-color:#171717;
+}
+
+
+#ui .u-settings {
+	background-image: url(../img/ico-user.gif);
+	background-position: 4px 0;
+	background-repeat:no-repeat;
+}
+#ui .active .u-settings {
+	background-position: 4px -21px;
+	color: #DCDCDC;
+	background-color: #000;
+}
+
+#ui .u-settings span {
+	padding:0 0 0 16px;
+}
+
+
+#ui a.btn-ping-spec-1:hover {
+	color: #FFF;
+}
+
+/* moved the CD launch in the main nav
+#ui .th-cont ul.top-navtop li.lifix a.btn-ping-spec-2 {
+    background-image: url(../img/ico-cloud-desktop.gif);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 30px;
+    margin-top: -6px;
+    padding: 0;
+    width: 30px;
+	border-radius: 4px 4px 4px 4px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#ui .th-cont ul.top-navtop li.lifix a.btn-ping-spec-2:hover {
+    background-position: 0 -30px;
+}
+
+#ui a.btn-ping-spec-2 span {
+	display:none;
+}
+*/
+
+
+
+/* / top-head */
+
+/* main-nav */
+#ui .main-nav {
+	background-color: #000;
+	/* background-image:url(../img/main-nav-bg.png); */
+	background-repeat:repeat-x; background-position: bottom left;
+	padding-left:20px; /* BS fix negative margins */
+}
+#ui .mn-cont {
+	height:45px;
+}
+#ui ul.mn-nav {
+	margin:0;
+	padding:0;
+	display: block;
+    float: left;
+    left: 0;
+    position: relative;
+	list-style: none outside none;
+}
+#ui ul.mn-nav > li {
+	float: left;
+	border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+#ui ul.mn-nav > li:last-child {}
+#ui ul.mn-nav li a {
+	display: block;
+    float: none;
+    padding:0px 20px 0 20px;
+    text-decoration: none;
+	line-height:45px;
+	font-size:16px;
+	color:#DCDCDC;
+}
+#ui ul.mn-nav li a:hover {
+	color: #FFF;
+}
+
+#ui ul.mn-nav > li.active {
+	border-left:1px solid #444444;
+	border-right:1px solid #444444;
+	background-image:url(../img/main-nav-bg.png);
+}
+#ui ul.mn-nav > li:hover {
+	background-color:#262626;
+	border-left:1px solid #262626;
+	border-right:1px solid #262626;
+}
+#ui ul.mn-nav > li.active:hover {
+	border-left:1px solid #444444;
+	border-right:1px solid #444444;
+}
+#ui ul.mn-nav > li.active a:hover{
+	color: #FFF;
+}
+#ui ul.mn-nav > li:first-child a {
+	background-image:url(../img/ico-home.png);
+	background-position:15px 0px;
+	background-repeat:no-repeat;
+	padding-left: 38px;
+}
+#ui ul.mn-nav > li.active:first-child a {
+	background-position:15px -41px;
+}
+#ui ul.mn-nav > li.get-strd a span {
+	color:#FEECA5;
+}
+#ui .launch-cd {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 19px;
+	margin-left:20px;
+	margin-top: 7px;
+}
+#ui .launch-cd a {
+    background-image: url("../img/ico-cloud-desktop.gif");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+    width: 30px;
+    background-color:#262626;
+    color: #37B9CC;
+}
+#ui .launch-cd a:hover {
+    background-position: 0 -30px;
+}
+
+#ui .launch-cd a span {
+	display:none;
+}
+
+
+
+
+/* / main-nav */
+
+/* main-nav-lev2 */
+#ui .main-nav-lev2 {
+	background-image:url(../img/pg-nav-lev2-bg.png);
+	background-position:center bottom;
+	padding-left:20px; /* BS fix negative margins */
+	background-repeat: no-repeat;
+}
+#ui .mn2-cont {
+	margin-top:10px;
+	height:27px;
+	/* background-image:url(../img/pg-nav-level2-bg.png); */
+	background-position:bottom left;
+}
+
+#ui .mn2-cont ul.mn2-nav {
+	margin:0 0 0 18px;
+	padding:0;
+	display: block;
+    float: left;
+    left: 0;
+    position: relative;
+	list-style: none outside none;
+}
+#ui .mn2-cont ul.mn2-nav > li {
+	float: left;
+	/* background-image:url(../img/pg-nav-level2-tabdel-bg.png);
+	background-repeat:no-repeat;
+	background-position:top right; */
+}
+#ui .mn2-cont ul.mn2-nav > li:last-child {
+}
+#ui .mn2-cont ul.mn2-nav li a {
+	display: block;
+    float: none;
+    padding:0 20px 0 20px;
+    text-decoration: none;
+	line-height:27px;
+	font-size:14px;
+	/* background-image:url(../img/pg-nav-level2-tabdel-bg.png);
+	background-repeat:no-repeat;
+	background-position:top left;*/
+	margin-left:-1px;
+	text-shadow: 0 0 10px white;
+	color:#000;
+}
+#ui .mn2-cont ul.mn2-nav li a:hover,
+#ui .mn2-cont ul.mn2-nav > li.active a:hover {
+	color: #000;
+	background-color: #FFF;
+}
+#ui .mn2-cont ul.mn2-nav > li.active a, 
+#ui .mn2-cont ul.mn2-nav > li.active a:focus {
+	color: #333333;
+	background-color: #F9F9F9;
+}
+
+/* /main-nav-lev2 */
+
+/* STOP: #ping-head */
+
+
+/* START: App general notifications */
+
+/* .stp-notready */
+#ui a.stp-notready {
+    border-bottom: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-radius: 0 0 0 15px;
+    display: block;
+    float: right;
+    height: 24px;
+    margin-bottom: -26px;
+    margin-left: -22px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    width: 1020px;
+}
+#ui a.stp-notready:hover {
+	background-color:#37B9CC;
+	color:#FFF;
+}
+
+#ui a.stp-notready i {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+
+
+/* /.stp-notready */
+
+/* STOP: App general notifications */
+
+
+/* START generic new styles recommended to work with BS  */
+
+[class*="span"].centred {
+	/* center things http://stackoverflow.com/questions/9184141/how-do-you-get-centered-content-using-twitter-bootstrap */
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+/* STOP generic new styles recommended to work with BS  */
+ 
+/* overwrite some defauld bootstrap styles - to be checked */
+
+#ui input[type="radio"], #ui input[type="checkbox"] {
+	/* not sure why Bootstrap is setting a margin {margin: 4px 0 0;}, we clear it 
+    margin:0;*/
+}
+
+#ui #appContainer .radio, #ui #appContainer .checkbox { /* old stuff messing boostrap from screen-headfootonly.css - to be removed after old css file deleted */
+	padding-left:20px ;
+}
+
+#ui input[type="file"] {
+	height:auto;
+}
+
+#ui #main { 
+	/* main div is the one used all over the app for the page content highest level; 
+	inherited from old design. background-color: white; */
+}
+#ui .title-breadcrumbs {/* title+breadcrumbs element */
+	background-color:transparent;
+	padding-bottom:20px;
+}
+#ui #main .breadcrumb { 
+	/* overwrite Bootstrap breadcrumbs */
+	margin:2px 0 0 0;
+	padding:0;
+	background-color:transparent;
+	line-height:42px;
+	text-align:right;
+	font-size:12px;
+	width: 420px;
+}
+#ui #main .breadcrumb .icon-home { 
+	/* overwrite Bootstrap breadcrumbs */
+	margin-top:-1px;
+}
+
+#ui .btn-large {
+	/* overwrite Bootstrap btn-large */
+	padding: 9px 17px;
+}
+
+#ui .blk-page-content > .pagecontent { 
+	/* container for all elements of the page content*/ 
+	padding:30px 0 40px 0;
+}
+#ui .pg-title { 
+	/* default page title */
+	text-shadow: 0 1px 0 #FFFFFF;
+	 *zoom: 1;
+	 margin-left:0;
+	 font-size:21px;
+	 width: 520px;
+}
+#ui .small-title .pg-title {
+	font-size:19px;
+}
+
+#ui .after-pg-title { 
+	/* the block after the page title
+	contains the left part with the actual elements
+	plus the page help section on the right */
+	background-color:transparent;
+}
+#ui .blk-c-content { 
+	/* inside div.after-pg-title use .blk-c-content to 
+	defines different sections of the left page content
+	can be used multiple times  */ 
+}
+#ui .tooltip .tooltip-inner {
+	line-height:normal;
+}
+
+
+/* ---- other styles inside blocks */
+
+#ui .table-hover tbody tr:hover td, 
+#ui .table-hover tbody tr:hover th { 
+	/* overwrite default Bootstrap */
+    background-color: #F0F0F0;
+}
+
+/* table.pick-conn is the one used for setup connection/Setup Identity Repository */
+#ui table.pick-conn {
+	cursor: default;
+	margin-top:30px;
+}
+#ui table.pick-conn tr td * {
+	font-size:15px;
+	line-height:20px;
+}
+#ui table.pick-conn tr label {
+	margin:0;
+	cursor: pointer;
+}
+#ui table.pick-conn tr label span {
+	font-weight:bold;
+	margin:0 0 0 15px;
+}
+
+#ui table.pick-conn tr label:hover span {
+	color:#333333;
+}
+#ui table.pick-conn tr:first-child td {
+    border-top: none;
+}
+#ui table.pick-conn tr td:nth-child(1) {
+	padding-left: 15px;
+	color:#37B9CC;
+	font-weight:bold;
+    width: 220px;
+}
+#ui table.pick-conn tr.row-selected td:nth-child(1) {
+	color: #333333;
+}
+#ui table.pick-conn tr td:nth-child(2) {
+	font-weight:bold;
+}
+#ui table.pick-conn tr td:last-child {
+	margin:0;
+	padding:8px;
+	width:25px;
+}
+#ui table.pick-conn input[type="radio"] {
+	margin:0px;
+}
+#ui table.pick-conn .bt-inln-hlp {
+	margin:0 20px 0 0;
+}
+
+/* row status*/
+
+/* common: row-selected, row-progress, row-inuse */
+#ui table.pick-conn tr.row-selected td,
+#ui table.pick-conn tr.row-progress td,
+#ui table.pick-conn tr.row-inuse td { 
+    background-color: #fcf8e3; /* Bootstrap .warning bkg color */
+}
+#ui table.pick-conn tr.row-selected *,
+#ui table.pick-conn tr.row-progress *,
+#ui table.pick-conn tr.row-inuse * { 
+	cursor: default;
+}
+#ui table.pick-conn tr.row-selected .bt-inln-hlp,
+#ui table.pick-conn tr.row-progress .bt-inln-hlp,
+#ui table.pick-conn tr.row-inuse .bt-inln-hlp {
+	cursor: pointer;
+}
+
+#ui table.pick-conn tr td.c-status span {
+	font-size:14px;
+	display:block;
+	min-width:1px;
+	min-height:1px;
+}
+/* row-selected */
+#ui table.pick-conn tr.row-selected .c-status {
+	color:#C09853;
+}
+/* row-progress */
+#ui table.pick-conn tr.row-progress td:nth-child(1) {
+	color: #333333;
+}
+#ui table.pick-conn tr.row-progress .c-status {
+	color: #B94A48;
+}
+/* row-inuse */
+#ui table.pick-conn tr.row-inuse td:nth-child(1) {
+	color: #333333;
+}
+#ui table.pick-conn tr.row-inuse .c-status {
+	color:#6C9A73
+}
+
+/* row-disabled */
+#ui table.pick-conn tbody tr.row-disabled td,
+#ui table.pick-conn tbody tr.row-disabled:hover td  { 
+ 	cursor: default;
+	color:#D0D2CF;
+	background-color: transparent;
+}
+#ui table.pick-conn tr.row-disabled .c-status {
+    color:#D0D2CF;
+}
+#ui table.pick-conn tr.row-disabled:hover .c-status {
+	color: #F96;
+}
+
+
+
+/** all help sections **/
+
+/* help page box */
+
+#ui .page-help { 
+	font-size:12px;
+	line-height:15px;
+	margin-left: 40px;
+    width: 280px;
+}
+#ui .page-help .page-help-title {
+	color: #999999;
+    line-height: normal;
+    margin: 0 0 20px;
+    padding: 0;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+#ui .page-help-block { 
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 20px;
+}
+#ui .page-help .page-help-scroll {
+	padding:0 5px 0 0;
+}
+#ui .page-help .page-help-scroll .hp-high-block:last-child {
+    margin-bottom: 20px;
+}
+#ui .page-help .page-help-scroll .hp-item-selected {
+	background-color: #E1FFE2;
+    padding: 0 2px 1px 10px;
+	color:#000;
+	border-radius: 4px 4px 4px 4px;
+}
+#ui .page-help .page-help-scroll .hp-item-selected p  {
+	padding-right:5px;
+}
+
+#ui .page-help .page-help-scroll p {
+	margin-bottom:5px;
+}
+#ui .page-help .page-help-scroll>h5:first-of-type {
+	margin:0px 0 5px 0;
+}
+
+/* page inline help */
+#ui .hp-copy-1 { 
+	/* main instructions - bold; used mainly on the main pages; 
+	more important than the second type instructions, or the right page help */
+	font-weight:bold;
+}
+
+/* custom styles for jquery.mCustomScrollbar.css */
+#ui .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color:#999999;
+}
+#ui  .mCSB_scrollTools .mCSB_draggerRail {
+    background-color:#DDDDDD;
+}
+#ui .mCSB_container {
+    margin-right: 10px;
+}
+
+/* Experimental styles to define the generic pages with forms: view/edit states */
+
+
+/* !!! general element */
+
+#ui .frm-blk-1 { /* grey block element to be used for separtion in pages */
+	background-color: #F0F0F0;
+	border-radius: 5px;
+	margin-bottom:20px	
+}
+#ui .frm-blk-1.editonly { /* by defauld, no style is applied | background-color: red; */}
+#ui .frm-blk-1.editonly .field-val {
+	display:none
+}
+
+#ui .form-line .explain {
+	margin-left:0px;
+	padding: 4px 0 0;
+	display: block;
+}
+
+/* !!! define the form position - to be used in all website forms */
+/* !!!*/
+#ui .form-line select, 
+#ui .form-line textarea, 
+#ui .form-line input[type="text"], 
+#ui .form-line input[type="password"], 
+#ui .form-line input[type="datetime"], 
+#ui .form-line input[type="datetime-local"], 
+#ui .form-line input[type="date"], 
+#ui .form-line input[type="month"], 
+#ui .form-line input[type="time"], 
+#ui .form-line input[type="week"], 
+#ui .form-line input[type="number"], 
+#ui .form-line input[type="email"], 
+#ui .form-line input[type="url"], 
+#ui .form-line input[type="search"], 
+#ui .form-line input[type="tel"], 
+#ui .form-line input[type="color"], 
+#ui .form-line .uneditable-input,
+#ui .form-line.control-group
+ { /* overwrite Bootstrap for ping tables*/
+	margin-bottom: 0px;
+	/* float:left; */
+}
+#ui .form-line {
+	border-bottom:1px solid #FFF;
+	padding:5px 0 5px 0;
+}
+#ui .form-line:last-child {
+	border-bottom:none;
+}
+#ui .form-line span {
+	/* background-color:green; */
+	margin:0;
+}
+#ui .form-line label {
+	/* background-color:green; */
+	padding: 5px 0 0 0;
+	margin:0;
+	display:inline-block;
+}
+#ui .form-line label.bold {
+	/* background-color: pink ; */
+	padding: 6px 0 0 0;
+	font-weight:bold;
+}
+#ui .form-line .alert.span4 {
+	width:286px;
+}
+
+#ui .form-line.fl-txt label {
+	/* ;background-color:red; */
+	padding: 5px 0 5px 0;
+}
+#ui .form-line.fl-txt label + label {
+	/* background-color: yellow; */
+	padding: 0 0 5px 0;
+}
+#ui .form-line.fl-txt label.inline + label.inline {
+	/* background-color: pink; */
+	padding: 0;
+	margin-left:20px;
+}
+#ui .form-line.fl-header {
+	border-radius: 5px 5px 0 0;
+	background-color: #D1D1D1;
+	color: #FFF;
+	padding:0;
+	height:22px;
+}
+#ui a.but-state {
+	background-color:#CACACA;
+	color: #FFF;
+	line-height:22px;
+	padding:0 6px;
+	margin-left:1px;
+	font-size:12px;
+}
+#ui a.but-state:hover {
+	text-decoration:none;
+	background-color:#BDBDBD;
+}
+#ui .fl-header .inline-cont .but-state.bs-last {
+	border-radius: 0 5px 0 0;
+}
+#ui .form-line.fl-header h5,
+#ui .form-line.fl-header legend {  
+	margin:0;
+	display:inherit;
+	font-size:14px;
+	font-weight:bold;
+	line-height:normal;
+	border:0 none;
+	color: inherit;
+	padding:auto;
+	width:auto;
+	float:left;
+	display: inline-table;
+	line-height:22px;
+	max-width:350px;
+}
+#ui #rad { /* #rad so will not mix with the actual style used in old UI */ }
+
+#ui .form-line .fl-col1 {
+	/* background-color:red; */
+}
+#ui .form-line .fl-col2 {
+	/* background-color: blue; */
+}
+/* view only field values - text */
+#ui .field-val {
+	color:#6C9A73;
+	padding: 5px 0 0;
+}
+/* .feedbackPanel generated by wicket, forced */
+#ui .feedbackPanel {
+	white-space:normal;
+}
+#ui #feedback .feedbackPanel li {
+	padding:0;
+	margin:6px 10px 0 0;
+} 
+#ui #feedback .feedbackPanel li span {
+	padding-left:13px;
+	display:block;
+	background-position:0 4px;
+	font-size: 14px;
+    line-height: 17px;
+} 
+
+
+/* form fields errors + messages */
+#ui * .form-line .alert,
+#ui * .form-line .feedbackPanel,
+#ui * .form-line .error, 
+#ui * .explain {
+    font-size: 12px;
+	line-height:15px;
+}
+#ui * .explain {
+	color:#999999;
+}
+
+#ui * .form-line .feedbackPanel { /* .feedbackPanel generated by wicket, forced to use instead of .error */} 
+#ui * .form-line .alert-success {
+    color: #6C9A73;
+	background-color:#E1FFE2;
+}
+#ui * .form-line .error,
+#ui * .form-line .alert-error {
+    color: #B94A48;
+}
+#ui * .form-line .feedbackPanel ul {
+	margin: 0;
+    padding: 0px 0 0;
+	list-style:none;
+}
+#ui * .form-line .feedbackPanel ul li {
+	line-height:15px;
+}
+
+#ui * .form-line .alert {
+	margin:5px 0 0 0;
+	padding: 4px 6px;
+}
+#ui .two-alerts .alert:nth-child(1) {
+	margin:5px 0 5px 0;
+}
+#ui .two-alerts .alert:nth-child(2) {
+	margin:0;
+}
+
+#ui .form-line .feedbackContainer {
+	margin-top:-1px;
+	display:block;
+	float:none;
+}
+
+/* required */
+#ui .required-f:before {
+    color: #B94A48;
+    content: "*";
+    display: inline-block;
+    height: auto;
+    margin-top: 1px;
+    vertical-align: middle;
+    width: 7px;
+	margin-left:-7px;
+}
+#ui .required-f .required-f:before { /* dirty fix for profile in 5minwiz */
+    content: normal;
+    display: none;
+}
+
+
+/* start: autoselectable block */
+#ui .autoselectable { /* text to select text */
+	cursor: copy;
+}
+#ui .autoselectable .toggle-tooltip-block { /* used in js */ }
+#ui .autoselectable:hover .el-select-on {
+	background-color:#FCF8E3;
+}
+/* stop: autoselectable block */
+
+/* start: butselectable block */
+#ui .butselectable {/* button to select text - entire block */
+}
+#ui .butselectable .el-select-on {
+	background-color:#FCF8E3;
+}
+#ui .butselectable .el-select-off {
+	/* nothing, just used in JS. */
+}
+/* stop: butselectable block */
+
+/* button select to copy text */
+#ui .bt-slct-to-copy { /* button to select text*/
+	background-color: #E4E4E4;
+	color: #FFFFFF;
+	display: inline-block;
+    border-radius: 3px 3px 3px 3px;
+    /* float: left;  */
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    margin: 5px 0 0 3px;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	cursor: copy;
+}
+#ui .bt-slct-to-copy:hover,
+#ui .bt-slct-to-copy.but-stc-active,
+#ui .form-line.form-subtitl .fl-col2 .bt-slct-to-copy:hover{
+	text-decoration:none;
+	background-color:#FCF8E3;
+	color:#333;
+}
+
+/* test things only*/
+#ui .hide-x {
+}
+#ui .show-x {
+	border:1px solid red;
+	color:red;
+	background-color:black;
+}
+
+/* inline help button default */
+#ui .bt-inln-hlp { 
+	background-color: #E4E4E4;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+	float:right;
+	margin:5px 30px 0 0;
+}
+#ui .bt-inln-hlp:hover,
+#ui .bt-inln-hlp.but-ih-active,
+#ui .form-line.form-subtitl .fl-col2 .bt-inln-hlp:hover {
+	text-decoration:none;
+	background-color:#E1FFE2;
+	color:#333;
+}
+/* form blocks - view only mode */
+#ui .frm-blk-1.viewonly { /* grey block element to be used for separtion in pages */
+	background-color: #FFF;
+}
+#ui .frm-blk-1.nohelp {
+    width: 640px;
+}
+
+#ui .frm-blk-1.viewonly .form-line {
+    border-bottom: 1px solid #F0F0F0;
+}
+#ui .frm-blk-1.viewonly .form-line:last-child {
+    border-bottom: 0 none;
+}
+
+
+/* --- */
+#ui .form-line .form2col-c1 {
+    float: left;
+    min-height: 25px;
+    padding-top: 5px;
+	margin-right:20px;
+    width: 200px;
+	background-color:#33FFFF;
+}
+
+#ui .form-line .form2col-c2 {
+	display:inline-block;
+	background-color:#FFFF66;
+}
+#ui .form-line .form2col-c2 .cpy {
+	float:right;
+	width:330px;
+	display:block;
+	padding-top: 5px;
+	margin-bottom:0 0 10px 0;
+	background-color:green;
+}
+#ui .form-line .form2col-c2.form2col-c2-radio-txt {
+	width: auto;
+	min-height: 25px;
+	background-color:red;
+}
+#ui .form-line .form2col-c2.form2col-c2-radio-txt .cpy {
+	background-color: blue;
+}
+#ui .form-line .form2col-c2.form2col-c2-radio-txt input[type="checkbox"] {
+	margin-top:3px;
+}
+
+/* Form line subtitle */
+
+#ui .form-line.form-subtitl {
+	background-color: #E6E6E6; 
+	margin-left: -40px;
+}
+#ui .form-line.form-subtitl h5 {
+	font-size: 16px; 
+	color:#808080; 
+	line-height:16px;
+}
+#ui .form-line.form-subtitl .fl-col2 {
+	 margin-left:40px
+}
+#ui .form-line.form-subtitl .fl-col2 .bt-inln-hlp {
+	 margin-top: 9px;
+	 background-color:#D1D1D1;
+}
+
+
+/* ====Footer==== */
+/**** START NEW STYLES: new .pingfooter ****/
+.pingfooter {
+	width: 100%;
+	height: 45px;
+	clear: both;
+	line-height:14px;
+	background-image: url(../img/footer_bg.png);
+	/* making the footer sticky - in conjunction with #main */
+	position: relative;
+	margin-top: -45px;
+	clear:both;
+	background-position:0
+}
+.pingfooter p {
+	font-size: 12px;
+	display:block;
+	float:left;
+	color:#A5A5A5;
+	height:14px;
+	margin-top:16px;
+}
+.pingfooter .ping-sep {
+	padding:0 10px;
+}
+.pingfooter p.policy-support-links {
+	margin-left:60px;
+}
+.pingfooter p.right-foot {
+	float:right;
+	height:29px;
+	width:100px;
+	margin-top:6px;
+}
+.pingfooter .right-foot .sec-by {
+	display:block;
+	float:left;
+	margin:10px 0 0 0;
+}
+.pingfooter .right-foot img.ping-logo {
+	float: right;
+}
+.pingfooter a {
+	text-decoration:none
+}
+.pingfooter a.active {
+	color:#DCDCDC;
+}
+.pingfooter a:hover {
+	color:#FFFFFF; 
+}
+
+
+/* .pingfooter - customize BS margin  */
+#ui .pingfooter .container {
+	padding-left:20px; /* fix BS margin*/
+}
+/**** STOP NEW STYLES: new .pingfooter ****/
+/* ====/Footer==== */
+
+/* ====support-kb==== */
+/**** START NEW STYLES: new .support-kb ****/
+
+#ui #support-kb {
+	top: 380px;
+	left:0;
+	position: fixed;
+    z-index: 9999;
+    display: block;
+}
+#ui #support-kb a {
+	display:block;
+	background-image:url(../img/support-knowledgebase.png);
+	background-repeat:no-repeat;
+	background-position:0;
+	display:block;
+	width:34px;
+	height:188px;
+}
+#ui #support-kb a span{
+	display: none;
+}
+
+/**** STOP NEW STYLES: new .support-kb ****/
+/* ====/support-kb==== */
+
+
+
+/* ====modal==== */
+/**** START Modal BS ****/
+/* overwrite some defauld bootstrap styles - to be checked */
+
+/* bootstrap fading fix */
+#ui .modal.fade {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition:none;
+}
+
+/* bootstrap modal with error fix */
+#ui .modal.alert {
+	background-color: #fcf8e3; /* Bootstrap .warning bkg color */;
+}
+#ui .modal.alert  h4.alert-heading {
+	padding:0 0 10px 0;
+}
+#ui .modal.alert p + p {
+    margin-top: 10px;
+} 
+
+/* customization of modal to make it ping */
+#ui .modal-header {
+	color:#808080;
+	background-color:#E6E6E6;
+	border-radius: 6px 6px 0px 0px;
+	border-bottom:1px solid #FFF;
+	padding: 5px 15px;
+}
+.modal-body {
+	background-color: #FFF;
+}
+#ui .modal-footer {
+	background-color:#E6E6E6;
+	border-radius: 0px 0px 6px 6px;
+	border-top:1px solid #FFF;
+    padding: 10px 15px;
+	box-shadow:none;
+}
+#ui .modal-header h5 {
+	font-size: 16px;
+    line-height: 16px;
+}
+#ui .modal-header .close {
+    margin-top: 6px;
+}
+#ui .modal-footer.smallbig-bt .btn {
+	margin-top:5px;
+}
+#ui .modal-footer.smallbig-bt .btn-large {
+	margin-top: auto;
+}
+
+
+/* 	bootstrap modal large */
+
+/* .modal.mo-large1 */
+/*	usage:IdpConnectionSetupInstructionsPanel
+	CAS > add/edit app >instructions panel > thumbnail 
+*/
+#ui .modal.mo-large1 { 
+	margin: -300px 0 0 -480px;
+	width: 900px;
+} 
+#ui .modal.mo-large1 .modal-body {
+	max-height: 400px;
+} 
+/* /.modal.mo-large1 */
+
+
+/**** STOP Modal BS ****/
+/* ====/modal==== */
+
+
+/* ====login-outdated-v1luc==== */
+/**** START This is outdated version of login, not implemented ****/
+
+html#ui.login-outdated-v1luc {
+	background-image:none;
+}
+#ui.login-outdated-v1luc .logo-line {/*defined*/}
+html#ui.login-outdated-v1luc body #appContainer #main {
+	/* remove h scroll */
+	overflow:hidden;
+	padding-bottom:180px;
+}
+#ui.login-outdated-v1luc #ping-head,
+#ui.login-outdated-v1luc #support-kb {
+	display:none;
+}
+#ui.login-outdated-v1luc .login-block {       
+	/* center it http://stackoverflow.com/questions/8442782/how-i-can-center-block-with-my-login-form-vertically-and-horizontally-at-bootstr */
+    position:absolute;      
+    top: 30%;
+    left: 50%;
+    margin-top:-100px; /* negative number 1/2 height */
+    margin-left:-300px; /* negative number 1/2 width | 640px, 30px goes to left margin */
+}
+#ui.login-outdated-v1luc .login-block .lgo {
+	margin-left:0; 
+	width:640px;
+	height:100px;
+	background-image:url(../img/pingone-logo-b.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+#ui.login-outdated-v1luc .login-block .lgo span {
+	visibility:hidden;
+}
+#ui.login-outdated-v1luc .form-line.fl-header-lg {
+    background-color: #000;
+    border-radius: 5px 5px 0 0;
+    color: #FFFFFF;
+    height: 45px;
+    padding: 0;
+	background-image:url(../img/main-nav-bg.png);
+}
+#ui.login-outdated-v1luc .fl-header-lg a.lg-tb {
+	display:block;
+	width:320px;
+	margin:0;
+	border-right:1px solid #FFF;
+	text-align:center;
+	line-height:45px;
+	color:#DCDCDC;
+	font-size: 18px;
+	font-weight:bold;
+	background-color:#000;
+}
+#ui.login-outdated-v1luc .fl-header-lg a.lg-tb:first-child  {
+    border-radius: 5px 0 0 0;
+}
+#ui.login-outdated-v1luc .fl-header-lg a.lg-tb:last-child {
+	border-right: none;
+	border-radius: 0 5px 0 0;
+}
+#ui.login-outdated-v1luc .fl-header-lg a.lg-tb:hover {
+	text-decoration:none;
+	color: #FFF;
+	background-color:#262626;
+}
+#ui.login-outdated-v1luc .fl-header-lg a.lg-tb.active {
+	color: #FFF;
+	background-color:transparent;
+}
+#ui.login-outdated-v1luc .lg-lft-but input {
+	margin-left:-20px;
+}
+#ui.login-outdated-v1luc .lg-midl-mes {
+	padding-top:11px;
+}
+
+/**** STOP This is outdated version of login, not implemented ****/
+/* ====/login-outdated-v1luc==== */
+
+
+
+/* ====pg-signlog==== */
+/**** START customized signup for the 5 minutes wizard ****/
+#ui .pg-signup-login { }
+#ui .pg-signup-login form {
+	margin:0;
+}
+#ui .pg-signlog {
+	float:none;
+	margin:100px auto;
+	background-color: #F0F0F0;
+    border-radius: 5px 5px 5px 5px;
+	padding:20px 40px 40px 40px;
+}
+#ui .pg-signlog.form-line {
+	border-bottom:0 none;
+}
+#ui .pg-signlog.form-line input { }
+#ui .pg-signlog h3 {
+	text-align:center;
+	margin:0px 0 20px 0;
+}
+#ui .pg-signlog .slbut {
+	width:160px;
+}
+#ui .pg-signlog .input-append .slbut  {
+	border-radius: 0 4px 4px 0;
+}
+#ui .pg-signlog .sl-meser { /* messages and errors */ }
+#ui .pg-signup-login .sl-bot-xline {
+	color:#999999;
+}
+#ui .pg-signup-login .sl-bot-xline .pull-right {
+	margin-right:210px;
+}
+#ui .pg-signup-login .sl-bot-xline .pull-left {
+	margin-left:210px;
+}
+#ui .pg-signup-login .sl-bot-xline .pull-left i {
+	margin-right:5px;
+}
+
+/* modal .modalform */
+#ui .modalform {}
+#ui .modalform form {
+	margin:0;
+}
+#ui .modalform .required-f:before {
+	width: 4px;
+}
+#ui .modalform .form-line label {
+	color:#999999;
+}
+#ui .modalform .tooltip .tooltip-inner {
+	-webkit-box-shadow: 0 1px 3px #555555;
+	-moz-box-shadow: 0 1px 3px #555555;
+	box-shadow: 0 1px 3px #555555;
+	white-space: nowrap;
+}
+#ui .modalform .modal-header {
+	background-color:#D1D1D1;
+	border-bottom:1px solid #F0F0F0;
+}
+#ui .modalform .modal-body {
+	background-color: #F0F0F0;
+	height:400px;
+}
+#ui .modalform .modal-footer {
+	text-align:center;
+	background-color:#D1D1D1;
+	border-top:1px solid #F0F0F0;
+}
+#ui .modalform .wizfooter .wizsteps {
+    display: inline-block;
+	margin-top:10px;
+}
+
+#ui .mod-2-bloks { }
+#ui .mod-2-bloks .mod2-b1,
+#ui .mod-2-bloks .mod2-b2 {
+	width:425px;
+}
+#ui .mod-2-bloks .mod2-b1 {
+	width:434px;
+	border-right:1px solid #D1D1D1;
+}
+#ui .mod-2-bloks .span5:last-child {
+	width:410px;
+	margin-left: 10px;
+}
+#ui .mod-2-bloks .form-line {
+	padding:0 auto;
+	margin-left:60px;
+	border:0 none;
+	margin-bottom:5px;
+}
+#ui .mod-2-bloks .form-line:last-child {
+	margin-bottom:0;
+}
+
+/* .mod-simulate-cd 5minwizard content */
+#ui .mod-simulate-cd {
+	height:400px;
+}
+
+#ui .mod-simulate-cd .cd-block {
+	background-image:url(../img/cd/background-clouds-lrg.jpg);
+	background-position: -300px center;
+}
+
+#ui .mod-simulate-cd .cd-block .cd-semibkg {
+   background: none repeat scroll 0 0 rgba(240, 240, 240, 0.5);
+    border-radius: 5px ;
+    overflow: hidden;
+	margin:12px;
+}
+
+#ui .mod-simulate-cd .page-help {
+	width:220px;
+	margin:0;
+	float:right;
+}
+
+
+/* from CD/Ian */
+#ui .mod-simulate-cd .ping-banner-container {
+    overflow: hidden;
+    width: 100%;
+}
+#ui .mod-simulate-cd .ping-banner {
+    background-color: #000000;
+    border-bottom: 1px solid #CCCCCC;
+    box-shadow: 0 -3px 4px 0 rgba(0, 0, 0, 0.5) inset;
+    height: 28px;
+    overflow: hidden;
+    width: 100%;
+}
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav {
+    margin: 0 auto;
+    padding: 3px 20px 0;
+    width: 540px;
+}
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav .ping-clouddesktop {
+    display: inline-block;
+    height: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    vertical-align: text-top;
+    width: 350px;
+}
+
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav .ping-logo {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+    margin: 0;
+    overflow: hidden;
+    text-decoration: none;
+    width: 174px;
+	background-image:url(../img/cd/cdp-logo-wht-sm.png);
+	background-repeat:no-repeat;
+	background-origin:0 0;
+	padding:0 0 0 104px;
+}
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav .ping-loggedin {
+    color: #FFFFFF;
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 3px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav .ping-loggedin .ping-loggedin-user {
+    color: #DADADA;
+}
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav .ping-loggedin a {
+    color: #909090;
+    text-decoration: none;
+}
+#ui .mod-simulate-cd .ping-banner .ping-utilitynav .ping-loggedin a:hover {
+    text-decoration: underline;
+}
+#ui .mod-simulate-cd .ping-header-container {
+    overflow: hidden;
+    padding-top: 3px;
+}
+#ui .mod-simulate-cd .cd-comp-logo {
+	padding:9px 0 0 9px;
+}
+#ui .mod-simulate-cd .cd-comp-logo .org-logo-image {
+    max-height: 60px;
+    max-width: 320px;
+}
+
+/* ping-apps */
+#ui .mod-simulate-cd .ping-apps {
+	padding: 13px 0 10px 0;
+	height:300px;
+}
+#ui .mod-simulate-cd .ping-apps ul {
+	display: block;
+	float: left;
+	clear: both;
+	list-style-type: none;
+	padding: 0 0 0 19px;
+	margin: 0 -1px 0 0;
+	/* 240px * 4 columns wide */
+}
+#ui .mod-simulate-cd .ping-apps ul li {
+	float: left;
+	position: relative;
+	margin: 0 22px 22px 0;
+    opacity: 1.0;
+}
+#ui .mod-simulate-cd .ping-apps ul li .ping-app {
+    position: relative;
+	display: block;
+	padding: 8px 6px;
+	width: 204px;	/* 218px total width -14px */
+	height: 66px;	/* 84px -18px */
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #ebebeb;
+	outline: 0;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: -ms-linear-gradient(#f7f7f7 0%, #fff 17%, #fff 83%, #f7f7f7 100%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0%, #f7f7f7), color-stop(17%, #fff), color-stop(83%, #fff), color-stop(100%, #f7f7f7));
+    background: -moz-linear-gradient(#f7f7f7 0%, #fff 17%, #fff 83%, #f7f7f7 100%);
+    background: -o-linear-gradient(#f7f7f7 0%, #fff 17%, #fff 83%, #f7f7f7 100%);
+    background: linear-gradient(#f7f7f7 0%, #fff 17%, #fff 83%, #f7f7f7 100%);
+	-webkit-box-shadow: rgba(0, 0, 0, .30) 0 3px 4px;
+	-moz-box-shadow: rgba(0,0,0,.30) 0 3px 4px;
+	box-shadow: rgba(0, 0, 0, .30) 0 3px 4px;
+    -moz-transition: all 0.1s linear; 
+    -o-transition: all 0.05s linear;    
+    -webkit-transition: all 0.05s linear;
+    -ms-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+    /* instance when app is missing image */
+    text-decoration: none;
+}
+
+#ui .mod-simulate-cd .ping-apps ul li .ping-app:hover {
+	border: 1px solid #000;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#ui .mod-simulate-cd .ping-apps ul li .ping-app.appselected {
+	border: 1px solid #000;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+#ui .mod-simulate-cd .ping-apps ul li .ping-app.appmandatory {
+	cursor:not-allowed;
+}
+
+#ui .mod-simulate-cd .ping-apps ul {
+    padding-left: 9px;
+}
+#ui .mod-simulate-cd .ping-apps ul li {
+    margin: 0 6px 6px 0;
+}
+#ui .mod-simulate-cd .ping-apps ul li .ping-app {
+    width: 96px;
+    height: 31px;
+}
+#ui .mod-simulate-cd .ping-apps ul li .ping-app.active {
+    top: 2px;
+}
+#ui .mod-simulate-cd .ping-apps ul li .ping-app img {
+    width: 90px;
+    height: 25px;
+    margin: 3px;
+}
+
+#ui .mod-simulate-cd .ping-apps ul li .ping-drag-link {
+    display: block;
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    width: 15px;
+    z-index: 100;
+}
+/* from CD/Ian */
+
+#ui .mod-simulate-cd input[type="checkbox"] {
+	margin:-7px 0  0 0;
+}
+
+/* /.mod-simulate-cd 5minwizard content */
+
+/* .ping5minwiz-conf */
+#ui .ping5minwiz-conf {
+	text-align:center;
+	padding: 40px 0;
+}
+#ui .ping5minwiz-conf h5 {
+	font-size: 18px;
+}
+#ui .ping5minwiz-conf .position-cdl {
+	padding: 80px 0 0 0;
+}
+#ui .ping5minwiz-conf .position-cdl a {
+	background-color: #37B9CC;
+	display: inline-block;
+	width:200px;
+	height:100px;
+	border-radius: 5px;
+	background-image:url(../img/cloud-desktop-logo-1.png);
+	background-repeat:no-repeat;
+	background-position:0 center
+}
+#ui .ping5minwiz-conf .position-cdl a:hover {
+    background-color: #60C7D6;
+}
+
+#ui .ping5minwiz-conf .position-cdl a span {
+	display:none;
+}
+
+
+
+/* .ping5minwiz-conf */
+
+
+/* GetStarted page */
+#ui div.pg-getstart {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+#ui div.pg-getstart .level-boxes .box {
+    background-color: #EDF0EB;
+    color: #404040;
+    position: relative;
+    transition: all 0.3s linear 0s;
+    width: 95%;
+	border-radius:6px;
+}
+#ui div.pg-getstart .level-boxes .box .wrap {
+    padding: 33px 30px 26px;
+    position: relative;
+	text-align:center;
+	height:350px;
+}
+#ui div.pg-getstart .level-boxes .box .wrap .separator {
+    margin: 30px -30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+#ui div.pg-getstart .level-boxes .box .wrap .separator i {
+    margin:8px 5px 0 0;
+}
+#ui div.pg-getstart .level-boxes .box .price.hdr {
+	text-align:center;
+}
+#ui div.pg-getstart .level-boxes .box .price span.amount {
+    font-size: 22px;
+    font-weight: normal;
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+}
+#ui div.pg-getstart .level-boxes .box .bestbuy {
+    color: #E86338;
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+#ui div.pg-getstart .level-boxes .box .options {
+	height:150px;
+	text-align:left;
+}
+#ui div.pg-getstart .level-boxes .box .options ul li {
+    padding: 5px 0;
+}
+#ui div.pg-getstart .level-boxes .box .options ul li a {
+	color:#333333;
+	display:inline-block;
+	width:207px;
+	float:right;
+}
+#ui div.pg-getstart .level-boxes .box .options ul li a.strike {
+    text-decoration: line-through;
+	color:#333333;
+	cursor:auto;
+}
+#ui div.pg-getstart .getnow {
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+	font-size: 26px;
+    font-style: italic;
+    line-height: 36px;
+
+}
+#ui div.pg-getstart .getnow span.tx1 {
+}
+#ui div.pg-getstart .getnow .launch-cd {
+	margin:0;
+}
+#ui div.pg-getstart .getnow .launch-cd a {
+	vertical-align: auto;
+	margin-top:-10px;
+}
+
+#ui .color-a {
+    background-color: #C45268;
+    color: #EEEEEE;
+}
+#ui .color-b {
+    background: none repeat scroll 0 0 #EDF0EB;
+    color: #404040;
+}
+#ui .color-c {
+    background: none repeat scroll 0 0 #00BBB6;
+    color: #EEEEEE;
+}
+#ui .color-d {
+    background: none repeat scroll 0 0 #E86338;
+    color: #EEEEEE;
+}
+#ui .color-e {
+    background: none repeat scroll 0 0 #404040;
+    color: #EEEEEE;
+}
+/* /GetStarted page */
+
+
+/* .popover customization */
+
+#ui .popover {
+	padding: 0;
+	border:0 solid #FFF;
+}
+#ui .popover.bottom .arrow:after {
+	border-width: 0;
+}
+#ui .popover .popover-title {
+	border-bottom:0 none;
+}
+
+
+#ui .popover-custom1 { }
+#ui .popover-custom1 .popover { }
+#ui .popover-custom1 .popover,
+#ui .popover-custom1 .popover .popover-title {
+	line-height: normal;
+}
+#ui .pop-alert .popover .popover-title  {
+	background-color: #FCF8E3;
+	color: #C09853;
+	font-weight:bold;
+}
+
+
+
+
+/**** STOP customized signup for the 5 minutes wizard ****/
+/* ====/pg-signlog==== */
+
+
+
+/* just for testing */
+
+#ui #main .show-grid [class*="span"] { 
+	/* show grid.   background-color: #EEEEEE; */
+}
+
+/* fixes that will be cleaned after whole refactoring */
+/* ONDEMAND-5837 */
+#ui .mo-large1 .ping-highlight-2col .ping-highlight-container {
+    width: 370px;
+}
+#ui .mo-large1 #master-date-chart {
+    width:800px; 
+}
+#ui .mo-large1 #master-connections-timeranges,
+#ui .mo-large1 .dashboard-charts .charts-panel .range-block {
+    width:800px; 
+}
+
+

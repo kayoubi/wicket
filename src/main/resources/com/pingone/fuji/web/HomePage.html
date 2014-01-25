@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" id="ui" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+    <title>Ping Identity Mt Fuji</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css?v=${pom.version}" />
+    <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container" style="padding-bottom:250px">
+    <h1>Ping Identity Mt Fuji - Web Developer</h1>
+    
+    <p>Congrats! We know you know at least enough about maven to get yourself in trouble. But you knew we knew you
+        knew that.</p>
+    
+    <p>This programming exercise, or Mt Fuji, is the DevOps team way of seeing how you code. This consists of
+        two assignments, one asking for a JavaScript example, and the other a Java example.</p>
+    
+    <h2>How your code will be evaluated</h2>
+    <ul>
+        <li>Readability</li>
+        <li>Extensibility</li>
+        <li>Correctness</li>
+        <li>Completeness</li>
+    </ul>
+    
+    <p>As a general rule, programming at Ping prefers simple over complex, and readability over conciseness.</p>
+    
+    <h2>Assignment #1 - JavaScript</h2>
+    <p>Refer to <a href="assets/twitter-bootstrap-c52368d/webportal-bs/ui-programming-exercise.html">ui-programming-exercise.html</a></p>
+    <p>We would like you to write a JS that will position dynamically the help box. You can use any library 
+        in the <tt>src/main/webapp/assets/</tt> directory -- JQuery/Bootstrap and add on top of it or
+         write a JS from scratch.</p>
+    <p><b>Scenario</b>: Our eccentric UI designer from eastern europe has provided a composition, which is
+        assigned to you to implement. You receieved the following screenshots describing expected behavior:</p>
+    
+    <ul>
+        <li><a href="ref/01.jpeg" target="_blank">01.jpeg</a> is the screenshot of the actual ui-programming-exercise.html. Please note the way help section is working.</li>
+        <li><a href="ref/02.jpeg" target="_blank">02.jpeg</a> is where you can see the variables -- all are space related.</li>
+        <li><a href="ref/03.jpeg" target="_blank">03.jpeg</a> and <a href="ref/04.jpeg" target="_blank">04.jpeg</a> 
+            is the expected behavior.</li>
+    </ul>
+    
+    <p>In addition, you've been provided the following instructions:</p>
+        <pre>
+            Explanation:
+
+            var_window = dynamic value, as we drag and expand/contract the window, this changes
+            var_top = dynamic -- accommodate the header elements (if we add more there, this will change)
+            var_top_min = 100px -- fixed, define it in the properties of the JS
+            var_bottom = 100px -- fixed, define it in the properties of the JS
+            var_space = dynamic -- calculate it: var_window -- (var_top/"or var_top_min" + var_bottom)
+            var_help = dynamic, but not lower than 355px -- define it in the properties of the JS
+                 (now is in the inline style of the element)
+        
+            Behavior we want:
+
+            Help section (var_help element) shall be positioned static so if the page is expanded 
+            (no scroll) or filled with content (scroll) the help will stay in the middle of the 
+            var_space element, filling it -- see picture 03.jpeg. 
+
+            If we contract the browser window, the help shall not shrink lower than 355px.
+
+            Now there is a tricky part we want to see. 
+            If the page scrolls, and we scroll down so the header is out, the help shall stay 
+            positioned to the top by var_top_min, 100px -- see picture 04.jpeg.  
+            If we scroll up and the header is appearing, the help shall stop to the var_top and of course, 
+            not overlap that area -- see picture 03.jpeg.
+
+            This shall work in latest Firefox, Chrome and Safari, and all IE starting with IE7. 
+        </pre>
+
+    <h2>Assignment #2 - Java</h2>
+    
+    <p>At Ping Identity, most of our web development uses <a href="http://wicket.apache.org/" target="_blank">Apache Wicket</a> as
+    our MVC framework. Knowing such an esoteric framework isn't necessary for the Mt Fuji, but it can't hurt. Here's
+    how it integrates into our example Spring / Hibernate stack:</p>
+    
+    <p><a href="" wicket:id="wicketDemo">Wicket Demo</a></p>
+    
+    <p><b>Scenario:</b> Our eccentric european has again provided a comp for you to implement. However,
+        this one needs to save off to the database, the client side is fully implemented.</p>
+
+    <p>In your favorite MVC framework, save off these inputs into the database! We've provided the database calls,
+    as well as a service layer call along with a data transfer object:</p>
+    <ul>
+        <li><tt>src/main/java/com/pingone/fuji/web/dto/UserDto.java</tt></li>
+        <li><tt>src/main/java/com/pingone/fuji/wev/svc/FujiSvc.java#saveUser(UserDto userDto)</tt></li>
+        <li><tt>src/main/java/com/pingone/fuji/wev/svc/FujiSvc.java#getUser()</tt></li>
+    </ul>
+
+    <p>Using the mockup <a href="ref/java/1.html" target="_blank">[1]</a> provided, save the data from the browser into the database. Then using the other
+    mockup<a href="ref/java/2.html" target="_blank">[2]</a>, load it from the database and display the information saved.</p>
+    
+    <div class="alert">
+        <p><b>Remember!</b> Be sure to add validation for the fields as indicated by the mockup. We also
+            really, really like unit tests.</p>
+    </div>
+    
+    <p>To reiterate, you can do this in any MVC framework you want. Wicket integration with Spring/Hibernate is
+    provided.</p>
+
+    
+    <p><b>So... where do I save it?</b></p>
+
+    <p>For assignment #1 - We'd like these to be saved to <tt>http://localhost:9090/web/jsdemo</tt></p>
+        
+    <p>For assignment #2 - We'd like these to be saved to <tt>http://localhost:9090/web/user/add</tt> and 
+    <tt>http://localhost:9090/web/user/view/&lt;email&gt;</tt>, respectively. If you are not using wicket, 
+    feel free to remove it if it's getting in the way.</p>
+
+
+    <h2>Assignment #3 - Bonus Round!</h2>
+    
+    <p>Find anything wrong with this application? We put our worst developer on it and he threw it up in a few
+       hours. He didn't sabotage it or anything but there's two people who's entire job is to protect the outside
+       world from him, just saying.</p>
+       
+    <p>If you see anything wrong - anywhere, make a note of it! You'll get bonus points, promise.</p>
+    </div>
+
+</body>
+</html>
+

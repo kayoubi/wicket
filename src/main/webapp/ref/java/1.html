@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" id="ui" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+    <title>Java Example</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.min.css" />
+    <link href="assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container">
+    <h1>Save User</h1>
+    <div class="alert">
+        <ul>
+            <li>Field 'Email' is required.</li>
+            <li>Password is required.</li>
+            <li>You must not be a spambot.</li>
+        </ul>
+    </div>
+    <form>
+        <fieldset>
+            <legend>Save a User</legend>
+            <label>Email</label>
+            <input type="text" placeholder="jdoe@example.com" >&nbsp;*
+            <span class="help-block">Your e-mail address</span>
+
+            <label>First Name</label>
+            <input type="text" placeholder="Jane">
+            <span class="help-block">Your first name.</span>
+
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe">
+            <span class="help-block">Your last name.</span>
+
+            <label>Password</label>
+            <input type="password" placeholder="Password">
+            <span class="help-block">Your password.</span>
+
+            <label>Spambot?</label>
+            <span class="help-block">Are you a spambot?</span>
+            <label class="checkbox">
+                <input type="checkbox"> No, I swear!
+            </label>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>

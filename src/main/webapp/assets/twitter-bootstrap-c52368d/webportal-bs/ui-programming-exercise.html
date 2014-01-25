@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" id="ui">
+<head>
+	<title>PingOne - Identity Repository</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="../../css/screen.css?v=13.4.0.6231-SNAPSHOT"/>
+	<link rel="stylesheet" type="text/css" href="../../css/jquery.qtip.css?v=13.4.0.6231-SNAPSHOT"/>
+	<link rel="stylesheet" type="text/css" href="../../libs/jquery.mCustomScrollbar-2.0/jquery.mCustomScrollbar.css?v=13.4.0.6231-SNAPSHOT"/>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css?v=13.4.0.6231-SNAPSHOT"/>
+	<link rel="stylesheet" type="text/css" href="../../theme/css/webportal.css?v=13.4.0.6231-SNAPSHOT"/>
+	
+	<link href="../../images/favicon.ico?v=13.4.0.6231-SNAPSHOT" rel="shortcut icon" type="image/x-icon"/>
+	
+	<script type="text/javascript" src="../../scripts/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery-ui-1.8.24.custom.min.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery.qtip.min.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery.scrollTo-1.4.2-min.js"></script>
+	<script type="text/javascript" src="../../scripts/ping-global.js?v=13.4.0.6231-SNAPSHOT"></script>
+    <script type="text/javascript" src="../../scripts/highcharts-2.3.3.js"></script>
+	<script type="text/javascript" src="../../scripts/ZeroClipboard.js"></script>
+    <script type="text/javascript" src="../../scripts/moment-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../../scripts/underscore-1.4.0-min.js"></script>
+	<script type="text/javascript" src="../../scripts/bootstrap-fileupload.js"></script>
+	<script type="text/javascript" src="../../scripts/bootstrap-limit.js"></script>
+	<script type="text/javascript" src="../../scripts/bootstrap-button.js"></script>
+	
+	<script type="text/javascript" src="../../libs/jquery.mCustomScrollbar-2.0/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../../libs/jquery.mCustomScrollbar-2.0/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="../wicket/resource/org.apache.wicket.markup.html.WicketEventReference/wicket-event-ver-1362598858000.js"></script>
+<script type="text/javascript" src="../wicket/resource/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax-ver-1362598858000.js"></script>
+<script type="text/javascript" id="wicket-ajax-base-url">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="cas/config";
+/*]]>*/
+</script>
+<script type="text/javascript" >
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { triggerOnChangeOnClick('authnType');blurOnFocus('input[name=authnType]:radio');;});
+/*]]>*/
+</script>
+<script type="text/javascript" >
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { setupHelpLinksAndScrollbar();;});
+/*]]>*/
+</script>
+<script type="text/javascript" >
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { if (typeof TESTUTIL  == 'undefined') TESTUTIL = { 
+    activeAjaxCount: 0, ajaxCallsTried: 0, ajaxCallsCompleted: 0,
+    activeUniformCount: 0 
+};
+if (Wicket.Ajax) {
+Wicket.Ajax.registerPreCallHandler(function()
+{
+    if (typeof console !== 'undefined'){ console.log('preCall') };
+    TESTUTIL.activeAjaxCount++;TESTUTIL.ajaxCallsTried++;
+});
+Wicket.Ajax.registerPostCallHandler(function()
+{
+    if (typeof console !== 'undefined'){ console.log('postCall') };
+    TESTUTIL.activeAjaxCount--;TESTUTIL.ajaxCallsCompleted++;
+});
+};
+
+;});
+/*]]>*/
+</script>
+</head>
+
+
+<body>
+
+	<!-- #appContainer -->
+	<div id="appContainer" class="ping-container ping-wide">
+	
+		<!-- #ping-head -->
+		<div id="ping-head">
+			<span>
+
+	<!-- .top-head -->
+	<div class="top-head">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="row th-cont">
+
+						<div class="app-name">
+							<a href="#" title="PingOne Home" id="pingone-logo">PingOne</a>
+							<h4 class="an-type">Cloud Access Services</h4>
+						</div>
+
+						
+	<ul class="top-navtop">
+		<li class="litp lifix">
+			<a href="#" title="Logout of the system" class="btn btn-mini btn-ping-spec-1 btn-inverse-1">
+			 <span>Logout</span> 
+			</a>
+		</li>
+		
+    
+       <li class="litp lifix">
+	       <a href="#" class="btn btn-mini btn-ping-spec-1 u-settings"><span>John Big</span></a>
+	   </li>
+    
+
+		<li class="litp">
+			<span>Welcome,</span>
+		</li>
+	</ul>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / .top-head -->
+
+	<!-- .main-nav -->
+	<div class="main-nav">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+
+					<div class="row mn-cont">
+
+						<ul class="mn-nav">
+							
+    
+       <li>
+	       <a href="#"><span>Dashboard</span></a>
+	   </li>
+    
+	
+							
+							
+							
+
+							
+    
+       <li>
+	       <a href="#"><span>Applications</span></a>
+	   </li>
+    
+
+							
+    
+       <li>
+	       <a href="#"><span>User Groups</span></a>
+	   </li>
+    
+ 
+							
+							
+    
+       <li class="active">
+	       <a href="#"><span>Setup</span></a>
+	   </li>
+    
+
+							
+							
+    
+       <li>
+	       <a href="#"><span>Account</span></a>
+	   </li>
+    
+
+                            
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- .main-nav -->
+	
+	
+</span>
+		</div>
+		<!-- #ping-head -->
+
+		<!-- .nojs-message -->
+		<noscript>
+			<div class="nojs-message">
+				<div class="alert alert-error">
+					<p class="nojsm-1">
+						<strong>Warning!</strong> JavaScript is not enabled.
+					</p>
+					<p class="nojsm-2">You must enable JavaScript in order to use
+						the PingOne website.</p>
+				</div>
+			</div>
+		</noscript>
+		<!-- / .nojs-message -->
+
+		<!-- #main -->
+		<div id="main">
+			<div class="container">
+				<div class="row blk-page-content">
+				
+					<!-- .pagecontent -->
+					<div class="span12 pagecontent">
+					
+						<!-- .title-breadcrumbs -->
+						<div class="row title-breadcrumbs">
+							<h4 class="span6 pg-title"><span id="pageTitle">Identity Repository</span></h4>
+							
+	<ul class="span6 breadcrumb">
+		<li>
+		  <a href="#" title="Dashboard"><i class="icon-home"></i></a>
+		  <span class="divider">/</span>
+		</li>
+		
+		<li class="active">
+		  <span>Identity Repository</span>
+		</li>
+	</ul>
+
+						</div>
+						<!-- /.title-breadcrumbs -->
+
+						
+
+	<script type="text/javascript">
+/*<![CDATA[*/
+
+		var blurOnFocus = function(selector) {
+			$(selector).bind("click", function() {
+				$(this).blur();
+			});
+		};
+		(function($) {
+			$(window).load(function() {
+				triggerOnChangeOnClick('authnType');
+			});
+		})(jQuery);
+	
+/*]]>*/
+</script>
+
+	<!-- upper block content - Identity Repository -->
+	<div class="row after-pg-title">
+	
+		<!-- block content -->
+		<div class="span8 blk-c-content">
+			<div class="row">
+			
+				<p class="hp-copy-1">
+					In order to setup your applications, you have first to setup an Identity Bridge.<br/>
+					Please choose one of the options below.
+				</p>
+	
+				<p class="hp-copy-1">
+					If you are not sure, you can <a href="#" id="inviteLink">invite people</a> from 
+					your organization, such as a Systems Administrator to complete this process. 
+				</p>
+				
+				<form id="authnTypeForm13" method="post" action=""><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="authnTypeForm13_hf_0" id="authnTypeForm13_hf_0" /></div>
+				
+					
+						<table class="table table-hover pick-conn">
+							<tbody>
+								<tr helpid="hp-AUTHN_SOFTWARE_CLIENT" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType15" value="radio30" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKY_AIK1JYyf6ln38K7GACGM&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType15&#039;) != null;}.bind(this));"> <span>PingOne AD Connect</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr><tr helpid="hp-AUTHN_PINGFEDERATE" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType16" value="radio31" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKTlkv1Eneo-f2PlClXAmmZw&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType16&#039;) != null;}.bind(this));"> <span>Ping Federate (SAML)</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr><tr helpid="hp-AUTHN_OPENID" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType17" value="radio32" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKa3AFBoQsXd_eHWVPP-1PL8&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType17&#039;) != null;}.bind(this));"> <span>Google Apps</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr><tr helpid="hp-AUTHN_SAML20" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType18" value="radio33" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKdPWVPG3CU3HBO11BtImNSA&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType18&#039;) != null;}.bind(this));"> <span>3rd-party SAML</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr><tr helpid="hp-AUTHN_OPENTOKEN" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType19" value="radio34" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKaGHbaFzFLNH8Xu9VE59aoE&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType19&#039;) != null;}.bind(this));"> <span>3rd-party Open Token IdP</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr><tr helpid="hp-AUTHN_OPENTOKEN_CLOUDDIR" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType1a" value="radio35" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKbGP5ijowVgsirwzBr87Izc&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType1a&#039;) != null;}.bind(this));"> <span>Cloud Directory</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr><tr helpid="hp-AUTHN_OPENTOKEN_SUPERIDP" class=""> 
+									<td><label><input type="radio" name="authnType" id="authnType1b" value="radio36" class="wicket-authnType14" onchange="var wcall=wicketAjaxGet(&#039;./config?x=Bjykfq0W4xevFFC74LaKvvEuERULXeoXKT2KfGXr7rpg6OamZtJSUFhDGFfU7h7AawgNCACzweBTyXrCecReKZcIQ-7PJgkx5wepxtXs9W8&#039;,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$(&#039;authnType1b&#039;) != null;}.bind(this));"> <span>PingOne Super IdP</span></label></td>
+									<td class="c-status"><span></span></td>
+									<td><a class="bt-inln-hlp">?</a></td>
+								</tr>
+							</tbody>
+						</table>
+					
+					
+					<div>
+    <div id="confirmationDialog1c" style="display:none"></div>
+</div>
+					<!-- check webportal-bs/template.html#AlertModal for implementation / ONDEMAND-5839 -->
+					
+					
+					<a id="setup" style="display:none"></a>
+				
+				</form>
+				
+			</div>
+		</div>
+		<!-- / block content -->
+		
+		<!-- page help box -->
+		<div class="span4 page-help" style="height: 335px; background-color:#FCF">
+		
+			<h5 class="page-help-title">About this section</h5>
+			
+			<div class="page-help-block" style="height: 295px">
+				<div class="page-help-scroll">
+					
+					<!-- <h5>Identity Repository</h5> -->
+					
+					<p>
+						This is the section of the application where you setup your IdentityBridge.
+					</p>
+					
+					<div class="hp-high-block">
+						<div id="hp-identitybridge">
+							<h6>IdentityBridge</h6>
+							<p>
+								An IdentityBridge is a tool that connects authoritative 
+								user repositories to cloud infrastructure. By securely 
+								connecting user repositories, organizations can store 
+								passwords in one place but leverage them to protect many 
+								different applications.
+							</p>
+							<p>
+								In order to connect your users to cloud applications, 
+								we must first authenticate those users. Some organizations 
+								keep their user information on-premise, in repositories like 
+								Active Directory, other organizations use cloud repositories 
+								like Google Apps, or infrastructure services like SAML.
+							</p>
+							<p>
+								PingOne supports many methods of bridging identities into 
+								the cloud; choose the method that best suits your organization.
+							</p>
+						</div>
+					</div>
+					
+					<div class="hp-high-block" id="hp-AUTHN_SOFTWARE_CLIENT"><div>
+	<h6>PingOne AD Connect</h6>
+	<p>PingOne AD Connect is a free software tool that can be
+		downloaded and deployed locally on a Windows server so that Active
+		Directory identities can be bridged into CAS. If you don't know which
+		option to pick, and you have Active Directory in your organization,
+		this is your best bet.</p>
+	<p>
+		For more information on what it means to install AD Connect in your
+		organization, you can watch a quick video <a
+			href="#"
+			>here</a>.
+	</p>
+</div></div><div class="hp-high-block" id="hp-AUTHN_PINGFEDERATE"><div>
+	<h6>Ping Federate (SAML)</h6>
+	<p>PingFederate is a powerful federation server that can send SAML
+		assertions to PingOne (among many other things). Choose this option if
+		you are a PingFederate administrator.</p>
+	<p>
+		For more information please check out the <a 
+			href="#">PingFederate</a>
+		product page.
+	</p>
+</div></div><div class="hp-high-block" id="hp-AUTHN_OPENID"><div>
+	<h6>Google Apps</h6>
+	<p>Google Apps for your Domain is a cloud-based business suite that
+		can generate OpenID assertions and send them to PingOne. If you are
+		already using Google Apps for mail and calendar, there are just a few
+		extra steps you must take to also use Google Apps as your Identity
+		Provider.</p>
+	<p>
+		For more information please check <a 
+			href="#">Google
+			Apps</a> official page.
+	</p>
+</div></div><div class="hp-high-block" id="hp-AUTHN_SAML20"><div>
+	<h6>3rd-party SAML</h6>
+	<p>
+		There are many federation tools that can generate SAML assertions and
+		send them to PingOne. Examples of 3<sup>rd</sup> Party SAML tools are
+		ADFS, Shibboleth, CA Siteminder, Oracle Identity Federation, and many
+		others. PingOne can accept SAML 2.0 assertions from all of these
+		providers.
+	</p>
+</div></div><div class="hp-high-block" id="hp-AUTHN_OPENTOKEN"><div>
+	<h6>3-Party OpenToken IdP</h6>
+	<p>Plug in your own authenticator to PingOne using OpenToken.</p>
+	<p>If you want to hack some new ways of authenticating people, this
+		is the right choice for you. How about authenticating user through "face recognition"?</p>
+</div></div><div class="hp-high-block" id="hp-AUTHN_OPENTOKEN_CLOUDDIR"><div>
+	<h6>Cloud Directory</h6>
+	<p>PingOne Cloud Directory is a powerful cloud based directory
+		server that allows you manage and authenticate your users in a highly
+		secure and extensible infrastructrue. Stop worrying about scalibility,
+		geo-dedundency, availibility, here is your one stop shop to get it
+		all!</p>
+	<p>
+		For more information please check out the <a 
+			href="#">Cloud
+			Direcotry</a> product page.
+	</p>
+</div></div><div class="hp-high-block" id="hp-AUTHN_OPENTOKEN_SUPERIDP"><div>
+	<h6>PingOne Super IdP</h6>
+	<p>Use the Web Portal as your IdP in hacker's mode.</p>
+	<p>Since we know you are the administrator of your account, we will
+		give you the power to customize the identity attributes (subjects, assertions,
+		claims, anything you can think of) to be sent to PingOne Token Processor, and by doing so, you
+		can impersonate any users under your account.</p>
+</div></div>			
+				</div>
+			</div>
+		
+		</div>
+		<!-- / page help box -->
+		
+	</div>
+	<!-- /upper block content - Identity Repository -->
+
+
+
+					</div>
+					<!-- /.pagecontent -->
+					
+				</div>
+			</div>
+
+		</div>
+		<!-- / #main -->
+
+		<!-- .etc-msg -->
+		<div class="etc-msg">
+			<div>
+				<span class="etcm-1">Development Mode</span>
+			</div>
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+		</div>
+		<!-- / .etc-msg -->
+
+	</div>
+	<!-- / #appContainer -->
+
+	<!-- .pingfooter -->
+	<div class="pingfooter">
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="row">
+
+				<p class="copyright">
+					<span>&copy; 2003 - 
+	2013
+</span> 
+					<a href="#" title="Ping Identity Corporation" >Ping Identity Corporation</a>. 
+					<span>All rights reserved.</span> 
+				</p>
+				
+				<p class="policy-support-links">
+					<a class="padded" href="#" >Privacy</a>
+					
+						<span class="ping-sep">|</span>
+						<a href="#" id="termsAndLegal">Terms</a>
+					
+					
+						<span class="ping-sep">|</span>
+						<a href="#" style="display:none">About</a>
+						<a href="#" >About</a>
+					
+				</p>
+				
+				<p class="right-foot">
+					<span class="sec-by">Secured by</span>  
+					<img class="ping-logo" src="../../theme/img/logo-ping-identity.png" alt=""/>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+	<!-- / .pingfooter -->
+
+	<!-- support-kb -->
+	<div id="support-kb">
+		<a href="#"  title="Locate solutions to technical problems."><span>Support &amp; Knowledgebase</span></a>
+	</div>
+	<!-- / support-kb -->
+
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+

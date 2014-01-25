@@ -1,0 +1,18 @@
+Fix modal-behind-backdrop issue (https://github.com/twitter/bootstrap/issues/3217)
+====================================================================================================
+diff --git a/web-portal/src/main/webapp/assets/bootstrap/js/bootstrap.js b/web-portal/src/main/webapp/assets/bootstrap/js/bootstrap.js
+index a535f36..54091f9 100755
+--- a/web-portal/src/main/webapp/assets/bootstrap/js/bootstrap.js
++++ b/web-portal/src/main/webapp/assets/bootstrap/js/bootstrap.js
+@@ -220,7 +220,10 @@
+           var doAnimate = $.support.transition && animate
+ 
+           this.$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
+-            .appendTo(document.body)
++            // fix modal-behind-backdrop issue (https://github.com/twitter/bootstrap/issues/3217)
++            //.appendTo(document.body)
++            .insertAfter(this.$element)
++          
+ 
+           this.$backdrop.click(
+             this.options.backdrop == 'static' ?
