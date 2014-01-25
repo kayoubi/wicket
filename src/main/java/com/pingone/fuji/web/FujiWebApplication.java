@@ -16,6 +16,7 @@
  **************************************************************************/
 package com.pingone.fuji.web;
 
+import com.pingone.fuji.web.usr.UserAdd;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
@@ -42,6 +43,7 @@ public class FujiWebApplication
         getComponentInstantiationListeners().add(new SpringComponentInjector(this));
         mountPage("/home", HomePage.class);
         mountPage("/wicketdemo", WicketDemo.class);
+        mountPage("/user/add", UserAdd.class);
     }
     
 }

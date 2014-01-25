@@ -56,6 +56,7 @@ public class FujiSvcImpl
         userDao.saveUser(user);
     }
 
+    @Transactional
     @Override
     public UserDto getUser(String email)
     {
