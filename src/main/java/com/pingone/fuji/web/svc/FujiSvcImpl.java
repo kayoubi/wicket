@@ -45,6 +45,7 @@ public class FujiSvcImpl
         return userDao.findByEmail(email) != null;
     }
 
+    @Transactional
     @Override
     public void saveUser(UserDto userDto)
     {
@@ -66,7 +67,7 @@ public class FujiSvcImpl
         userDto.setFirstName(user.getFirstName());
         userDto.setLastName(user.getLastName());
         userDto.setPassword(user.getPassword()); // hashing passwords is hard - what are we, a digital identity company?
-        userDto.setSpamBot(false);
+        userDto.setNotSpamBot(false);
         return userDto;
     }
 }

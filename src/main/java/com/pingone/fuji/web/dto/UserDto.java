@@ -34,7 +34,7 @@ public class UserDto
     
     private String email;
     
-    private boolean spamBot;
+    private boolean notSpamBot;
     
     private String password;
     
@@ -78,14 +78,14 @@ public class UserDto
         this.password = password;
     }
 
-    public boolean isSpamBot()
+    public boolean isNotSpamBot()
     {
-        return spamBot;
+        return notSpamBot;
     }
     
-    public void setSpamBot(boolean spamBot)
+    public void setNotSpamBot(boolean notSpamBot)
     {
-        this.spamBot = spamBot;
+        this.notSpamBot = notSpamBot;
     }
 
 }

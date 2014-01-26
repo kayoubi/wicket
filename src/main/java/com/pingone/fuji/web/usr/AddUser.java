@@ -4,7 +4,9 @@ import com.pingone.fuji.web.dto.UserDto;
 import com.pingone.fuji.web.svc.FujiSvc;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.CheckBox;
 import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.PasswordTextField;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.PropertyModel;
@@ -14,13 +16,13 @@ import org.apache.wicket.validation.validator.EmailAddressValidator;
 /**
  * @author Khaled Ayoubi
  */
-public class UserAdd extends WebPage {
+public class AddUser extends WebPage {
     private UserDto user;
 
     @SpringBean
     private FujiSvc fujiSvc;
 
-    public UserAdd() {
+    public AddUser() {
         super();
         user = new UserDto();
         add(new Label("title", "Save User"));
@@ -35,11 +37,13 @@ public class UserAdd extends WebPage {
             add(new TextField<String>("email", new PropertyModel<String>(user, "email")).setRequired(true).add(EmailAddressValidator.getInstance()));
             add(new TextField<String>("firstName", new PropertyModel<String>(user, "firstName")).setRequired(true));
             add(new TextField<String>("lastName", new PropertyModel<String>(user, "lastName")).setRequired(true));
+            add(new PasswordTextField("password", new PropertyModel<String>(user, "password")));
+            add(new CheckBox("notspambot", new PropertyModel<Boolean>(user, "notSpamBot")));
         }
 
         @Override
         protected void onSubmit() {
-            System.out.println(user);
+            fujiSvc.saveUser(user);
         }
 
         @Override
@@ -49,6 +53,9 @@ public class UserAdd extends WebPage {
                 if (fujiSvc.isEmailTakenByAUser(user.getEmail())) {
 //                    error(new ValidationError().addMessageKey("existingUser"));
                     error("User already exist");
+                }
+                if (!user.isNotSpamBot()) {
+                    error("You must not be a spambot");
                 }
             }
         }
