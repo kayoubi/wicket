@@ -9,7 +9,6 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
-import org.apache.wicket.validation.ValidationError;
 import org.apache.wicket.validation.validator.EmailAddressValidator;
 
 /**
@@ -48,7 +47,8 @@ public class UserAdd extends WebPage {
             super.onValidate();
             if (!hasError()) {
                 if (fujiSvc.isEmailTakenByAUser(user.getEmail())) {
-                    get("email").error(new ValidationError().addMessageKey("existingUser"));
+//                    error(new ValidationError().addMessageKey("existingUser"));
+                    error("User already exist");
                 }
             }
         }
