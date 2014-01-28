@@ -364,7 +364,7 @@
     <!-- / block content -->
 
     <!-- page help box -->
-    <div id="help-box" class="span4 page-help" style="background-color:#FCF; position:relative;">
+    <div id="help-box" class="span4 page-help" style="height: 335px; background-color:#FCF; position:relative;">
 
         <h5 class="page-help-title">About this section</h5>
 
@@ -562,14 +562,10 @@
         });
     };
     (function($) {
-        var helpBox = $("#help-box");
-        var helpInitTop = helpBox.position().top;
+        var helpInitTop = $("#help-box").position().top;
 //        $("help-box").css('top', helpInitTop);
 //        console.log('help-origin: ' + helpInitTop);
         var topMin = 100;
-        var bottomMin = 100;
-
-        helpBox.css.('height', 100);
         $(window).load(function() {
             triggerOnChangeOnClick('authnType');
         });
@@ -589,7 +585,8 @@
 //            console.log($("#help-box").css('top'));
 
             if ((helpInitTop - vertical_position) < topMin) {
-                helpBox.css('top', vertical_position - topMin);
+                console.log('set2');
+                $("#help-box").css('top', vertical_position - topMin);
             }
         });
     })(jQuery);
