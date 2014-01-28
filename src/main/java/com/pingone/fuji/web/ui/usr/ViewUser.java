@@ -1,4 +1,4 @@
-package com.pingone.fuji.web.usr;
+package com.pingone.fuji.web.ui.usr;
 
 import com.pingone.fuji.web.dto.UserDto;
 import com.pingone.fuji.web.svc.FujiSvc;

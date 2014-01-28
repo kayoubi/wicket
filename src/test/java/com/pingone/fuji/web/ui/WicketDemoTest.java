@@ -14,17 +14,16 @@
  *     http://www.pingidentity.com
  * 
  **************************************************************************/
-package com.pingone.fuji.web;
+package com.pingone.fuji.web.ui;
 
-import static org.mockito.Mockito.mock;
-
+import com.pingone.fuji.web.svc.FujiSvc;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.apache.wicket.spring.test.ApplicationContextMock;
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.pingone.fuji.web.svc.FujiSvc;
+import static org.mockito.Mockito.mock;
 
 /**
  * 

@@ -1,11 +1,12 @@
-package com.pingone.fuji.web.usr;
+package com.pingone.fuji.web.ui.usr;
 
 import com.pingone.fuji.web.svc.FujiSvc;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 import org.apache.wicket.spring.test.ApplicationContextMock;
 import org.apache.wicket.util.tester.FormTester;
 import org.apache.wicket.util.tester.WicketTester;
-import org.junit.Before;
+import org.junit.After;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.mockito.Mockito.*;
@@ -14,27 +15,29 @@ import static org.mockito.Mockito.*;
  * @author Khaled Ayoubi
  */
 public class AddUserTest {
-    private ApplicationContextMock appContextMock;
 
-    private SpringComponentInjector injector;
+    private static WicketTester tester;
 
-    private WicketTester tester;
+    private static FujiSvc svc;
 
-    @Before
-    public void setUp() {
-        appContextMock = new ApplicationContextMock();
-        tester = new WicketTester();
-
-        FujiSvc svc = mock(FujiSvc.class);
-        when(svc.isEmailTakenByAUser("existing@gmail.com")).thenReturn(true);
+    @BeforeClass
+    public static void setUp() {
+        ApplicationContextMock appContextMock = new ApplicationContextMock();
+        svc = mock(FujiSvc.class);
         appContextMock.putBean(svc);
 
-        injector = new SpringComponentInjector(tester.getApplication(), appContextMock, true);
+        tester = new WicketTester();
+        SpringComponentInjector injector = new SpringComponentInjector(tester.getApplication(), appContextMock, true);
         tester.getApplication().getComponentInstantiationListeners().add(injector);
     }
 
+    @After
+    public void tearDown() {
+        reset(svc);
+    }
+
     @Test
-    public void testYouMustNotBeSpambot() {
+    public void testUserMustNotBeSpambot() {
         tester.startPage(AddUser.class);
         FormTester formTester = tester.newFormTester("form");
         formTester.setValue("email", "khaled.ayoubi@gmail.com");
@@ -48,6 +51,8 @@ public class AddUserTest {
 
     @Test
     public void testCantAddExistingUser() {
+        when(svc.isEmailTakenByAUser("existing@gmail.com")).thenReturn(true);
+
         tester.startPage(AddUser.class);
         FormTester formTester = tester.newFormTester("form");
         formTester.setValue("email", "existing@gmail.com");
@@ -61,7 +66,7 @@ public class AddUserTest {
     }
 
     @Test
-    public void testCantAddValidUser() {
+    public void testCanAddValidUser() {
         tester.startPage(AddUser.class);
         FormTester formTester = tester.newFormTester("form");
         formTester.setValue("email", "new-user@gmail.com");

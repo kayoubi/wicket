@@ -14,10 +14,10 @@
  *     http://www.pingidentity.com
  * 
  **************************************************************************/
-package com.pingone.fuji.web;
+package com.pingone.fuji.web.ui;
 
-import com.pingone.fuji.web.usr.AddUser;
-import com.pingone.fuji.web.usr.ViewUser;
+import com.pingone.fuji.web.ui.usr.AddUser;
+import com.pingone.fuji.web.ui.usr.ViewUser;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;

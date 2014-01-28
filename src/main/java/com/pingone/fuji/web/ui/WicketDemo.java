@@ -15,7 +15,7 @@
  * 
  **************************************************************************/
 
-package com.pingone.fuji.web;
+package com.pingone.fuji.web.ui;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;

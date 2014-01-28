@@ -20,6 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.pingone.fuji.web.dao.User;
@@ -31,6 +32,8 @@ public class FujiSvcImpl
 {
     @Autowired
     private UserDao userDao;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
     
     @Override
     public String getCurrentDate()
@@ -53,7 +56,7 @@ public class FujiSvcImpl
         user.setFirstName(userDto.getFirstName());
         user.setLastName(userDto.getLastName());
         user.setEmail(userDto.getEmail());
-        user.setPassword(userDto.getPassword());
+        user.setPassword(passwordEncoder.encode(userDto.getPassword()));
         userDao.saveUser(user);
     }
 

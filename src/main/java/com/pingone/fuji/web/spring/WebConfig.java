@@ -16,6 +16,7 @@
  **************************************************************************/
 package com.pingone.fuji.web.spring;
 
+import java.security.SecureRandom;
 import java.util.Properties;
 
 import javax.naming.NamingException;
@@ -28,10 +29,12 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.orm.hibernate3.HibernateTransactionManager;
 import org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import com.pingone.fuji.web.FujiWebApplication;
+import com.pingone.fuji.web.ui.FujiWebApplication;
 import com.pingone.fuji.web.dao.UserDao;
 import com.pingone.fuji.web.dao.UserDaoImpl;
 import com.pingone.fuji.web.svc.FujiSvc;
@@ -99,6 +102,11 @@ public class WebConfig
     {
         return new TransactionTemplate(transactionManager());
     }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder(10, new SecureRandom());
+    }
     
     protected DataSource dataSource(final String jndiName)
         throws NamingException
@@ -110,4 +118,6 @@ public class WebConfig
         jofb.afterPropertiesSet();
         return (DataSource) jofb.getObject();
     }
+
+
 }
