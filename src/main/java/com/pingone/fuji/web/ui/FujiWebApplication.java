@@ -20,6 +20,7 @@ import com.pingone.fuji.web.ui.usr.AddUser;
 import com.pingone.fuji.web.ui.usr.ViewUser;
 import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
+import org.apache.wicket.request.mapper.ResourceMapper;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 
 public class FujiWebApplication 
@@ -46,6 +47,7 @@ public class FujiWebApplication
         mountPage("/wicketdemo", WicketDemo.class);
         mountPage("/user/view/${email}", ViewUser.class);
         mountPage("/user/add", AddUser.class);
+        mountPage("/jsdemo", JsDemo.class);
     }
     
 }

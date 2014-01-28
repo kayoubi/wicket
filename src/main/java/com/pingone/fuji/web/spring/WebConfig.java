@@ -16,12 +16,11 @@
  **************************************************************************/
 package com.pingone.fuji.web.spring;
 
-import java.security.SecureRandom;
-import java.util.Properties;
-
-import javax.naming.NamingException;
-import javax.sql.DataSource;
-
+import com.pingone.fuji.web.dao.UserDao;
+import com.pingone.fuji.web.dao.UserDaoImpl;
+import com.pingone.fuji.web.svc.FujiSvc;
+import com.pingone.fuji.web.svc.FujiSvcImpl;
+import com.pingone.fuji.web.ui.FujiWebApplication;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,11 +33,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import com.pingone.fuji.web.ui.FujiWebApplication;
-import com.pingone.fuji.web.dao.UserDao;
-import com.pingone.fuji.web.dao.UserDaoImpl;
-import com.pingone.fuji.web.svc.FujiSvc;
-import com.pingone.fuji.web.svc.FujiSvcImpl;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+import java.util.Properties;
 
 /**
  * 
@@ -105,7 +102,7 @@ public class WebConfig
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder(10, new SecureRandom());
+        return new BCryptPasswordEncoder();
     }
     
     protected DataSource dataSource(final String jndiName)
